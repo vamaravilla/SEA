@@ -1,0 +1,1560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <title></title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/menu_principal.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/menu_secundario.css" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jsDatePick_rtl.css" />
+        <script type="text/javascript" src="/js/jsDatePick.min.1.0.js"></script>
+    <style type="text/css">#sfWebDebug {   padding: 0;   margin: 0;   font-family: Arial, sans-serif;   font-size: 12px;   color: #333;   text-align: left;   line-height: 12px; }  #sfWebDebug a, #sfWebDebug a:hover {   text-decoration: none;   border: none;   background-color: transparent;   color: #000; }  #sfWebDebug img {   float: none;   margin: 0;   border: 0;   display: inline; }  #sfWebDebugBar {   position: absolute;   margin: 0;   padding: 1px 0;   right: 0px;   top: 0px;   opacity: 0.80;   filter: alpha(opacity:80);   z-index: 10000;   white-space: nowrap;   background-color: #ddd; }  #sfWebDebugBar[id] {   position: fixed; }  #sfWebDebugBar img {   vertical-align: middle; }  #sfWebDebugBar .sfWebDebugMenu {   padding: 5px;   padding-left: 0;   display: inline;   margin: 0; }  #sfWebDebugBar .sfWebDebugMenu li {   display: inline;   list-style: none;   margin: 0;   padding: 0 6px; }  #sfWebDebugBar .sfWebDebugMenu li.last {   margin: 0;   padding: 0;   border: 0; }  #sfWebDebugDatabaseDetails li {   margin: 0;   margin-left: 30px;   padding: 5px 0; }  #sfWebDebugShortMessages li {   margin-bottom: 10px;   padding: 5px;   background-color: #ddd; }  #sfWebDebugShortMessages li {   list-style: none; }  #sfWebDebugDetails {   margin-right: 7px; }  #sfWebDebug pre {   line-height: 1.3;   margin-bottom: 10px; }  #sfWebDebug h1 {   font-size: 16px;   font-weight: bold;   margin: 20px 0;   padding: 0;   border: 0px;   background-color: #eee; }  #sfWebDebug h2 {   font-size: 14px;   font-weight: bold;   margin: 10px 0;   padding: 0;   border: 0px;   background: none; }  #sfWebDebug h3 {   font-size: 12px;   font-weight: bold;   margin: 10px 0;   padding: 0;   border: 0px;   background: none; }  #sfWebDebug .sfWebDebugTop {   position: absolute;   left: 0px;   top: 0px;   width: 98%;   padding: 0 1%;   margin: 0;   z-index: 9999;   background-color: #efefef;   border-bottom: 1px solid #aaa; }  #sfWebDebugLog {   margin: 0;   padding: 3px;   font-size: 11px; }  #sfWebDebugLogMenu {   margin-bottom: 5px; }  #sfWebDebugLogMenu li {   display: inline;   list-style: none;   margin: 0;   padding: 0 5px;   border-right: 1px solid #aaa; }  #sfWebDebugConfigSummary {   display: inline;   padding: 5px;   background-color: #ddd;   border: 1px solid #aaa;   margin: 20px 0; }  #sfWebDebugConfigSummary li {   list-style: none;   display: inline;   margin: 0;   padding: 0 5px; }  #sfWebDebugConfigSummary li.last {   border: 0; }  .sfWebDebugInfo, .sfWebDebugInfo td {   background-color: #ddd; }  .sfWebDebugWarning, .sfWebDebugWarning td {   background-color: orange !important; }  .sfWebDebugError, .sfWebDebugError td {   background-color: #f99 !important; }  .sfWebDebugLogNumber {   width: 1%; }  .sfWebDebugLogType {   width: 1%;   white-space: nowrap; }  .sfWebDebugLogType, #sfWebDebug .sfWebDebugLogType a {   color: darkgreen; }  #sfWebDebug .sfWebDebugLogType a:hover {   text-decoration: underline; }  .sfWebDebugLogInfo {   color: blue; }  .ison {   color: #3f3;   margin-right: 5px; }  .isoff {   color: #f33;   margin-right: 5px;   text-decoration: line-through; }  .sfWebDebugLogs {   padding: 0;   margin: 0;   border: 1px solid #999;   font-family: Arial;   font-size: 11px; }  .sfWebDebugLogs tr {   padding: 0;   margin: 0;   border: 0; }  .sfWebDebugLogs td {   margin: 0;   border: 0;   padding: 1px 3px;   vertical-align: top; }  .sfWebDebugLogs th {   margin: 0;   border: 0;   padding: 3px 5px;   vertical-align: top;   background-color: #999;   color: #eee;   white-space: nowrap; }  .sfWebDebugDebugInfo {   color: #999;   font-size: 11px;   margin: 5px 0 5px 10px;   padding: 2px 0 2px 5px;   border-left: 1px solid #aaa;   line-height: 1.25em; }  .sfWebDebugDebugInfo .sfWebDebugLogInfo, .sfWebDebugDebugInfo a.sfWebDebugFileLink {   color: #333 !important; }  .sfWebDebugCache {   padding: 0;   margin: 0;   font-family: Arial;   position: absolute;   overflow: hidden;   z-index: 995;   font-size: 9px;   padding: 2px;   filter:alpha(opacity=85);   -moz-opacity:0.85;   opacity: 0.85; }  #sfWebDebugSymfonyVersion {   margin-left: 0;   padding: 1px 4px;   background-color: #666;   color: #fff; }  #sfWebDebugviewDetails ul {   padding-left: 2em;   margin: .5em 0;   list-style: none; }  #sfWebDebugviewDetails li {   margin-bottom: .5em; }  #sfWebDebug .sfWebDebugDataType, #sfWebDebug .sfWebDebugDataType a {   color: #666;   font-style: italic; }  #sfWebDebug .sfWebDebugDataType a:hover {   text-decoration: underline; }  #sfWebDebugDatabaseLogs {   margin-bottom: 10px; }  #sfWebDebugDatabaseLogs ol {   margin: 0;   padding: 0;   margin-left: 20px;   list-style: number; }  #sfWebDebugDatabaseLogs li {   padding: 6px; }  #sfWebDebugDatabaseLogs li:nth-child(odd) {   background-color: #CCC; }  .sfWebDebugDatabaseQuery {   margin-bottom: .5em;   margin-top: 0; }  .sfWebDebugDatabaseLogInfo {   color: #666;   font-size: 11px; }  .sfWebDebugDatabaseQuery .sfWebDebugLogInfo {   color: #909;   font-weight: bold; }  .sfWebDebugHighlight {   background: #FFC; }</style></head>
+    
+	<body>
+		<div id="fondo_fijo"></div>
+		<div id="contenedor_principal">
+			<div id="contenedor_superior" class="fondo_gris1">
+
+<div id="contenedor_menu" class="contenido_centrado">
+
+					<div id="menu">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="izq"></td>
+								<td class="centro">
+
+<!-- Menú principal - Inicio -->
+<ul id="menu_lista">
+
+	<!-- Ítem 1 - Inicio -->
+	<li class="m1_sup item">
+
+		<a href="#nogo">
+			<div class="item3">
+				<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+					<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Asignaci&oacute;n de UMAs</div></div></div>
+				</div>
+			</div>
+		</a>
+
+		<!-- Submenú o descripción -->
+		<div class="m1_sub m1_oculto sup_item_sub">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="esquina esquina_arr_izq"></td>
+					<td class="medio_fondo"></td>
+					<td class="esquina esquina_arr_der"></td>
+				</tr>
+				<tr>
+
+					<td class="medio_fondo"></td>
+					<td class="medio_fondo medio_lista">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+					</td>
+					<td class="medio_fondo"></td>
+				</tr>
+				<tr>
+					<td class="esquina esquina_aba_izq"></td>
+					<td class="medio_fondo"></td>
+
+					<td class="esquina esquina_aba_der"></td>
+				</tr>
+			</table>
+		</div>
+	</li>
+	<!-- Ítem 1 - Fin -->
+
+	<!-- Ítem 2 - Inicio -->
+	<li class="m1_sup item">
+
+		<a href="#nogo">
+			<div class="item2">
+				<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+					<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Actividades acad&eacute;micas</div></div></div>
+				</div>
+			</div>
+		</a>
+
+		<!-- Submenú o descripción -->
+		<div class="m1_sub m1_oculto sup_item_sub">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="esquina esquina_arr_izq"></td>
+					<td class="medio_fondo"></td>
+					<td class="esquina esquina_arr_der"></td>
+				</tr>
+				<tr>
+
+					<td class="medio_fondo"></td>
+					<td class="medio_fondo medio_lista">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+					</td>
+					<td class="medio_fondo"></td>
+				</tr>
+				<tr>
+					<td class="esquina esquina_aba_izq"></td>
+					<td class="medio_fondo"></td>
+
+					<td class="esquina esquina_aba_der"></td>
+				</tr>
+			</table>
+		</div>
+	</li>
+	<!-- Ítem 2 - Fin -->
+
+	<!-- Ítem 3 - Inicio -->
+	<li class="m1_sup item">
+
+		<a href="#nogo">
+			<div class="item1">
+				<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+					<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Informaci&oacute;n personal</div></div></div>
+				</div>
+			</div>
+		</a>
+
+		<!-- Submenú o descripción -->
+		<div class="m1_sub m1_oculto sup_item_sub">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="esquina esquina_arr_izq"></td>
+					<td class="medio_fondo"></td>
+					<td class="esquina esquina_arr_der"></td>
+				</tr>
+				<tr>
+
+					<td class="medio_fondo"></td>
+					<td class="medio_fondo medio_lista">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+					</td>
+					<td class="medio_fondo"></td>
+				</tr>
+				<tr>
+					<td class="esquina esquina_aba_izq"></td>
+					<td class="medio_fondo"></td>
+
+					<td class="esquina esquina_aba_der"></td>
+				</tr>
+			</table>
+		</div>
+	</li>
+	<!-- Ítem 3 - Fin -->
+</ul>
+<!-- Menú principal - Fin -->
+
+								</td>
+
+								<td class="der"></td>
+							</tr>
+						</table>
+					</div>
+				
+<!-- Submenú - Inicio -->
+<div id="submenu" class="fondo_azul2">
+	<div id="cabeza_submenu"></div>
+	<div id="cuerpo_submenu">
+		<h1>Submen&uacute;</h1>
+
+		<br />
+		<div class="seccion">
+			Acciones
+		</div>
+		<ul id="lista_acciones">
+			<li><a href="/frontend_dev.php/ficha/mostrar">Ver ficha personal</a></li>
+			<li><a href="#nogo">Acci&oacute;n 2</a></li>
+			<li><a href="#nogo">Acci&oacute;n 3</a></li>
+
+			<li><a href="#nogo">Acci&oacute;n 4</a></li>
+		</ul>
+		<br/>
+		<div class="seccion">
+			Reportes
+		</div>
+		<ul id="lista_reportes">
+			<li><a href="#nogo">Reporte 1</a></li>
+
+			<li><a href="#nogo">Reporte 2</a></li>
+			<li><a href="#nogo">Reporte 3</a></li>
+			<li><a href="#nogo">Reporte 4</a></li>
+		</ul>
+		<br />
+	</div>
+	<div id="pie_submenu"></div>
+
+</div>
+<!-- Submenú - Fin -->
+
+				</div>
+
+
+			</div>
+			<div id="contenedor_resto">
+				<div id="contenedor_medio">
+					<div id="bloque_cabeza">
+						<div id="cabeza" class="contenido_centrado"></div>
+
+					</div>
+					<div id="bloque_cuerpo">
+						<div id="contenedor_cuerpo" class="contenido_centrado">
+	
+							<!-- Área de trabajo - Inicio -->
+							<div id="area_trabajo">
+								<center>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr>
+
+                <td colspan="2"><center><h1>Ficha de acad&eacute;mico - Edici&oacute;n</h1></center></td>
+            </tr>
+        </thead>
+        <tfoot></tfoot>
+        <tbody>
+            <tr>
+                <td class="grupo_datos" colspan="2"><h2>Datos generales</h2></td>
+
+            </tr>
+            <tr>
+  <th><label for="academico_codigoacademico">Código</label></th>
+  <td><input type="text" name="academico[codigoacademico]" value="00085206" id="academico_codigoacademico" /></td>
+</tr>
+<tr>
+  <th><label for="academico_primernombreacad">Primer nombre</label></th>
+  <td><input type="text" name="academico[primernombreacad]" value="Guillermo" id="academico_primernombreacad" /></td>
+</tr>
+
+<tr>
+  <th><label for="academico_segundonombreacad">Segundo nombre</label></th>
+  <td><input type="text" name="academico[segundonombreacad]" value="Alberto" id="academico_segundonombreacad" /></td>
+</tr>
+<tr>
+  <th><label for="academico_primerapellidoacad">Primer apellido</label></th>
+  <td><input type="text" name="academico[primerapellidoacad]" value="Gutiérrez" id="academico_primerapellidoacad" /></td>
+</tr>
+<tr>
+  <th><label for="academico_segundoapellidoacad">Segundo apellido</label></th>
+
+  <td><input type="text" name="academico[segundoapellidoacad]" value="Rosales" id="academico_segundoapellidoacad" /></td>
+</tr>
+<tr>
+  <th><label for="academico_apellidocasadaacad">Apellido de casada</label></th>
+  <td><input type="text" name="academico[apellidocasadaacad]" value="" id="academico_apellidocasadaacad" /></td>
+</tr>
+<tr>
+  <th><label for="academico_sexoacad">Sexo</label></th>
+  <td><input type="text" name="academico[sexoacad]" value="0" id="academico_sexoacad" /></td>
+</tr>
+
+<tr>
+  <th><label for="academico_fechanacimientoacad">Fecha de nacimiento</label></th>
+  <td><input id="fechanacimientoacad" type="text" name="academico[fechanacimientoacad]" value="1988-11-26" /></td>
+</tr>
+<tr>
+  <th><label for="academico_usalentes">Usa lentes</label></th>
+  <td><input type="checkbox" name="academico[usalentes]" checked="checked" id="academico_usalentes" /></td>
+</tr>
+<tr>
+  <th><label for="academico_poseetransporte">Posee transporte</label></th>
+
+  <td><input type="checkbox" name="academico[poseetransporte]" checked="checked" id="academico_poseetransporte" /></td>
+</tr>
+<tr>
+  <th><label for="academico_idmunicipionac">Municipio de nacimiento</label></th>
+  <td><select name="academico[idmunicipionac]" id="academico_idmunicipionac">
+<option value="1" selected="selected">San Salvador</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="academico_iddeptonac">Departamento de nacimiento</label></th>
+
+  <td><select name="academico[iddeptonac]" id="academico_iddeptonac">
+<option value="1">Ahuachapán</option>
+<option value="2">Cabañas</option>
+<option value="3">Chalatenago</option>
+<option value="4">Cuscatlán</option>
+<option value="5">La Libertad</option>
+<option value="6">La Paz</option>
+<option value="7">La Unión</option>
+<option value="8">Morazán</option>
+
+<option value="9">San Miguel</option>
+<option value="10" selected="selected">San Salvador</option>
+<option value="11">San Vicente</option>
+<option value="12">Santa Ana</option>
+<option value="13">Sonsonate</option>
+<option value="14">Usulután</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="academico_idpaisnac">País de nacimiento</label></th>
+
+  <td><select name="academico[idpaisnac]" id="academico_idpaisnac">
+<option value="1">Afganistán</option>
+<option value="2">Åland</option>
+<option value="3">Albania</option>
+<option value="4">Alemania</option>
+<option value="5">Andorra</option>
+<option value="6">Angola</option>
+<option value="7">Anguila</option>
+<option value="8">Antigua y Barbuda</option>
+
+<option value="9">Antillas Neerlandesas</option>
+<option value="10">Arabia Saudita</option>
+<option value="11">Argelia</option>
+<option value="12">Argentina</option>
+<option value="13">Armenia</option>
+<option value="14">Aruba</option>
+<option value="15">Australia</option>
+<option value="16">Austria</option>
+<option value="17">Azerbaiyán</option>
+
+<option value="18">Bahamas</option>
+<option value="19">Baréin</option>
+<option value="20">Bangladés</option>
+<option value="21">Barbados</option>
+<option value="22">Bélgica</option>
+<option value="23">Belice</option>
+<option value="24">Benín</option>
+<option value="25">Bermudas</option>
+<option value="26">Bielorrusia</option>
+
+<option value="27">Birmania</option>
+<option value="28">Bolivia</option>
+<option value="29">Bosnia y Herzegovina</option>
+<option value="30">Botsuana</option>
+<option value="31">Isla Bouvet</option>
+<option value="32">Brasil</option>
+<option value="33">Brunéi</option>
+<option value="34">Bulgaria</option>
+<option value="35">Burkina Faso</option>
+
+<option value="36">Burundi</option>
+<option value="37">Bután</option>
+<option value="38">Cabo Verde</option>
+<option value="39">Islas Caimán</option>
+<option value="40">Camboya</option>
+<option value="41">Camerún</option>
+<option value="42">Canadá</option>
+<option value="43">República Centroafricana</option>
+<option value="44">Chad</option>
+
+<option value="45">República Checa</option>
+<option value="46">Chile</option>
+<option value="47">China</option>
+<option value="48">Chipre</option>
+<option value="49">Islas Cocos</option>
+<option value="50">Colombia</option>
+<option value="51">Comoras</option>
+<option value="52">República del Congo</option>
+<option value="53">Rep. Dem. del Congo</option>
+
+<option value="54">Islas Cook</option>
+<option value="55">Corea del Norte</option>
+<option value="56">Corea del Sur</option>
+<option value="57">Costa de Marfil</option>
+<option value="58">Costa Rica</option>
+<option value="59">Croacia</option>
+<option value="60">Cuba</option>
+<option value="61">Dinamarca</option>
+<option value="62">Dominica</option>
+
+<option value="63">República Dominicana</option>
+<option value="64">Ecuador</option>
+<option value="65">Egipto</option>
+<option value="66" selected="selected">El Salvador</option>
+<option value="67">Emiratos Árabes Unidos</option>
+<option value="68">Eritrea</option>
+<option value="69">Eslovaquia</option>
+<option value="70">Eslovenia</option>
+<option value="71">España</option>
+
+<option value="72">Estados Unidos</option>
+<option value="73">Estonia</option>
+<option value="74">Etiopía</option>
+<option value="75">Islas Feroe</option>
+<option value="76">Filipinas</option>
+<option value="77">Finlandia</option>
+<option value="78">Fiyi</option>
+<option value="79">Francia</option>
+<option value="80">Gabón</option>
+
+<option value="81">Gambia</option>
+<option value="82">Georgia</option>
+<option value="83">Islas Georgias del Sur y Sandwich del Sur</option>
+<option value="84">Ghana</option>
+<option value="85">Gibraltar</option>
+<option value="86">Granada</option>
+<option value="87">Grecia</option>
+<option value="88">Groenlandia</option>
+<option value="89">Guadalupe</option>
+
+<option value="90">Guam</option>
+<option value="91">Guatemala</option>
+<option value="92">Guayana Francesa</option>
+<option value="93">Guernsey</option>
+<option value="94">Guinea</option>
+<option value="95">Guinea Ecuatorial</option>
+<option value="96">Guinea-Bissau</option>
+<option value="97">Guyana</option>
+<option value="98">Haití</option>
+
+<option value="99">Islas Heard y McDonald</option>
+<option value="100">Honduras</option>
+<option value="101">Hong Kong</option>
+<option value="102">Hungría</option>
+<option value="103">India</option>
+<option value="104">Indonesia</option>
+<option value="105">Irán</option>
+<option value="106">Irak</option>
+<option value="107">Irlanda</option>
+
+<option value="108">Islandia</option>
+<option value="109">Israel</option>
+<option value="110">Italia</option>
+<option value="111">Jamaica</option>
+<option value="112">Japón</option>
+<option value="113">Jersey</option>
+<option value="114">Jordania</option>
+<option value="115">Kazajistán</option>
+<option value="116">Kenia</option>
+
+<option value="117">Kirguistán</option>
+<option value="118">Kiribati</option>
+<option value="119">Kuwait</option>
+<option value="120">Laos</option>
+<option value="121">Lesoto</option>
+<option value="122">Letonia</option>
+<option value="123">Líbano</option>
+<option value="124">Liberia</option>
+<option value="125">Libia</option>
+
+<option value="126">Liechtenstein</option>
+<option value="127">Lituania</option>
+<option value="128">Luxemburgo</option>
+<option value="129">Macao</option>
+<option value="130">República de Macedonia</option>
+<option value="131">Madagascar</option>
+<option value="132">Malasia</option>
+<option value="133">Malaui</option>
+<option value="134">Maldivas</option>
+
+<option value="135">Malí</option>
+<option value="136">Malta</option>
+<option value="137">Islas Malvinas</option>
+<option value="138">Isla de Man</option>
+<option value="139">Islas Marianas del Norte</option>
+<option value="140">Marruecos</option>
+<option value="141">Islas Marshall</option>
+<option value="142">Martinica</option>
+<option value="143">Mauricio</option>
+
+<option value="144">Mauritania</option>
+<option value="145">Mayotte</option>
+<option value="146">México</option>
+<option value="147">Micronesia</option>
+<option value="148">Moldavia</option>
+<option value="149">Mónaco</option>
+<option value="150">Mongolia</option>
+<option value="151">Montenegro</option>
+<option value="152">Montserrat</option>
+
+<option value="153">Mozambique</option>
+<option value="154">Namibia</option>
+<option value="155">Nauru</option>
+<option value="156">Isla de Navidad</option>
+<option value="157">Nepal</option>
+<option value="158">Nicaragua</option>
+<option value="159">Níger</option>
+<option value="160">Nigeria</option>
+<option value="161">Niue</option>
+
+<option value="162">Norfolk</option>
+<option value="163">Noruega</option>
+<option value="164">Nueva Caledonia</option>
+<option value="165">Nueva Zelanda</option>
+<option value="166">Omán</option>
+<option value="167">Países Bajos</option>
+<option value="168">Pakistán</option>
+<option value="169">Palaos</option>
+<option value="170">Autoridad Nacional Palestina</option>
+
+<option value="171">Panamá</option>
+<option value="172">Papúa Nueva Guinea</option>
+<option value="173">Paraguay</option>
+<option value="174">Perú</option>
+<option value="175">Islas Pitcairn</option>
+<option value="176">Polinesia Francesa</option>
+<option value="177">Polonia</option>
+<option value="178">Portugal</option>
+<option value="179">Puerto Rico</option>
+
+<option value="180">Catar</option>
+<option value="181">Reino Unido</option>
+<option value="182">Reunión</option>
+<option value="183">Ruanda</option>
+<option value="184">Rumanía</option>
+<option value="185">Rusia</option>
+<option value="186">República Árabe Saharaui Democrática</option>
+<option value="187">Islas Salomón</option>
+<option value="188">Samoa</option>
+
+<option value="189">Samoa Estadounidense</option>
+<option value="190">San Bartolomé</option>
+<option value="191">San Cristóbal y Nieves</option>
+<option value="192">San Marino</option>
+<option value="193">San Martín</option>
+<option value="194">San Pedro y Miquelón</option>
+<option value="195">San Vicente y las Granadinas</option>
+<option value="196">Santa Helena, A. y T.</option>
+<option value="197">Santa Lucía</option>
+
+<option value="198">Santo Tomé y Príncipe</option>
+<option value="199">Senegal</option>
+<option value="200">Serbia</option>
+<option value="201">Seychelles</option>
+<option value="202">Sierra Leona</option>
+<option value="203">Singapur</option>
+<option value="204">Siria</option>
+<option value="205">Somalia</option>
+<option value="206">Sri Lanka</option>
+
+<option value="207">Suazilandia</option>
+<option value="208">Sudáfrica</option>
+<option value="209">Sudán</option>
+<option value="210">Suecia</option>
+<option value="211">Suiza</option>
+<option value="212">Surinam</option>
+<option value="213">Svalbard y Jan Mayen</option>
+<option value="214">Tailandia</option>
+<option value="215">Taiwán</option>
+
+<option value="216">Tanzania</option>
+<option value="217">Tayikistán</option>
+<option value="218">Territorio Británico del Océano Índico</option>
+<option value="219">Territorios Australes Franceses</option>
+<option value="220">Timor Oriental</option>
+<option value="221">Togo</option>
+<option value="222">Tokelau</option>
+<option value="223">Tonga</option>
+<option value="224">Trinidad y Tobago</option>
+
+<option value="225">Túnez</option>
+<option value="226">Islas Turcas y Caicos</option>
+<option value="227">Turkmenistán</option>
+<option value="228">Turquía</option>
+<option value="229">Tuvalu</option>
+<option value="230">Ucrania</option>
+<option value="231">Uganda</option>
+<option value="232">Uruguay</option>
+<option value="233">Uzbekistán</option>
+
+<option value="234">Vanuatu</option>
+<option value="235">Ciudad del Vaticano</option>
+<option value="236">Venezuela</option>
+<option value="237">Vietnam</option>
+<option value="238">Islas Vírgenes Británicas</option>
+<option value="239">Islas Vírgenes de los Estados Unidos</option>
+<option value="240">Wallis y Futuna</option>
+<option value="241">Yemen</option>
+<option value="242">Yibuti</option>
+
+<option value="243">Zambia</option>
+<option value="244">Zimbabue</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="academico_idpaisciudadania">País de ciudadanía</label></th>
+  <td><select name="academico[idpaisciudadania]" id="academico_idpaisciudadania">
+<option value="1">Afganistán</option>
+<option value="2">Åland</option>
+<option value="3">Albania</option>
+
+<option value="4">Alemania</option>
+<option value="5">Andorra</option>
+<option value="6">Angola</option>
+<option value="7">Anguila</option>
+<option value="8">Antigua y Barbuda</option>
+<option value="9">Antillas Neerlandesas</option>
+<option value="10">Arabia Saudita</option>
+<option value="11">Argelia</option>
+<option value="12">Argentina</option>
+
+<option value="13">Armenia</option>
+<option value="14">Aruba</option>
+<option value="15">Australia</option>
+<option value="16">Austria</option>
+<option value="17">Azerbaiyán</option>
+<option value="18">Bahamas</option>
+<option value="19">Baréin</option>
+<option value="20">Bangladés</option>
+<option value="21">Barbados</option>
+
+<option value="22">Bélgica</option>
+<option value="23">Belice</option>
+<option value="24">Benín</option>
+<option value="25">Bermudas</option>
+<option value="26">Bielorrusia</option>
+<option value="27">Birmania</option>
+<option value="28">Bolivia</option>
+<option value="29">Bosnia y Herzegovina</option>
+<option value="30">Botsuana</option>
+
+<option value="31">Isla Bouvet</option>
+<option value="32">Brasil</option>
+<option value="33">Brunéi</option>
+<option value="34">Bulgaria</option>
+<option value="35">Burkina Faso</option>
+<option value="36">Burundi</option>
+<option value="37">Bután</option>
+<option value="38">Cabo Verde</option>
+<option value="39">Islas Caimán</option>
+
+<option value="40">Camboya</option>
+<option value="41">Camerún</option>
+<option value="42">Canadá</option>
+<option value="43">República Centroafricana</option>
+<option value="44">Chad</option>
+<option value="45">República Checa</option>
+<option value="46">Chile</option>
+<option value="47">China</option>
+<option value="48">Chipre</option>
+
+<option value="49">Islas Cocos</option>
+<option value="50">Colombia</option>
+<option value="51">Comoras</option>
+<option value="52">República del Congo</option>
+<option value="53">Rep. Dem. del Congo</option>
+<option value="54">Islas Cook</option>
+<option value="55">Corea del Norte</option>
+<option value="56">Corea del Sur</option>
+<option value="57">Costa de Marfil</option>
+
+<option value="58">Costa Rica</option>
+<option value="59">Croacia</option>
+<option value="60">Cuba</option>
+<option value="61">Dinamarca</option>
+<option value="62">Dominica</option>
+<option value="63">República Dominicana</option>
+<option value="64">Ecuador</option>
+<option value="65">Egipto</option>
+<option value="66" selected="selected">El Salvador</option>
+
+<option value="67">Emiratos Árabes Unidos</option>
+<option value="68">Eritrea</option>
+<option value="69">Eslovaquia</option>
+<option value="70">Eslovenia</option>
+<option value="71">España</option>
+<option value="72">Estados Unidos</option>
+<option value="73">Estonia</option>
+<option value="74">Etiopía</option>
+<option value="75">Islas Feroe</option>
+
+<option value="76">Filipinas</option>
+<option value="77">Finlandia</option>
+<option value="78">Fiyi</option>
+<option value="79">Francia</option>
+<option value="80">Gabón</option>
+<option value="81">Gambia</option>
+<option value="82">Georgia</option>
+<option value="83">Islas Georgias del Sur y Sandwich del Sur</option>
+<option value="84">Ghana</option>
+
+<option value="85">Gibraltar</option>
+<option value="86">Granada</option>
+<option value="87">Grecia</option>
+<option value="88">Groenlandia</option>
+<option value="89">Guadalupe</option>
+<option value="90">Guam</option>
+<option value="91">Guatemala</option>
+<option value="92">Guayana Francesa</option>
+<option value="93">Guernsey</option>
+
+<option value="94">Guinea</option>
+<option value="95">Guinea Ecuatorial</option>
+<option value="96">Guinea-Bissau</option>
+<option value="97">Guyana</option>
+<option value="98">Haití</option>
+<option value="99">Islas Heard y McDonald</option>
+<option value="100">Honduras</option>
+<option value="101">Hong Kong</option>
+<option value="102">Hungría</option>
+
+<option value="103">India</option>
+<option value="104">Indonesia</option>
+<option value="105">Irán</option>
+<option value="106">Irak</option>
+<option value="107">Irlanda</option>
+<option value="108">Islandia</option>
+<option value="109">Israel</option>
+<option value="110">Italia</option>
+<option value="111">Jamaica</option>
+
+<option value="112">Japón</option>
+<option value="113">Jersey</option>
+<option value="114">Jordania</option>
+<option value="115">Kazajistán</option>
+<option value="116">Kenia</option>
+<option value="117">Kirguistán</option>
+<option value="118">Kiribati</option>
+<option value="119">Kuwait</option>
+<option value="120">Laos</option>
+
+<option value="121">Lesoto</option>
+<option value="122">Letonia</option>
+<option value="123">Líbano</option>
+<option value="124">Liberia</option>
+<option value="125">Libia</option>
+<option value="126">Liechtenstein</option>
+<option value="127">Lituania</option>
+<option value="128">Luxemburgo</option>
+<option value="129">Macao</option>
+
+<option value="130">República de Macedonia</option>
+<option value="131">Madagascar</option>
+<option value="132">Malasia</option>
+<option value="133">Malaui</option>
+<option value="134">Maldivas</option>
+<option value="135">Malí</option>
+<option value="136">Malta</option>
+<option value="137">Islas Malvinas</option>
+<option value="138">Isla de Man</option>
+
+<option value="139">Islas Marianas del Norte</option>
+<option value="140">Marruecos</option>
+<option value="141">Islas Marshall</option>
+<option value="142">Martinica</option>
+<option value="143">Mauricio</option>
+<option value="144">Mauritania</option>
+<option value="145">Mayotte</option>
+<option value="146">México</option>
+<option value="147">Micronesia</option>
+
+<option value="148">Moldavia</option>
+<option value="149">Mónaco</option>
+<option value="150">Mongolia</option>
+<option value="151">Montenegro</option>
+<option value="152">Montserrat</option>
+<option value="153">Mozambique</option>
+<option value="154">Namibia</option>
+<option value="155">Nauru</option>
+<option value="156">Isla de Navidad</option>
+
+<option value="157">Nepal</option>
+<option value="158">Nicaragua</option>
+<option value="159">Níger</option>
+<option value="160">Nigeria</option>
+<option value="161">Niue</option>
+<option value="162">Norfolk</option>
+<option value="163">Noruega</option>
+<option value="164">Nueva Caledonia</option>
+<option value="165">Nueva Zelanda</option>
+
+<option value="166">Omán</option>
+<option value="167">Países Bajos</option>
+<option value="168">Pakistán</option>
+<option value="169">Palaos</option>
+<option value="170">Autoridad Nacional Palestina</option>
+<option value="171">Panamá</option>
+<option value="172">Papúa Nueva Guinea</option>
+<option value="173">Paraguay</option>
+<option value="174">Perú</option>
+
+<option value="175">Islas Pitcairn</option>
+<option value="176">Polinesia Francesa</option>
+<option value="177">Polonia</option>
+<option value="178">Portugal</option>
+<option value="179">Puerto Rico</option>
+<option value="180">Catar</option>
+<option value="181">Reino Unido</option>
+<option value="182">Reunión</option>
+<option value="183">Ruanda</option>
+
+<option value="184">Rumanía</option>
+<option value="185">Rusia</option>
+<option value="186">República Árabe Saharaui Democrática</option>
+<option value="187">Islas Salomón</option>
+<option value="188">Samoa</option>
+<option value="189">Samoa Estadounidense</option>
+<option value="190">San Bartolomé</option>
+<option value="191">San Cristóbal y Nieves</option>
+<option value="192">San Marino</option>
+
+<option value="193">San Martín</option>
+<option value="194">San Pedro y Miquelón</option>
+<option value="195">San Vicente y las Granadinas</option>
+<option value="196">Santa Helena, A. y T.</option>
+<option value="197">Santa Lucía</option>
+<option value="198">Santo Tomé y Príncipe</option>
+<option value="199">Senegal</option>
+<option value="200">Serbia</option>
+<option value="201">Seychelles</option>
+
+<option value="202">Sierra Leona</option>
+<option value="203">Singapur</option>
+<option value="204">Siria</option>
+<option value="205">Somalia</option>
+<option value="206">Sri Lanka</option>
+<option value="207">Suazilandia</option>
+<option value="208">Sudáfrica</option>
+<option value="209">Sudán</option>
+<option value="210">Suecia</option>
+
+<option value="211">Suiza</option>
+<option value="212">Surinam</option>
+<option value="213">Svalbard y Jan Mayen</option>
+<option value="214">Tailandia</option>
+<option value="215">Taiwán</option>
+<option value="216">Tanzania</option>
+<option value="217">Tayikistán</option>
+<option value="218">Territorio Británico del Océano Índico</option>
+<option value="219">Territorios Australes Franceses</option>
+
+<option value="220">Timor Oriental</option>
+<option value="221">Togo</option>
+<option value="222">Tokelau</option>
+<option value="223">Tonga</option>
+<option value="224">Trinidad y Tobago</option>
+<option value="225">Túnez</option>
+<option value="226">Islas Turcas y Caicos</option>
+<option value="227">Turkmenistán</option>
+<option value="228">Turquía</option>
+
+<option value="229">Tuvalu</option>
+<option value="230">Ucrania</option>
+<option value="231">Uganda</option>
+<option value="232">Uruguay</option>
+<option value="233">Uzbekistán</option>
+<option value="234">Vanuatu</option>
+<option value="235">Ciudad del Vaticano</option>
+<option value="236">Venezuela</option>
+<option value="237">Vietnam</option>
+
+<option value="238">Islas Vírgenes Británicas</option>
+<option value="239">Islas Vírgenes de los Estados Unidos</option>
+<option value="240">Wallis y Futuna</option>
+<option value="241">Yemen</option>
+<option value="242">Yibuti</option>
+<option value="243">Zambia</option>
+<option value="244">Zimbabue</option>
+</select></td>
+</tr>
+<tr>
+
+  <th><label for="academico_idtiposangre">Tipo de sangre</label></th>
+  <td><select name="academico[idtiposangre]" id="academico_idtiposangre">
+<option value="1" selected="selected">O Rh +</option>
+<option value="2">O Rh -</option>
+<option value="3">A Rh +</option>
+<option value="4">A Rh -</option>
+<option value="5">B Rh +</option>
+<option value="6">B Rh -</option>
+
+<option value="7">AB Rh +</option>
+<option value="8">AB Rh -</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="academico_idnivelestudio">Nivel de estudio</label></th>
+  <td><select name="academico[idnivelestudio]" id="academico_idnivelestudio">
+<option value="1">Técnico</option>
+<option value="2">Profesorado</option>
+<option value="3" selected="selected">Licenciatura</option>
+
+<option value="4">Ingeniería</option>
+<option value="5">Arquitectura</option>
+<option value="6">Maestría</option>
+<option value="7">Doctorado</option>
+</select></td>
+</tr>
+<tr>
+  <th><label for="academico_idestadocivil">Estado civil</label></th>
+  <td><select name="academico[idestadocivil]" id="academico_idestadocivil">
+<option value="1" selected="selected">Soltero(a)</option>
+
+<option value="2">Casado(a)</option>
+<option value="3">Viudo(a)</option>
+</select><input type="hidden" name="academico[idacademico]" value="1" id="academico_idacademico" />
+<input type="hidden" name="academico[_csrf_token]" value="11aeaa74fa0821bb75165164251cb764" id="academico__csrf_token" /></td>
+</tr>
+        </tbody>
+    </table>
+</center>
+
+<script type="text/javascript">
+    window.onload
+        = function(){
+        window.alert('Hola');
+		new JsDatePick({
+			useMode:2,
+			target:"fechanacimientoacad",
+			dateFormat:"%d-%M-%Y",
+                        //yearsRange:[1900,2100]
+			/*selectedDate:{				This is an example of what the full configuration offers.
+				day:5,						For full documentation about these settings please see the full version of the code.
+				month:9,
+				year:2006
+			},
+			yearsRange:[1978,2020],
+			limitToToday:false,
+			cellColorScheme:"beige",
+			dateFormat:"%m-%d-%Y",
+			imgPath:"img/",
+			weekStartDay:1*/
+		});
+                /*
+                new JsDatePick({
+			useMode:2,
+			target:"inputField",
+			dateFormat:"%d/%M/%Y"
+		});
+                */
+	};
+</script>							</div>
+							<!-- Área de trabajo - Fin -->
+
+	
+						</div>
+					</div>
+				</div>
+				<div id="contenedor_inferior" class="fondo_azul1">
+					<div id="pie" class="contenido_centrado">
+						Universidad Centroamericana &quot;Jos&eacute; Sime&oacute;n Ca&ntilde;as&quot;. El Salvador, a&ntilde;o 2011.
+						<br />Sitio web desarrollado 100&#037; con software libre.
+                                                <br />Potenciado por <a href="http://www.symfony-project.org/"><img src="http://sea.uca.edu.sv/images/logos/symfony.png" border="0" /></a> y <a href="http://www.doctrine-project.org/"><img src="http://sea.uca.edu.sv/images/logos/doctrine.png" border="0" /></a>
+
+						<br /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">/* <![CDATA[ */
+function sfWebDebugGetElementsByClassName(strClass, strTag, objContElm)
+{
+  // http://muffinresearch.co.uk/archives/2006/04/29/getelementsbyclassname-deluxe-edition/
+  strTag = strTag || "*";
+  objContElm = objContElm || document;
+  var objColl = (strTag == '*' && document.all) ? document.all : objContElm.getElementsByTagName(strTag);
+  var arr = new Array();
+  var delim = strClass.indexOf('|') != -1  ? '|' : ' ';
+  var arrClass = strClass.split(delim);
+  var j = objColl.length;
+  for (var i = 0; i < j; i++) {
+    if(objColl[i].className == undefined) continue;
+    var arrObjClass = objColl[i].className.split ? objColl[i].className.split(' ') : [];
+    if (delim == ' ' && arrClass.length > arrObjClass.length) continue;
+    var c = 0;
+    comparisonLoop:
+    {
+      var l = arrObjClass.length;
+      for (var k = 0; k < l; k++) {
+        var n = arrClass.length;
+        for (var m = 0; m < n; m++) {
+          if (arrClass[m] == arrObjClass[k]) c++;
+          if (( delim == '|' && c == 1) || (delim == ' ' && c == arrClass.length)) {
+            arr.push(objColl[i]);
+            break comparisonLoop;
+          }
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+function sfWebDebugToggleMenu()
+{
+  var element = document.getElementById('sfWebDebugDetails');
+
+  var cacheElements = sfWebDebugGetElementsByClassName('sfWebDebugCache');
+  var mainCacheElements = sfWebDebugGetElementsByClassName('sfWebDebugActionCache');
+  var panelElements = sfWebDebugGetElementsByClassName('sfWebDebugTop');
+
+  if (element.style.display != 'none')
+  {
+    for (var i = 0; i < panelElements.length; ++i)
+    {
+      panelElements[i].style.display = 'none';
+    }
+
+    // hide all cache information
+    for (var i = 0; i < cacheElements.length; ++i)
+    {
+      cacheElements[i].style.display = 'none';
+    }
+    for (var i = 0; i < mainCacheElements.length; ++i)
+    {
+      mainCacheElements[i].style.border = 'none';
+    }
+  }
+  else
+  {
+    for (var i = 0; i < cacheElements.length; ++i)
+    {
+      cacheElements[i].style.display = '';
+    }
+    for (var i = 0; i < mainCacheElements.length; ++i)
+    {
+      mainCacheElements[i].style.border = '1px solid #f00';
+    }
+  }
+
+  sfWebDebugToggle('sfWebDebugDetails');
+  sfWebDebugToggle('sfWebDebugShowMenu');
+  sfWebDebugToggle('sfWebDebugHideMenu');
+}
+
+function sfWebDebugShowDetailsFor(element)
+{
+  if (typeof element == 'string')
+    element = document.getElementById(element);
+
+  var panelElements = sfWebDebugGetElementsByClassName('sfWebDebugTop');
+  for (var i = 0; i < panelElements.length; ++i)
+  {
+    if (panelElements[i] != element)
+    {
+      panelElements[i].style.display = 'none';
+    }
+  }
+
+  sfWebDebugToggle(element);
+}
+
+function sfWebDebugToggle(element)
+{
+  if (typeof element == 'string')
+    element = document.getElementById(element);
+
+  if (element)
+    element.style.display = element.style.display == 'none' ? '' : 'none';
+}
+
+function sfWebDebugToggleMessages(klass)
+{
+  var elements = sfWebDebugGetElementsByClassName(klass);
+
+  var x = elements.length;
+  for (var i = 0; i < x; ++i)
+  {
+    sfWebDebugToggle(elements[i]);
+  }
+}
+
+function sfWebDebugToggleAllLogLines(show, klass)
+{
+  var elements = sfWebDebugGetElementsByClassName(klass);
+  var x = elements.length;
+  for (var i = 0; i < x; ++i)
+  {
+    elements[i].style.display = show ? '' : 'none';
+  }
+}
+
+function sfWebDebugShowOnlyLogLines(type)
+{
+  var types = new Array();
+  types[0] = 'info';
+  types[1] = 'warning';
+  types[2] = 'error';
+  for (klass in types)
+  {
+    var elements = sfWebDebugGetElementsByClassName('sfWebDebug' + types[klass].substring(0, 1).toUpperCase() + types[klass].substring(1, types[klass].length));
+    var x = elements.length;
+    for (var i = 0; i < x; ++i)
+    {
+      if ('tr' == elements[i].tagName.toLowerCase())
+      {
+        elements[i].style.display = (type == types[klass]) ? '' : 'none';
+      }
+    }
+  }
+}
+/* ]]> */</script>
+      <div id="sfWebDebug">
+        <div id="sfWebDebugBar">
+
+          <a href="#" onclick="sfWebDebugToggleMenu(); return false;"><img src="/sf/sf_web_debug/images/sf.png" alt="Debug toolbar" /></a>
+
+          <ul id="sfWebDebugDetails" class="sfWebDebugMenu">
+            <li><span id="sfWebDebugSymfonyVersion">1.4.11</span></li>
+<li class="sfWebDebugInfo"><a title="Configuration" href="#" onclick="sfWebDebugShowDetailsFor('sfWebDebugconfigDetails'); return false;"><img src="/sf/sf_web_debug/images/config.png" alt="Config" /> config</a></li>
+<li class="sfWebDebugInfo"><a title="View Layer" href="#" onclick="sfWebDebugShowDetailsFor('sfWebDebugviewDetails'); return false;"><img src="/sf/sf_web_debug/images/view.png" alt="View Layer" /> view</a></li>
+<li class="sfWebDebugInfo"><a title="Logs" href="#" onclick="sfWebDebugShowDetailsFor('sfWebDebuglogsDetails'); return false;"><img src="/sf/sf_web_debug/images/log.png" alt="Log" /> logs</a></li>
+
+<li><img src="/sf/sf_web_debug/images/memory.png" alt="Memory" /> 11264.0 KB</li>
+<li class="sfWebDebugInfo"><a title="Timers" href="#" onclick="sfWebDebugShowDetailsFor('sfWebDebugtimeDetails'); return false;"><img src="/sf/sf_web_debug/images/time.png" alt="Time" /> 298 ms</a></li>
+<li class="sfWebDebugInfo"><a title="SQL queries" href="#" onclick="sfWebDebugShowDetailsFor('sfWebDebugdbDetails'); return false;"><img src="/sf/sf_web_debug/images/database.png" alt="SQL queries" /> 9</a></li>
+            <li class="last">
+              <a href="#" onclick="document.getElementById('sfWebDebug').style.display='none'; return false;"><img src="/sf/sf_web_debug/images/close.png" alt="Close" /></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div id="sfWebDebugconfigDetails" class="sfWebDebugTop" style="display:none"><h1>Configuration</h1><ul id="sfWebDebugConfigSummary"><li class="ison">debug</li><li class="isoff">xdebug</li><li class="ison">logging</li><li class="isoff">cache</li><li class="isoff">compression</li><li class="ison">tokenizer</li><li class="isoff">eaccelerator</li><li class="isoff">apc</li><li class="isoff last">xcache</li></ul>
+    <h2>Request <a href="#" onclick="sfWebDebugToggle('sfWebDebugRequest'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+
+    <div id="sfWebDebugRequest" style="display: none"><pre>options:
+  path_info_key: PATH_INFO
+  path_info_array: SERVER
+  http_port: null
+  https_port: null
+  default_format: null
+  logging: &#039;1&#039;
+  relative_url_root: null
+  formats: { txt: text/plain, js: [application/javascript, application/x-javascript, text/javascript], css: text/css, json: [application/json, application/x-json], xml: [text/xml, application/xml, application/x-xml], rdf: application/rdf+xml, atom: application/atom+xml }
+  no_script_name: false
+parameterHolder:
+  action: editar
+  module: ficha
+  sf_format: html
+attributeHolder:
+  sf_route: &#039;sfDoctrineRoute Object()&#039;
+</pre></div>
+    
+    <h2>Response <a href="#" onclick="sfWebDebugToggle('sfWebDebugResponse'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugResponse" style="display: none"><pre>status:
+  code: 200
+  text: OK
+options:
+  http_protocol: HTTP/1.1
+  logging: &#039;1&#039;
+  charset: utf-8
+  send_http_headers: false
+  content_type: &#039;text/html; charset=utf-8&#039;
+
+cookies: {  }
+httpHeaders:
+  Content-Type: &#039;text/html; charset=utf-8&#039;
+javascripts:
+  jsDatePick.min.1.0.js: {  }
+stylesheets:
+  main.css: {  }
+  menu_principal.css: {  }
+  menu_secundario.css: {  }
+  jsDatePick_rtl.css: {  }
+metas: {  }
+httpMetas:
+  Content-Type: &#039;text/html; charset=utf-8&#039;
+</pre></div>
+    
+    <h2>User <a href="#" onclick="sfWebDebugToggle('sfWebDebugUser'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugUser" style="display: none"><pre>options:
+  auto_shutdown: false
+  culture: null
+  default_culture: en
+  use_flash: true
+  logging: &#039;1&#039;
+  timeout: 1800
+attributeHolder:
+  user: { idUsuario: 1 }
+culture: en
+authenticated: true
+credentials:
+  - user
+lastRequest: 1309544414
+</pre></div>
+
+    
+    <h2>Settings <a href="#" onclick="sfWebDebugToggle('sfWebDebugSettings'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugSettings" style="display: none"><pre>app_url_base: &#039;http://sea.uca.edu.sv&#039;
+app_url_imagenes: &#039;http://sea.uca.edu.sv/images&#039;
+mod_ficha_enabled: true
+mod_ficha_view_class: sfPHP
+sf_admin_module_web_dir: /sfDoctrinePlugin
+sf_admin_web_dir: /sf/sf_admin
+sf_app: frontend
+sf_app_base_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend
+sf_app_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev
+sf_app_config_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend/config
+sf_app_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend
+sf_app_i18n_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend/i18n
+sf_app_lib_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend/lib
+sf_app_module_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend/modules
+sf_app_template_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps/frontend/templates
+sf_apps_dir: /home/guille/Proyectos/Proyecto/Proyecto/apps
+sf_cache: false
+sf_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache
+sf_charset: utf-8
+sf_check_lock: false
+sf_compressed: false
+sf_config_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev/config
+sf_config_dir: /home/guille/Proyectos/Proyecto/Proyecto/config
+sf_csrf_secret: 87894105f9577384bad73b3229c484e8c9faa751
+sf_data_dir: /home/guille/Proyectos/Proyecto/Proyecto/data
+sf_debug: true
+sf_default_culture: en
+sf_enabled_modules:
+  - default
+sf_environment: dev
+sf_error_404_action: error404
+sf_error_404_module: default
+sf_error_reporting: 32767
+sf_escaping_method: ESC_SPECIALCHARS
+sf_escaping_strategy: true
+sf_etag: false
+sf_file_link_format: null
+sf_i18n: false
+sf_i18n_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev/i18n
+sf_lib_dir: /home/guille/Proyectos/Proyecto/Proyecto/lib
+sf_log_dir: /home/guille/Proyectos/Proyecto/Proyecto/log
+sf_logging_enabled: true
+sf_login_action: login
+sf_login_module: default
+sf_module_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev/modules
+sf_module_disabled_action: disabled
+sf_module_disabled_module: default
+sf_no_script_name: false
+sf_orm: doctrine
+sf_plugins_dir: /home/guille/Proyectos/Proyecto/Proyecto/plugins
+sf_root_dir: /home/guille/Proyectos/Proyecto/Proyecto
+sf_secure_action: secure
+sf_secure_module: default
+sf_standard_helpers:
+  - Partial
+  - Cache
+sf_symfony_lib_dir: /home/guille/Proyectos/Proyecto/Proyecto/lib/vendor/symfony-1.4.11/lib
+sf_template_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev/template
+sf_test_cache_dir: /home/guille/Proyectos/Proyecto/Proyecto/cache/frontend/dev/test
+sf_test_dir: /home/guille/Proyectos/Proyecto/Proyecto/test
+sf_upload_dir: /home/guille/Proyectos/Proyecto/Proyecto/web/uploads
+sf_use_database: true
+sf_web_debug: true
+sf_web_debug_web_dir: /sf/sf_web_debug
+sf_web_dir: /home/guille/Proyectos/Proyecto/Proyecto/web
+symfony.asset.javascripts_included: true
+symfony.asset.stylesheets_included: true
+</pre></div>
+    
+    <h2>Globals <a href="#" onclick="sfWebDebugToggle('sfWebDebugGlobals'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugGlobals" style="display: none"><pre>cookie:
+  __utma: 60086569.2090939737.1308977120.1308977120.1308977120.1
+  __utmc: &#039;60086569&#039;
+
+  __utmz: 60086569.1308977120.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+  symfony: 2e2uldaquam2tbi2fq7ia104f6
+env: {  }
+files: {  }
+get: {  }
+post: {  }
+server:
+  DOCUMENT_ROOT: /home/guille/Proyectos/Proyecto/Proyecto/web
+  GATEWAY_INTERFACE: CGI/1.1
+  HTTP_ACCEPT: &#039;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#039;
+  HTTP_ACCEPT_CHARSET: &#039;ISO-8859-1,utf-8;q=0.7,*;q=0.7&#039;
+  HTTP_ACCEPT_ENCODING: &#039;gzip, deflate&#039;
+  HTTP_ACCEPT_LANGUAGE: &#039;en-us,en;q=0.5&#039;
+  HTTP_CONNECTION: keep-alive
+  HTTP_COOKIE: &#039;symfony=2e2uldaquam2tbi2fq7ia104f6; __utma=60086569.2090939737.1308977120.1308977120.1308977120.1; __utmc=60086569; __utmz=60086569.1308977120.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&#039;
+
+  HTTP_HOST: sea.uca.edu.sv
+  HTTP_REFERER: &#039;http://sea.uca.edu.sv/frontend_dev.php/ficha/mostrar&#039;
+  HTTP_USER_AGENT: &#039;Mozilla/5.0 (X11; Linux i686; rv:5.0) Gecko/20100101 Firefox/5.0&#039;
+  PATH: &#039;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games&#039;
+  PATH_INFO: /ficha/editar
+  PATH_TRANSLATED: &#039;redirect:/index.php/editar&#039;
+  PHP_SELF: /frontend_dev.php/ficha/editar
+  QUERY_STRING: &#039;&#039;
+
+  REMOTE_ADDR: 127.0.0.1
+  REMOTE_PORT: &#039;35926&#039;
+  REQUEST_METHOD: GET
+  REQUEST_TIME: 1309544414
+  REQUEST_URI: /frontend_dev.php/ficha/editar
+  SCRIPT_FILENAME: /home/guille/Proyectos/Proyecto/Proyecto/web/frontend_dev.php
+  SCRIPT_NAME: /frontend_dev.php
+  SERVER_ADDR: 127.0.0.1
+  SERVER_ADMIN: you@example.com
+  SERVER_NAME: sea.uca.edu.sv
+  SERVER_PORT: &#039;80&#039;
+  SERVER_PROTOCOL: HTTP/1.1
+  SERVER_SIGNATURE: &quot;&lt;address&gt;Apache/2.2.17 (Unix) DAV/2 mod_ssl/2.2.17 OpenSSL/1.0.0c PHP/5.3.5 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1 Server at sea.uca.edu.sv Port 80&lt;/address&gt;\n&quot;
+  SERVER_SOFTWARE: &#039;Apache/2.2.17 (Unix) DAV/2 mod_ssl/2.2.17 OpenSSL/1.0.0c PHP/5.3.5 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1&#039;
+
+  UNIQUE_ID: Tg4P3n8AAQEAAGmvvhsAAAAJ
+session:
+  symfony/user/sfUser/attributes: { user: { idUsuario: 1 } }
+  symfony/user/sfUser/authenticated: true
+  symfony/user/sfUser/credentials: [user]
+  symfony/user/sfUser/culture: en
+  symfony/user/sfUser/lastRequest: 1309544412
+</pre></div>
+    
+    <h2>Php <a href="#" onclick="sfWebDebugToggle('sfWebDebugPhp'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugPhp" style="display: none"><pre>php: 5.3.5
+os: &#039;Linux guille-portatil 2.6.38-8-generic #42-Ubuntu SMP Mon Apr 11 03:31:50 UTC 2011 i686&#039;
+extensions:
+  56: apache2handler
+  8: bcmath
+  9: bz2
+  10: calendar
+  0: &#039;Core (5.3.5)&#039;
+  11: ctype
+  12: curl
+  1: &#039;date (5.3.5)&#039;
+
+  13: dba
+  14: &#039;dom (20031129)&#039;
+  2: ereg
+  46: &#039;exif (1.4 $Id: exif.c 293036 2010-01-03 09:23:27Z sebastian $)&#039;
+  16: &#039;fileinfo (1.0.5-dev)&#039;
+  17: &#039;filter (0.11.0)&#039;
+  18: ftp
+  19: gd
+  20: gettext
+  15: &#039;hash (1.0)&#039;
+
+  22: iconv
+  41: imap
+  24: &#039;intl (1.1.0)&#039;
+  25: &#039;json (1.2.1)&#039;
+  26: ldap
+  3: libxml
+  27: mbstring
+  28: mcrypt
+  63: mhash
+  61: ming
+  29: mssql
+  33: &#039;mysql (1.0)&#039;
+  32: &#039;mysqli (0.1)&#039;
+  31: &#039;mysqlnd (mysqlnd 5.0.7-dev - 091210 - $Revision: 304625 $)&#039;
+
+  62: ncurses
+  4: openssl
+  5: pcre
+  34: &#039;PDO (1.0.4dev)&#039;
+  35: &#039;pdo_mysql (1.0.2)&#039;
+  36: &#039;pdo_pgsql (1.0.2)&#039;
+  37: &#039;pdo_sqlite (1.0.1)&#039;
+  60: pgsql
+  38: &#039;Phar (2.0.1)&#039;
+
+  39: posix
+  59: &#039;radius (1.2.4)&#039;
+  40: &#039;Reflection ($Revision: 305605 $)&#039;
+  23: session
+  42: shmop
+  43: &#039;SimpleXML (0.1)&#039;
+  44: soap
+  45: sockets
+  21: &#039;SPL (0.2)&#039;
+  58: &#039;SQLite (2.0-dev)&#039;
+
+  6: &#039;sqlite3 (0.7-dev)&#039;
+  30: &#039;standard (5.3.5)&#039;
+  47: sybase_ct
+  48: sysvsem
+  49: sysvshm
+  50: &#039;tokenizer (0.1)&#039;
+  51: wddx
+  52: xml
+  53: &#039;xmlreader (0.1)&#039;
+  54: &#039;xmlwriter (0.1)&#039;
+
+  55: &#039;xsl (0.1)&#039;
+  57: &#039;zip (1.9.1)&#039;
+  7: &#039;zlib (1.1)&#039;
+</pre></div>
+    
+    <h2>Symfony <a href="#" onclick="sfWebDebugToggle('sfWebDebugSymfony'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+    <div id="sfWebDebugSymfony" style="display: none"><pre>version: 1.4.11
+path: /home/guille/Proyectos/Proyecto/Proyecto/lib/vendor/symfony-1.4.11/lib
+
+</pre></div>
+    </div>
+<div id="sfWebDebugviewDetails" class="sfWebDebugTop" style="display:none"><h1>View Layer</h1><h2>Template: <span title="SF_ROOT_DIR/apps/frontend/modules/ficha/templates/editarSuccess.php">ficha&nbsp;&hellip;&nbsp;editarSuccess.php</span> <a href="#" onclick="sfWebDebugToggle('sfWebDebugViewTemplate1'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a></h2>
+<div id="sfWebDebugViewTemplate1" style="display:block">
+<p>Parameters:</p>
+<ul>
+<li><code>$formulario</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/form/doctrine/ACADEMICOForm.class.php">ACADEMICOForm</span>)</span>
+
+<a href="#" onclick="sfWebDebugToggle('sfWebDebugViewForm1'); return false;" title="Toggle details"><img src="/sf/sf_web_debug/images/toggle.gif" alt="Toggle details"/></a>
+<div id="sfWebDebugViewForm1" style="display:none">
+<ul><li>
+<code>$formulario['idacademico']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputHidden.class.php">sfWidgetFormInputHidden</span>)</span>
+</li>
+<li>
+<code>$formulario['codigoacademico']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+
+</li>
+<li>
+<code>$formulario['primernombreacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+<li>
+<code>$formulario['segundonombreacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+
+<li>
+<code>$formulario['primerapellidoacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+<li>
+<code>$formulario['segundoapellidoacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+<li>
+
+<code>$formulario['apellidocasadaacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+<li>
+<code>$formulario['sexoacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+</li>
+<li>
+<code>$formulario['fechanacimientoacad']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputText.class.php">sfWidgetFormInputText</span>)</span>
+
+</li>
+<li>
+<code>$formulario['usalentes']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputCheckbox.class.php">sfWidgetFormInputCheckbox</span>)</span>
+</li>
+<li>
+<code>$formulario['poseetransporte']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputCheckbox.class.php">sfWidgetFormInputCheckbox</span>)</span>
+</li>
+
+<li>
+<code>$formulario['idmunicipionac']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+<li>
+<code>$formulario['iddeptonac']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+<li>
+
+<code>$formulario['idpaisnac']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+<li>
+<code>$formulario['idpaisciudadania']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+<li>
+<code>$formulario['idtiposangre']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+
+</li>
+<li>
+<code>$formulario['idnivelestudio']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+<li>
+<code>$formulario['idestadocivil']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/widget/sfWidgetFormDoctrineChoice.class.php">sfWidgetFormDoctrineChoice</span>)</span>
+</li>
+
+<li>
+<code>$formulario['_csrf_token']</code> <span class="sfWebDebugDataType">(<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/widget/sfWidgetFormInputHidden.class.php">sfWidgetFormInputHidden</span>)</span>
+</li></ul>
+</div></li>
+</ul>
+</div></div>
+<div id="sfWebDebuglogsDetails" class="sfWebDebugTop" style="display:none"><h1>Logs</h1>
+      <ul id="sfWebDebugLogMenu">
+        <li><a href="#" onclick="sfWebDebugToggleAllLogLines(true, 'sfWebDebugLogLine'); return false;">[all]</a></li>
+
+        <li><a href="#" onclick="sfWebDebugToggleAllLogLines(false, 'sfWebDebugLogLine'); return false;">[none]</a></li>
+        <li><a href="#" onclick="sfWebDebugShowOnlyLogLines('info'); return false;"><img src="/sf/sf_web_debug/images/info.png" alt="Show only infos" /></a></li>
+        <li><a href="#" onclick="sfWebDebugShowOnlyLogLines('warning'); return false;"><img src="/sf/sf_web_debug/images/warning.png" alt="Show only warnings" /></a></li>
+        <li><a href="#" onclick="sfWebDebugShowOnlyLogLines('error'); return false;"><img src="/sf/sf_web_debug/images/error.png" alt="Show only errors" /></a></li>
+        <li><a href="#" onclick="sfWebDebugToggleMessages('Doctrine_Connection_Mysql'); return false;">Doctrine_Connection_Mysql</a></li>
+<li><a href="#" onclick="sfWebDebugToggleMessages('fichaActions'); return false;">fichaActions</a></li>
+<li><a href="#" onclick="sfWebDebugToggleMessages('sfFilterChain'); return false;">sfFilterChain</a></li>
+<li><a href="#" onclick="sfWebDebugToggleMessages('sfPHPView'); return false;">sfPHPView</a></li>
+
+<li><a href="#" onclick="sfWebDebugToggleMessages('sfPatternRouting'); return false;">sfPatternRouting</a></li>
+<li><a href="#" onclick="sfWebDebugToggleMessages('sfWebDebugLogger'); return false;">sfWebDebugLogger</a></li>
+<li><a href="#" onclick="sfWebDebugToggleMessages('sfWebResponse'); return false;">sfWebResponse</a></li>
+      </ul>
+      <div id="sfWebDebugLogLines"><table class="sfWebDebugLogs">
+      <tr>
+        <th>#</th>
+        <th>type</th>
+
+        <th>message</th>
+      </tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfPatternRouting'><td class="sfWebDebugLogNumber">1</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/routing/sfPatternRouting.class.php">sfPatternRouting</span></td><td>Match route "<span class="sfWebDebugLogInfo">ficha_editar</span>" (/ficha/editar.:sf_format) for /ficha/editar with parameters array (  &#039;module&#039; =&gt; &#039;ficha&#039;,  &#039;action&#039; =&gt; &#039;editar&#039;,  &#039;sf_format&#039; =&gt; &#039;html&#039;,) </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfFilterChain'><td class="sfWebDebugLogNumber">2</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/filter/sfFilterChain.class.php">sfFilterChain</span></td><td>Executing filter "<span class="sfWebDebugLogInfo">sfRenderingFilter</span>" </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfFilterChain'><td class="sfWebDebugLogNumber">3</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/filter/sfFilterChain.class.php">sfFilterChain</span></td><td>Executing filter "<span class="sfWebDebugLogInfo">sfExecutionFilter</span>" </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo fichaActions'><td class="sfWebDebugLogNumber">4</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/apps/frontend/modules/ficha/actions/actions.class.php">fichaActions</span></td><td>Call "<span class="sfWebDebugLogInfo">fichaActions-&gt;executeEditar()</span>" </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">5</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>exec : <span class="sfWebDebugLogInfo">SET</span> NAMES &#039;UTF8&#039; - () </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">6</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> a.idacademico <span class="sfWebDebugLogInfo">AS</span> a__idacademico, a.codigoacademico <span class="sfWebDebugLogInfo">AS</span> a__codigoacademico, a.primernombreacad <span class="sfWebDebugLogInfo">AS</span> a__primernombreacad, a.segundonombreacad <span class="sfWebDebugLogInfo">AS</span> a__segundonombreacad, a.primerapellidoacad <span class="sfWebDebugLogInfo">AS</span> a__primerapellidoacad, a.segundoapellidoacad <span class="sfWebDebugLogInfo">AS</span> a__segundoapellidoacad, a.apellidocasadaacad <span class="sfWebDebugLogInfo">AS</span> a__apellidocasadaacad, a.sexoacad <span class="sfWebDebugLogInfo">AS</span> a__sexoacad, a.fechanacimientoacad <span class="sfWebDebugLogInfo">AS</span> a__fechanacimientoacad, a.esnacional <span class="sfWebDebugLogInfo">AS</span> a__esnacional, a.esescalafonado <span class="sfWebDebugLogInfo">AS</span> a__esescalafonado, a.espensionado <span class="sfWebDebugLogInfo">AS</span> a__espensionado, a.esjubilado <span class="sfWebDebugLogInfo">AS</span> a__esjubilado, a.usalentes <span class="sfWebDebugLogInfo">AS</span> a__usalentes, a.poseetransporte <span class="sfWebDebugLogInfo">AS</span> a__poseetransporte, a.idmunicipionac <span class="sfWebDebugLogInfo">AS</span> a__idmunicipionac, a.iddeptonac <span class="sfWebDebugLogInfo">AS</span> a__iddeptonac, a.idpaisnac <span class="sfWebDebugLogInfo">AS</span> a__idpaisnac, a.idpaisciudadania <span class="sfWebDebugLogInfo">AS</span> a__idpaisciudadania, a.idtiposangre <span class="sfWebDebugLogInfo">AS</span> a__idtiposangre, a.idnivelestudio <span class="sfWebDebugLogInfo">AS</span> a__idnivelestudio, a.idestadocivil <span class="sfWebDebugLogInfo">AS</span> a__idestadocivil, a.idusuario <span class="sfWebDebugLogInfo">AS</span> a__idusuario <span class="sfWebDebugLogInfo">FROM</span> ACADEMICO a - () </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfPHPView'><td class="sfWebDebugLogNumber">7</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/view/sfPHPView.class.php">sfPHPView</span></td><td>Render "<span class="sfWebDebugLogInfo">sf_app_dir/modules/ficha/templates/editarSuccess.php</span>" </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">8</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> m.idmunicipio <span class="sfWebDebugLogInfo">AS</span> m__idmunicipio, m.nombremunicipio <span class="sfWebDebugLogInfo">AS</span> m__nombremunicipio <span class="sfWebDebugLogInfo">FROM</span> MUNICIPIO m - () </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">9</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> d.iddepartamento <span class="sfWebDebugLogInfo">AS</span> d__iddepartamento, d.nombredepartamento <span class="sfWebDebugLogInfo">AS</span> d__nombredepartamento <span class="sfWebDebugLogInfo">FROM</span> DEPARTAMENTO d - () </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">10</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> p.idpais <span class="sfWebDebugLogInfo">AS</span> p__idpais, p.codigoisopais <span class="sfWebDebugLogInfo">AS</span> p__codigoisopais, p.nombreisopais <span class="sfWebDebugLogInfo">AS</span> p__nombreisopais <span class="sfWebDebugLogInfo">FROM</span> PAIS p - () </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">11</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> p.idpais <span class="sfWebDebugLogInfo">AS</span> p__idpais, p.codigoisopais <span class="sfWebDebugLogInfo">AS</span> p__codigoisopais, p.nombreisopais <span class="sfWebDebugLogInfo">AS</span> p__nombreisopais <span class="sfWebDebugLogInfo">FROM</span> PAIS p - () </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">12</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> t.idtiposangre <span class="sfWebDebugLogInfo">AS</span> t__idtiposangre, t.nombretiposangre <span class="sfWebDebugLogInfo">AS</span> t__nombretiposangre <span class="sfWebDebugLogInfo">FROM</span> TIPO_SANGRE t - () </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">13</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> n.idnivelestudio <span class="sfWebDebugLogInfo">AS</span> n__idnivelestudio, n.nombrenivelestudio <span class="sfWebDebugLogInfo">AS</span> n__nombrenivelestudio <span class="sfWebDebugLogInfo">FROM</span> NIVEL_ESTUDIO n - () </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo Doctrine_Connection_Mysql'><td class="sfWebDebugLogNumber">14</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Connection/Mysql.php">Doctrine_Connection_Mysql</span></td><td>query : <span class="sfWebDebugLogInfo">SELECT</span> e.idestadocivil <span class="sfWebDebugLogInfo">AS</span> e__idestadocivil, e.nombreestadocivil <span class="sfWebDebugLogInfo">AS</span> e__nombreestadocivil <span class="sfWebDebugLogInfo">FROM</span> ESTADO_CIVIL e - () </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfPHPView'><td class="sfWebDebugLogNumber">15</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/view/sfPHPView.class.php">sfPHPView</span></td><td>Decorate content with "<span class="sfWebDebugLogInfo">sf_app_dir/templates/layout.php</span>" </td></tr>
+
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfPHPView'><td class="sfWebDebugLogNumber">16</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/view/sfPHPView.class.php">sfPHPView</span></td><td>Render "<span class="sfWebDebugLogInfo">sf_app_dir/templates/layout.php</span>" </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfWebResponse'><td class="sfWebDebugLogNumber">17</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/response/sfWebResponse.class.php">sfWebResponse</span></td><td>Send status "<span class="sfWebDebugLogInfo">HTTP/1.1 200 OK</span>" </td></tr>
+<tr class='sfWebDebugLogLine sfWebDebugInfo sfWebResponse'><td class="sfWebDebugLogNumber">18</td><td class="sfWebDebugLogType"><img src="/sf/sf_web_debug/images/info.png" alt="Info"/>&nbsp;<span title="SF_ROOT_DIR/lib/vendor/symfony-1.4.11/lib/response/sfWebResponse.class.php">sfWebResponse</span></td><td>Send header "<span class="sfWebDebugLogInfo">Content-Type: text/html; charset=utf-8</span>" </td></tr>
+
+</table></div>
+    </div>
+<div id="sfWebDebugtimeDetails" class="sfWebDebugTop" style="display:none"><h1>Timers</h1><table class="sfWebDebugLogs" style="width: 300px"><tr><th>type</th><th>calls</th><th>time (ms)</th><th>time (%)</th></tr><tr><td class="sfWebDebugLogType">Configuration</td><td class="sfWebDebugLogNumber" style="text-align: right">9</td><td style="text-align: right">1.30</td><td style="text-align: right">0</td></tr><tr><td class="sfWebDebugLogType">Factories</td><td class="sfWebDebugLogNumber" style="text-align: right">1</td><td style="text-align: right">29.19</td><td style="text-align: right">9</td></tr><tr><td class="sfWebDebugLogType">Action "ficha/editar"</td><td class="sfWebDebugLogNumber" style="text-align: right">1</td><td style="text-align: right">58.73</td><td style="text-align: right">19</td></tr><tr><td class="sfWebDebugLogType">Database (Doctrine)</td><td class="sfWebDebugLogNumber" style="text-align: right">9</td><td style="text-align: right">0.04</td><td style="text-align: right">0</td></tr><tr><td class="sfWebDebugLogType">View "Success" for "ficha/editar"</td><td class="sfWebDebugLogNumber" style="text-align: right">1</td><td style="text-align: right">156.93</td><td style="text-align: right">52</td></tr></table></div>
+
+<div id="sfWebDebugdbDetails" class="sfWebDebugTop" style="display:none"><h1>SQL queries</h1>
+      <div id="sfWebDebugDatabaseLogs">
+        <h3>Doctrine Version: 1.2.4</h3>
+        <ol>
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SET</span> NAMES &#039;UTF8&#039;</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> a.idacademico <span class="sfWebDebugLogInfo">AS</span> a__idacademico, a.codigoacademico <span class="sfWebDebugLogInfo">AS</span> a__codigoacademico, a.primernombreacad <span class="sfWebDebugLogInfo">AS</span> a__primernombreacad, a.segundonombreacad <span class="sfWebDebugLogInfo">AS</span> a__segundonombreacad, a.primerapellidoacad <span class="sfWebDebugLogInfo">AS</span> a__primerapellidoacad, a.segundoapellidoacad <span class="sfWebDebugLogInfo">AS</span> a__segundoapellidoacad, a.apellidocasadaacad <span class="sfWebDebugLogInfo">AS</span> a__apellidocasadaacad, a.sexoacad <span class="sfWebDebugLogInfo">AS</span> a__sexoacad, a.fechanacimientoacad <span class="sfWebDebugLogInfo">AS</span> a__fechanacimientoacad, a.esnacional <span class="sfWebDebugLogInfo">AS</span> a__esnacional, a.esescalafonado <span class="sfWebDebugLogInfo">AS</span> a__esescalafonado, a.espensionado <span class="sfWebDebugLogInfo">AS</span> a__espensionado, a.esjubilado <span class="sfWebDebugLogInfo">AS</span> a__esjubilado, a.usalentes <span class="sfWebDebugLogInfo">AS</span> a__usalentes, a.poseetransporte <span class="sfWebDebugLogInfo">AS</span> a__poseetransporte, a.idmunicipionac <span class="sfWebDebugLogInfo">AS</span> a__idmunicipionac, a.iddeptonac <span class="sfWebDebugLogInfo">AS</span> a__iddeptonac, a.idpaisnac <span class="sfWebDebugLogInfo">AS</span> a__idpaisnac, a.idpaisciudadania <span class="sfWebDebugLogInfo">AS</span> a__idpaisciudadania, a.idtiposangre <span class="sfWebDebugLogInfo">AS</span> a__idtiposangre, a.idnivelestudio <span class="sfWebDebugLogInfo">AS</span> a__idnivelestudio, a.idestadocivil <span class="sfWebDebugLogInfo">AS</span> a__idestadocivil, a.idusuario <span class="sfWebDebugLogInfo">AS</span> a__idusuario <span class="sfWebDebugLogInfo">FROM</span> ACADEMICO a</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> m.idmunicipio <span class="sfWebDebugLogInfo">AS</span> m__idmunicipio, m.nombremunicipio <span class="sfWebDebugLogInfo">AS</span> m__nombremunicipio <span class="sfWebDebugLogInfo">FROM</span> MUNICIPIO m</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> d.iddepartamento <span class="sfWebDebugLogInfo">AS</span> d__iddepartamento, d.nombredepartamento <span class="sfWebDebugLogInfo">AS</span> d__nombredepartamento <span class="sfWebDebugLogInfo">FROM</span> DEPARTAMENTO d</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> p.idpais <span class="sfWebDebugLogInfo">AS</span> p__idpais, p.codigoisopais <span class="sfWebDebugLogInfo">AS</span> p__codigoisopais, p.nombreisopais <span class="sfWebDebugLogInfo">AS</span> p__nombreisopais <span class="sfWebDebugLogInfo">FROM</span> PAIS p</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> p.idpais <span class="sfWebDebugLogInfo">AS</span> p__idpais, p.codigoisopais <span class="sfWebDebugLogInfo">AS</span> p__codigoisopais, p.nombreisopais <span class="sfWebDebugLogInfo">AS</span> p__nombreisopais <span class="sfWebDebugLogInfo">FROM</span> PAIS p</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> t.idtiposangre <span class="sfWebDebugLogInfo">AS</span> t__idtiposangre, t.nombretiposangre <span class="sfWebDebugLogInfo">AS</span> t__nombretiposangre <span class="sfWebDebugLogInfo">FROM</span> TIPO_SANGRE t</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> n.idnivelestudio <span class="sfWebDebugLogInfo">AS</span> n__idnivelestudio, n.nombrenivelestudio <span class="sfWebDebugLogInfo">AS</span> n__nombrenivelestudio <span class="sfWebDebugLogInfo">FROM</span> NIVEL_ESTUDIO n</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li>
+
+        <li>
+          <p class="sfWebDebugDatabaseQuery"><span class="sfWebDebugLogInfo">SELECT</span> e.idestadocivil <span class="sfWebDebugLogInfo">AS</span> e__idestadocivil, e.nombreestadocivil <span class="sfWebDebugLogInfo">AS</span> e__nombreestadocivil <span class="sfWebDebugLogInfo">FROM</span> ESTADO_CIVIL e</p>
+
+          <div class="sfWebDebugDatabaseLogInfo">0.00s, "doctrine" connection</div>
+        </li></ol>
+      </div>
+    </div>
+      </div>
+    </body>
+</html>
+

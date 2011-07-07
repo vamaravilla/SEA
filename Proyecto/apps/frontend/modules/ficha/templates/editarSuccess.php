@@ -1,0 +1,2 @@
+<center><h1>Ficha de acad&eacute;mico - Edici&oacute;n</h1></center>
+<?php include_partial('frmFicha', array('formulario' => $formulario, 'multipart' => true, 'rutaAceptar' => 'ficha_actualizar_privado', 'rutaCancelar' => 'ficha_mostrar_privado', 'intPropio' => $intPropio, )) ?>

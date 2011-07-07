@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>SEA - Sistema de Expedientes de Acad&eacute;micos UCA</title>
+		<link rel="stylesheet" media="all" type="text/css" href="css/menu_principal.css" />
+		<link rel="stylesheet" media="all" type="text/css" href="css/menu_secundario.css" />
+		<link rel="stylesheet" media="all" type="text/css" href="css/main.css" />
+		<link type="text/javascript" href="js/resize_frame.js" />
+		<link type="text/javascript" href="js/jquery-1.6.1.min.js" />
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				$("a").click(function() {
+					alert("Hello world!");
+				});
+				$(window).resize(function() {
+  				//$('#log').append('<div>Handler for .resize() called.</div>');
+				setElementWidth('contenedor_principal');
+				Window.alert('Hola');
+			});
+				});
+			
+		</script>
+	</head>
+
+	<body class="fondo_gris1">
+		<!-- Menú principal - Inicio -->
+		<ul id="menu1" class="fondo_azul1">
+			<li class="m1_sup item">
+				<a href="#nogo">
+					<div class="item3">
+						<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+							<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Asignaci&oacute;n de UMAs</div></div></div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Submenú o descripción -->
+				<div class="m1_sub m1_oculto sup_item_sub">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="esquina esquina_arr_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_arr_der"></td>
+						</tr>
+						<tr>
+							<td class="medio_fondo"></td>
+							<td class="medio_fondo medio_lista">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+							</td>
+							<td class="medio_fondo"></td>
+						</tr>
+						<tr>
+							<td class="esquina esquina_aba_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_aba_der"></td>
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li class="m1_sup item">
+				<a href="#nogo">
+					<div class="item2">
+						<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+							<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Actividades acad&eacute;micas</div></div></div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Submenú o descripción -->
+				<div class="m1_sub m1_oculto sup_item_sub">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="esquina esquina_arr_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_arr_der"></td>
+						</tr>
+						<tr>
+							<td class="medio_fondo"></td>
+							<td class="medio_fondo medio_lista">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+							</td>
+							<td class="medio_fondo"></td>
+						</tr>
+						<tr>
+							<td class="esquina esquina_aba_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_aba_der"></td>
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li class="m1_sup item">
+				<a href="#nogo">
+					<div class="item1">
+						<div class="sup_nombre_tam1 m1_oculto sup_item_nombre">
+							<div class="vert_medio1"><div class="vert_medio2"><div class="vert_medio3">Informaci&oacute;n personal</div></div></div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Submenú o descripción -->
+				<div class="m1_sub m1_oculto sup_item_sub">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="esquina esquina_arr_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_arr_der"></td>
+						</tr>
+						<tr>
+							<td class="medio_fondo"></td>
+							<td class="medio_fondo medio_lista">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed.
+							</td>
+							<td class="medio_fondo"></td>
+						</tr>
+						<tr>
+							<td class="esquina esquina_aba_izq"></td>
+							<td class="medio_fondo"></td>
+							<td class="esquina esquina_aba_der"></td>
+						</tr>
+					</table>
+				</div>
+			</li>
+		</ul>
+		<!-- Menú principal - Fin -->
+
+		<!-- Fondo fijo - Inicio -->
+		<div id="fondo_fijo"></div>
+		<!-- Fondo fijo - Fin -->
+
+		<!-- Cuerpo de página - Inicio -->
+		<div id="contenedor_principal">
+			<div class="div_min"></div>
+			<div id="contenido">
+				<div id="submenu">
+					<div id="cabeza_submenu"></div>
+					<div id="cuerpo_submenu">
+						<h1>Submen&uacute;</h1>
+						<div class="seccion">
+							Acciones
+						</div>
+						<ul id="lista_acciones">
+							<li><a href="#nogo">Acci&oacute;n 1</a></li>
+							<li><a href="#nogo">Acci&oacute;n 2</a></li>
+							<li><a href="#nogo">Acci&oacute;n 3</a></li>
+							<li><a href="#nogo">Acci&oacute;n 4</a></li>
+						</ul>
+						<br/>
+						<div class="seccion">
+							Reportes
+						</div>
+						<ul id="lista_reportes">
+							<li><a href="#nogo">Reporte 1</a></li>
+							<li><a href="#nogo">Reporte 2</a></li>
+							<li><a href="#nogo">Reporte 3</a></li>
+							<li><a href="#nogo">Reporte 4</a></li>
+						</ul>
+						<br />
+					</div>
+					<div id="pie_submenu"></div>
+				</div>
+				<div id="area_trabajo">
+<center>
+	<h1>Lorem Ipsum</h1>
+	<h4><i>&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</i></h4>
+	<h5><i>&quot;No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor...&quot;</i></h5>
+	<hr/>
+</center>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat volutpat arcu, eget suscipit diam pharetra sed. Integer ut felis in massa consectetur lobortis eu egestas ligula. Cras tortor nunc, congue pulvinar condimentum vel, cursus in velit. Duis ultrices hendrerit odio et cursus. Ut sodales tempor malesuada. In massa dolor, pretium vel ultrices vel, rutrum vel nisi. Proin sem justo, pharetra ut condimentum in, feugiat vel velit. Nunc laoreet mollis massa, a rhoncus mi posuere quis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vitae interdum nibh. Nam turpis mauris, lobortis a egestas quis, faucibus ac neque. Vivamus pretium vestibulum rhoncus. Nam justo augue, luctus in posuere a, ultricies sed augue. Praesent sed nibh neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean suscipit dignissim magna, a vestibulum mi porttitor eu. Cras hendrerit, ligula non adipiscing laoreet, justo nibh cursus enim, et dapibus mi odio sit amet ante. Phasellus mollis rutrum risus.</p>
+
+<p>Praesent sagittis libero ut lacus sagittis vel accumsan massa rutrum. Nam eu urna sed diam viverra faucibus. Vivamus consequat mi non nulla malesuada suscipit. Donec ultricies arcu arcu, nec porta ipsum. Suspendisse ac sem eu arcu varius dapibus. Mauris tristique, dui euismod cursus dapibus, eros eros semper lacus, quis gravida orci tortor ut enim. Sed eu consectetur massa. Aliquam nulla elit, iaculis at tincidunt ac, varius ac eros. Nam risus sem, posuere ut sollicitudin ac, lacinia non sapien. Cras gravida scelerisque lorem, nec congue eros aliquet ac. Sed sed tortor est, nec pretium arcu. Pellentesque laoreet pharetra lorem sed laoreet. Etiam porttitor turpis sit amet mauris feugiat ut vulputate magna elementum. Aliquam erat volutpat. Maecenas consectetur erat suscipit dolor varius sed suscipit nulla varius. Sed cursus euismod auctor.</p>
+
+<p>Morbi posuere tincidunt turpis, non tincidunt risus bibendum rhoncus. Nam enim tortor, posuere at egestas nec, viverra vel turpis. Donec rutrum lorem non orci hendrerit et dapibus nisi placerat. Donec malesuada turpis ut est fermentum semper. Integer a eros in mi egestas dignissim nec sit amet arcu. Nam sed lectus vitae sapien eleifend pulvinar sit amet in nisi. In ornare blandit pellentesque. Praesent quam ante, lacinia non elementum id, consequat eu purus. Proin non massa leo. Pellentesque venenatis metus eget justo tempor a dignissim magna commodo. Cras nibh quam, porttitor ut porttitor et, iaculis ut tortor. Pellentesque eu nisi lectus. Suspendisse eget arcu iaculis ipsum consequat tempor. Sed a consequat urna. Vestibulum urna nisl, vehicula vel molestie non, pulvinar et lorem. Maecenas ac lorem massa.</p>
+
+<p>Phasellus pellentesque congue augue pellentesque fermentum. Sed nec neque in nibh pulvinar elementum. Nunc purus nibh, mollis vehicula porta non, pretium eu tellus. In id eleifend nulla. Ut vestibulum sapien vitae dui blandit a hendrerit neque condimentum. Integer placerat dui eu tortor fringilla malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer euismod pharetra purus, quis vestibulum sem pharetra nec. Phasellus fermentum rhoncus placerat. Mauris in erat turpis. Integer dictum vestibulum lobortis. Praesent lacus eros, sagittis sed accumsan cursus, ultrices interdum risus. Aliquam rhoncus elit vel dolor condimentum in venenatis lacus condimentum. In accumsan fringilla mattis. Aliquam vestibulum neque ac orci mattis at dapibus sem pulvinar.</p>
+
+<p>Nunc mattis placerat turpis eget volutpat. Aenean pharetra, justo quis gravida sodales, tortor neque faucibus eros, vel blandit mi metus quis erat. Suspendisse potenti. Sed at lorem ipsum. Nunc blandit euismod mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula sollicitudin auctor. Sed pulvinar sodales dignissim. Vivamus dictum iaculis risus id congue. Maecenas ac nunc et dolor bibendum molestie sed in arcu. Aliquam suscipit accumsan elit, a vestibulum massa lacinia et. Morbi suscipit semper nisi. Aenean eleifend neque vel nisl egestas ultricies. Aliquam augue odio, condimentum id vestibulum at, porttitor vitae sapien. Proin eu ipsum mollis purus iaculis mattis. Nullam sit amet mauris purus.</p>
+
+								</div>
+							</div>
+							<div id="pie_pagina" class="fondo_azul1" rowspan="1" height="50">
+								Universidad Centroamericana &quot;Jos&eacute; Sime&oacute;n Ca&ntilde;as&quot;. El Salvador, a&ntilde;o 2011.
+								<br />Sitio web desarrollado 100&#037; con software libre.
+								<br />Potenciado por <a href="http://www.symfony-project.org/"><img src="images/logos/symfony.png" border="0" /></a> y <a href="http://www.doctrine-project.org/"><img src="images/logos/doctrine.png" border="0" /></a>
+								<br /><br />
+							</div>
+						</div>
+						</div>
+<!--
+						</td>
+						<td class="fondo_gris1" rowspan="3"></td>
+					</tr>
+					<tr>
+						<td id="pie_pagina" class="fondo_azul1" rowspan="1" height="50">
+							Universidad Centroamericana &quot;Jos&eacute; Sime&oacute;n Ca&ntilde;as&quot;. El Salvador, a&ntilde;o 2011.
+							<br />Sitio web desarrollado 100&#037; con software libre.
+							<br />Potenciado por <a href="http://www.symfony-project.org/"><img src="images/logos/symfony.png" border="0" /></a> y <a href="http://www.doctrine-project.org/"><img src="images/logos/doctrine.png" border="0" /></a>
+							<br /><br />
+						</td>
+					</tr>
+					<tr>
+						<td class="fondo_azul1" rowspan="1"></td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		-->
+	</body>
+</html>

@@ -1,0 +1,27 @@
+## YAML Template.
+---
+#editarSuccess:
+#  stylesheets:    [main.css,menu_principal.css,menu_secundario.css]
+  
+  #javascripts:    [jsDatePick.min.1.3.js]
+
+listarAcademicosSuccess:
+  stylesheets:    [tabla.css]
+
+all:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main.css,menu_principal.css,menu_secundario.css]
+
+  #javascripts:    [jsDatePick.min.1.3.js]
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,1464 @@
+PERFIL:
+  PERFIL_1:
+    nombreperfil: Academico
+ACADEMICO:
+<?php $i = 1; ?>
+<?php for (; $i <= 100; $i++){ ?>
+  ACADEMICO_<?php echo $i ?>:
+    codigoacademico: '000<?php echo $i ?>'
+    primernombreacad: Juan_<?php echo $i."\n" ?>
+    segundonombreacad: Alberto_<?php echo $i."\n" ?>
+    primerapellidoacad: Pérez_<?php echo $i."\n" ?>
+    segundoapellidoacad: Sosa_<?php echo $i."\n" ?>
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    usalentes: '0'
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    esnacional: '1'
+    MUNICIPIO: MUNICIPIO_1
+    DEPARTAMENTO: DEPARTAMENTO_10
+    PAIS: PAIS_66
+    PAIS_7: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_<?php echo $i."\n" ?>
+<?php } ?>
+<?php for(; $i <= 200; $i++){ ?>
+  ACADEMICO_<?php echo $i ?>:
+    codigoacademico: '000<?php echo $i ?>'
+    primernombreacad: María_<?php echo $i."\n" ?>
+    segundonombreacad: Rosa_<?php echo $i."\n" ?>
+    primerapellidoacad: Menjívar_<?php echo $i."\n" ?>
+    segundoapellidoacad: Mejía_<?php echo $i."\n" ?>
+    apellidocasadaacad: '<?php echo fmod($i,2) ? 'Ruiz' : '' ?>'
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    usalentes: '0'
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    esnacional: '1'
+    MUNICIPIO: MUNICIPIO_1
+    DEPARTAMENTO: DEPARTAMENTO_10
+    PAIS: PAIS_66
+    PAIS_7: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_<?php echo $i."\n" ?>
+<?php } ?>
+ESTADO_ACTIVIDAD:
+  ESTADO_ACTIVIDAD_1:
+    nombreestadoactividad: Nueva
+    permiteedicion: '1'
+    esestadoinicial: '1'
+  ESTADO_ACTIVIDAD_2:
+    nombreestadoactividad: 'En revisión'
+    permiteedicion: '1'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_3:
+    nombreestadoactividad: Aprobada
+    permiteedicion: '0'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_4:
+    nombreestadoactividad: Denegada
+    permiteedicion: '0'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_5:
+    nombreestadoactividad: 'Devuelta para revisión'
+    permiteedicion: '1'
+    esestadoinicial: '0'
+TIPO_DOC_IDENT:
+  TIPO_DOC_IDENT_1:
+    nombretipodocident: 'DUI (Documento Único de Identidad)'
+  TIPO_DOC_IDENT_2:
+    nombretipodocident: 'NIT (Número de Identificación Tributario)'
+  TIPO_DOC_IDENT_3:
+    nombretipodocident: Pasaporte
+  TIPO_DOC_IDENT_4:
+    nombretipodocident: 'Carnet de residente en El Salvador'
+  TIPO_DOC_IDENT_5:
+    nombretipodocident: 'Otro documento'
+USUARIO:
+<?php $i = 1; ?>
+<?php for(; $i <= 100; $i++){ ?>
+  USUARIO_<?php echo $i ?>:
+    nombreusuario: juanperez<?php echo $i."\n" ?>
+    contraseniausuario: '12345'
+    PERFIL: PERFIL_1
+<?php } ?>
+<?php for(; $i <= 200; $i++){ ?>
+  USUARIO_<?php echo $i ?>:
+    nombreusuario: juanperez<?php echo $i."\n" ?>
+    contraseniausuario: '12345'
+    PERFIL: PERFIL_1
+<?php } ?>
+PAIS:
+  PAIS_1:
+    codigoisopais: AF
+    nombreisopais: Afganistán
+  PAIS_2:
+    codigoisopais: AX
+    nombreisopais: Åland
+  PAIS_3:
+    codigoisopais: AL
+    nombreisopais: Albania
+  PAIS_4:
+    codigoisopais: DE
+    nombreisopais: Alemania
+  PAIS_5:
+    codigoisopais: AD
+    nombreisopais: Andorra
+  PAIS_6:
+    codigoisopais: AO
+    nombreisopais: Angola
+  PAIS_7:
+    codigoisopais: AI
+    nombreisopais: Anguila
+  PAIS_8:
+    codigoisopais: AG
+    nombreisopais: 'Antigua y Barbuda'
+  PAIS_9:
+    codigoisopais: AN
+    nombreisopais: 'Antillas Neerlandesas'
+  PAIS_10:
+    codigoisopais: SA
+    nombreisopais: 'Arabia Saudita'
+  PAIS_11:
+    codigoisopais: DZ
+    nombreisopais: Argelia
+  PAIS_12:
+    codigoisopais: AR
+    nombreisopais: Argentina
+  PAIS_13:
+    codigoisopais: AM
+    nombreisopais: Armenia
+  PAIS_14:
+    codigoisopais: AW
+    nombreisopais: Aruba
+  PAIS_15:
+    codigoisopais: AU
+    nombreisopais: Australia
+  PAIS_16:
+    codigoisopais: AT
+    nombreisopais: Austria
+  PAIS_17:
+    codigoisopais: AZ
+    nombreisopais: Azerbaiyán
+  PAIS_18:
+    codigoisopais: BS
+    nombreisopais: Bahamas
+  PAIS_19:
+    codigoisopais: BH
+    nombreisopais: Baréin
+  PAIS_20:
+    codigoisopais: BD
+    nombreisopais: Bangladés
+  PAIS_21:
+    codigoisopais: BB
+    nombreisopais: Barbados
+  PAIS_22:
+    codigoisopais: BE
+    nombreisopais: Bélgica
+  PAIS_23:
+    codigoisopais: BZ
+    nombreisopais: Belice
+  PAIS_24:
+    codigoisopais: BJ
+    nombreisopais: Benín
+  PAIS_25:
+    codigoisopais: BM
+    nombreisopais: Bermudas
+  PAIS_26:
+    codigoisopais: BY
+    nombreisopais: Bielorrusia
+  PAIS_27:
+    codigoisopais: MM
+    nombreisopais: Birmania
+  PAIS_28:
+    codigoisopais: BO
+    nombreisopais: Bolivia
+  PAIS_29:
+    codigoisopais: BA
+    nombreisopais: 'Bosnia y Herzegovina'
+  PAIS_30:
+    codigoisopais: BW
+    nombreisopais: Botsuana
+  PAIS_31:
+    codigoisopais: BV
+    nombreisopais: 'Isla Bouvet'
+  PAIS_32:
+    codigoisopais: BR
+    nombreisopais: Brasil
+  PAIS_33:
+    codigoisopais: BN
+    nombreisopais: Brunéi
+  PAIS_34:
+    codigoisopais: BG
+    nombreisopais: Bulgaria
+  PAIS_35:
+    codigoisopais: BF
+    nombreisopais: 'Burkina Faso'
+  PAIS_36:
+    codigoisopais: BI
+    nombreisopais: Burundi
+  PAIS_37:
+    codigoisopais: BT
+    nombreisopais: Bután
+  PAIS_38:
+    codigoisopais: CV
+    nombreisopais: 'Cabo Verde'
+  PAIS_39:
+    codigoisopais: KY
+    nombreisopais: 'Islas Caimán'
+  PAIS_40:
+    codigoisopais: KH
+    nombreisopais: Camboya
+  PAIS_41:
+    codigoisopais: CM
+    nombreisopais: Camerún
+  PAIS_42:
+    codigoisopais: CA
+    nombreisopais: Canadá
+  PAIS_43:
+    codigoisopais: CF
+    nombreisopais: 'República Centroafricana'
+  PAIS_44:
+    codigoisopais: TD
+    nombreisopais: Chad
+  PAIS_45:
+    codigoisopais: CZ
+    nombreisopais: 'República Checa'
+  PAIS_46:
+    codigoisopais: CL
+    nombreisopais: Chile
+  PAIS_47:
+    codigoisopais: CN
+    nombreisopais: China
+  PAIS_48:
+    codigoisopais: CY
+    nombreisopais: Chipre
+  PAIS_49:
+    codigoisopais: CC
+    nombreisopais: 'Islas Cocos'
+  PAIS_50:
+    codigoisopais: CO
+    nombreisopais: Colombia
+  PAIS_51:
+    codigoisopais: KM
+    nombreisopais: Comoras
+  PAIS_52:
+    codigoisopais: CG
+    nombreisopais: 'República del Congo'
+  PAIS_53:
+    codigoisopais: CD
+    nombreisopais: 'Rep. Dem. del Congo'
+  PAIS_54:
+    codigoisopais: CK
+    nombreisopais: 'Islas Cook'
+  PAIS_55:
+    codigoisopais: KP
+    nombreisopais: 'Corea del Norte'
+  PAIS_56:
+    codigoisopais: KR
+    nombreisopais: 'Corea del Sur'
+  PAIS_57:
+    codigoisopais: CI
+    nombreisopais: 'Costa de Marfil'
+  PAIS_58:
+    codigoisopais: CR
+    nombreisopais: 'Costa Rica'
+  PAIS_59:
+    codigoisopais: HR
+    nombreisopais: Croacia
+  PAIS_60:
+    codigoisopais: CU
+    nombreisopais: Cuba
+  PAIS_61:
+    codigoisopais: DK
+    nombreisopais: Dinamarca
+  PAIS_62:
+    codigoisopais: DM
+    nombreisopais: Dominica
+  PAIS_63:
+    codigoisopais: DO
+    nombreisopais: 'República Dominicana'
+  PAIS_64:
+    codigoisopais: EC
+    nombreisopais: Ecuador
+  PAIS_65:
+    codigoisopais: EG
+    nombreisopais: Egipto
+  PAIS_66:
+    codigoisopais: SV
+    nombreisopais: 'El Salvador'
+  PAIS_67:
+    codigoisopais: AE
+    nombreisopais: 'Emiratos Árabes Unidos'
+  PAIS_68:
+    codigoisopais: ER
+    nombreisopais: Eritrea
+  PAIS_69:
+    codigoisopais: SK
+    nombreisopais: Eslovaquia
+  PAIS_70:
+    codigoisopais: SI
+    nombreisopais: Eslovenia
+  PAIS_71:
+    codigoisopais: ES
+    nombreisopais: España
+  PAIS_72:
+    codigoisopais: US
+    nombreisopais: 'Estados Unidos'
+  PAIS_73:
+    codigoisopais: EE
+    nombreisopais: Estonia
+  PAIS_74:
+    codigoisopais: ET
+    nombreisopais: Etiopía
+  PAIS_75:
+    codigoisopais: FO
+    nombreisopais: 'Islas Feroe'
+  PAIS_76:
+    codigoisopais: PH
+    nombreisopais: Filipinas
+  PAIS_77:
+    codigoisopais: FI
+    nombreisopais: Finlandia
+  PAIS_78:
+    codigoisopais: FJ
+    nombreisopais: Fiyi
+  PAIS_79:
+    codigoisopais: FR
+    nombreisopais: Francia
+  PAIS_80:
+    codigoisopais: GA
+    nombreisopais: Gabón
+  PAIS_81:
+    codigoisopais: GM
+    nombreisopais: Gambia
+  PAIS_82:
+    codigoisopais: GE
+    nombreisopais: Georgia
+  PAIS_83:
+    codigoisopais: GS
+    nombreisopais: 'Islas Georgias del Sur y Sandwich del Sur'
+  PAIS_84:
+    codigoisopais: GH
+    nombreisopais: Ghana
+  PAIS_85:
+    codigoisopais: GI
+    nombreisopais: Gibraltar
+  PAIS_86:
+    codigoisopais: GD
+    nombreisopais: Granada
+  PAIS_87:
+    codigoisopais: GR
+    nombreisopais: Grecia
+  PAIS_88:
+    codigoisopais: GL
+    nombreisopais: Groenlandia
+  PAIS_89:
+    codigoisopais: GP
+    nombreisopais: Guadalupe
+  PAIS_90:
+    codigoisopais: GU
+    nombreisopais: Guam
+  PAIS_91:
+    codigoisopais: GT
+    nombreisopais: Guatemala
+  PAIS_92:
+    codigoisopais: GF
+    nombreisopais: 'Guayana Francesa'
+  PAIS_93:
+    codigoisopais: GG
+    nombreisopais: Guernsey
+  PAIS_94:
+    codigoisopais: GN
+    nombreisopais: Guinea
+  PAIS_95:
+    codigoisopais: GQ
+    nombreisopais: 'Guinea Ecuatorial'
+  PAIS_96:
+    codigoisopais: GW
+    nombreisopais: Guinea-Bissau
+  PAIS_97:
+    codigoisopais: GY
+    nombreisopais: Guyana
+  PAIS_98:
+    codigoisopais: HT
+    nombreisopais: Haití
+  PAIS_99:
+    codigoisopais: HM
+    nombreisopais: 'Islas Heard y McDonald'
+  PAIS_100:
+    codigoisopais: HN
+    nombreisopais: Honduras
+  PAIS_101:
+    codigoisopais: HK
+    nombreisopais: 'Hong Kong'
+  PAIS_102:
+    codigoisopais: HU
+    nombreisopais: Hungría
+  PAIS_103:
+    codigoisopais: IN
+    nombreisopais: India
+  PAIS_104:
+    codigoisopais: ID
+    nombreisopais: Indonesia
+  PAIS_105:
+    codigoisopais: IR
+    nombreisopais: Irán
+  PAIS_106:
+    codigoisopais: IQ
+    nombreisopais: Irak
+  PAIS_107:
+    codigoisopais: IE
+    nombreisopais: Irlanda
+  PAIS_108:
+    codigoisopais: IS
+    nombreisopais: Islandia
+  PAIS_109:
+    codigoisopais: IL
+    nombreisopais: Israel
+  PAIS_110:
+    codigoisopais: IT
+    nombreisopais: Italia
+  PAIS_111:
+    codigoisopais: JM
+    nombreisopais: Jamaica
+  PAIS_112:
+    codigoisopais: JP
+    nombreisopais: Japón
+  PAIS_113:
+    codigoisopais: JE
+    nombreisopais: Jersey
+  PAIS_114:
+    codigoisopais: JO
+    nombreisopais: Jordania
+  PAIS_115:
+    codigoisopais: KZ
+    nombreisopais: Kazajistán
+  PAIS_116:
+    codigoisopais: KE
+    nombreisopais: Kenia
+  PAIS_117:
+    codigoisopais: KG
+    nombreisopais: Kirguistán
+  PAIS_118:
+    codigoisopais: KI
+    nombreisopais: Kiribati
+  PAIS_119:
+    codigoisopais: KW
+    nombreisopais: Kuwait
+  PAIS_120:
+    codigoisopais: LA
+    nombreisopais: Laos
+  PAIS_121:
+    codigoisopais: LS
+    nombreisopais: Lesoto
+  PAIS_122:
+    codigoisopais: LV
+    nombreisopais: Letonia
+  PAIS_123:
+    codigoisopais: LB
+    nombreisopais: Líbano
+  PAIS_124:
+    codigoisopais: LR
+    nombreisopais: Liberia
+  PAIS_125:
+    codigoisopais: LY
+    nombreisopais: Libia
+  PAIS_126:
+    codigoisopais: LI
+    nombreisopais: Liechtenstein
+  PAIS_127:
+    codigoisopais: LT
+    nombreisopais: Lituania
+  PAIS_128:
+    codigoisopais: LU
+    nombreisopais: Luxemburgo
+  PAIS_129:
+    codigoisopais: MO
+    nombreisopais: Macao
+  PAIS_130:
+    codigoisopais: MK
+    nombreisopais: 'República de Macedonia'
+  PAIS_131:
+    codigoisopais: MG
+    nombreisopais: Madagascar
+  PAIS_132:
+    codigoisopais: MY
+    nombreisopais: Malasia
+  PAIS_133:
+    codigoisopais: MW
+    nombreisopais: Malaui
+  PAIS_134:
+    codigoisopais: MV
+    nombreisopais: Maldivas
+  PAIS_135:
+    codigoisopais: ML
+    nombreisopais: Malí
+  PAIS_136:
+    codigoisopais: MT
+    nombreisopais: Malta
+  PAIS_137:
+    codigoisopais: FK
+    nombreisopais: 'Islas Malvinas'
+  PAIS_138:
+    codigoisopais: IM
+    nombreisopais: 'Isla de Man'
+  PAIS_139:
+    codigoisopais: MP
+    nombreisopais: 'Islas Marianas del Norte'
+  PAIS_140:
+    codigoisopais: MA
+    nombreisopais: Marruecos
+  PAIS_141:
+    codigoisopais: MH
+    nombreisopais: 'Islas Marshall'
+  PAIS_142:
+    codigoisopais: MQ
+    nombreisopais: Martinica
+  PAIS_143:
+    codigoisopais: MU
+    nombreisopais: Mauricio
+  PAIS_144:
+    codigoisopais: MR
+    nombreisopais: Mauritania
+  PAIS_145:
+    codigoisopais: YT
+    nombreisopais: Mayotte
+  PAIS_146:
+    codigoisopais: MX
+    nombreisopais: México
+  PAIS_147:
+    codigoisopais: FM
+    nombreisopais: Micronesia
+  PAIS_148:
+    codigoisopais: MD
+    nombreisopais: Moldavia
+  PAIS_149:
+    codigoisopais: MC
+    nombreisopais: Mónaco
+  PAIS_150:
+    codigoisopais: MN
+    nombreisopais: Mongolia
+  PAIS_151:
+    codigoisopais: ME
+    nombreisopais: Montenegro
+  PAIS_152:
+    codigoisopais: MS
+    nombreisopais: Montserrat
+  PAIS_153:
+    codigoisopais: MZ
+    nombreisopais: Mozambique
+  PAIS_154:
+    codigoisopais: NA
+    nombreisopais: Namibia
+  PAIS_155:
+    codigoisopais: NR
+    nombreisopais: Nauru
+  PAIS_156:
+    codigoisopais: CX
+    nombreisopais: 'Isla de Navidad'
+  PAIS_157:
+    codigoisopais: NP
+    nombreisopais: Nepal
+  PAIS_158:
+    codigoisopais: NI
+    nombreisopais: Nicaragua
+  PAIS_159:
+    codigoisopais: NE
+    nombreisopais: Níger
+  PAIS_160:
+    codigoisopais: NG
+    nombreisopais: Nigeria
+  PAIS_161:
+    codigoisopais: NU
+    nombreisopais: Niue
+  PAIS_162:
+    codigoisopais: NF
+    nombreisopais: Norfolk
+  PAIS_163:
+    codigoisopais: NO
+    nombreisopais: Noruega
+  PAIS_164:
+    codigoisopais: NC
+    nombreisopais: 'Nueva Caledonia'
+  PAIS_165:
+    codigoisopais: NZ
+    nombreisopais: 'Nueva Zelanda'
+  PAIS_166:
+    codigoisopais: OM
+    nombreisopais: Omán
+  PAIS_167:
+    codigoisopais: NL
+    nombreisopais: 'Países Bajos'
+  PAIS_168:
+    codigoisopais: PK
+    nombreisopais: Pakistán
+  PAIS_169:
+    codigoisopais: PW
+    nombreisopais: Palaos
+  PAIS_170:
+    codigoisopais: PS
+    nombreisopais: 'Autoridad Nacional Palestina'
+  PAIS_171:
+    codigoisopais: PA
+    nombreisopais: Panamá
+  PAIS_172:
+    codigoisopais: PG
+    nombreisopais: 'Papúa Nueva Guinea'
+  PAIS_173:
+    codigoisopais: PY
+    nombreisopais: Paraguay
+  PAIS_174:
+    codigoisopais: PE
+    nombreisopais: Perú
+  PAIS_175:
+    codigoisopais: PN
+    nombreisopais: 'Islas Pitcairn'
+  PAIS_176:
+    codigoisopais: PF
+    nombreisopais: 'Polinesia Francesa'
+  PAIS_177:
+    codigoisopais: PL
+    nombreisopais: Polonia
+  PAIS_178:
+    codigoisopais: PT
+    nombreisopais: Portugal
+  PAIS_179:
+    codigoisopais: PR
+    nombreisopais: 'Puerto Rico'
+  PAIS_180:
+    codigoisopais: QA
+    nombreisopais: Catar
+  PAIS_181:
+    codigoisopais: GB
+    nombreisopais: 'Reino Unido'
+  PAIS_182:
+    codigoisopais: RE
+    nombreisopais: Reunión
+  PAIS_183:
+    codigoisopais: RW
+    nombreisopais: Ruanda
+  PAIS_184:
+    codigoisopais: RO
+    nombreisopais: Rumanía
+  PAIS_185:
+    codigoisopais: RU
+    nombreisopais: Rusia
+  PAIS_186:
+    codigoisopais: EH
+    nombreisopais: 'República Árabe Saharaui Democrática'
+  PAIS_187:
+    codigoisopais: SB
+    nombreisopais: 'Islas Salomón'
+  PAIS_188:
+    codigoisopais: WS
+    nombreisopais: Samoa
+  PAIS_189:
+    codigoisopais: AS
+    nombreisopais: 'Samoa Estadounidense'
+  PAIS_190:
+    codigoisopais: BL
+    nombreisopais: 'San Bartolomé'
+  PAIS_191:
+    codigoisopais: KN
+    nombreisopais: 'San Cristóbal y Nieves'
+  PAIS_192:
+    codigoisopais: SM
+    nombreisopais: 'San Marino'
+  PAIS_193:
+    codigoisopais: MF
+    nombreisopais: 'San Martín'
+  PAIS_194:
+    codigoisopais: PM
+    nombreisopais: 'San Pedro y Miquelón'
+  PAIS_195:
+    codigoisopais: VC
+    nombreisopais: 'San Vicente y las Granadinas'
+  PAIS_196:
+    codigoisopais: SH
+    nombreisopais: 'Santa Helena, A. y T.'
+  PAIS_197:
+    codigoisopais: LC
+    nombreisopais: 'Santa Lucía'
+  PAIS_198:
+    codigoisopais: ST
+    nombreisopais: 'Santo Tomé y Príncipe'
+  PAIS_199:
+    codigoisopais: SN
+    nombreisopais: Senegal
+  PAIS_200:
+    codigoisopais: RS
+    nombreisopais: Serbia
+  PAIS_201:
+    codigoisopais: SC
+    nombreisopais: Seychelles
+  PAIS_202:
+    codigoisopais: SL
+    nombreisopais: 'Sierra Leona'
+  PAIS_203:
+    codigoisopais: SG
+    nombreisopais: Singapur
+  PAIS_204:
+    codigoisopais: SY
+    nombreisopais: Siria
+  PAIS_205:
+    codigoisopais: SO
+    nombreisopais: Somalia
+  PAIS_206:
+    codigoisopais: LK
+    nombreisopais: 'Sri Lanka'
+  PAIS_207:
+    codigoisopais: SZ
+    nombreisopais: Suazilandia
+  PAIS_208:
+    codigoisopais: ZA
+    nombreisopais: Sudáfrica
+  PAIS_209:
+    codigoisopais: SD
+    nombreisopais: Sudán
+  PAIS_210:
+    codigoisopais: SE
+    nombreisopais: Suecia
+  PAIS_211:
+    codigoisopais: CH
+    nombreisopais: Suiza
+  PAIS_212:
+    codigoisopais: SR
+    nombreisopais: Surinam
+  PAIS_213:
+    codigoisopais: SJ
+    nombreisopais: 'Svalbard y Jan Mayen'
+  PAIS_214:
+    codigoisopais: TH
+    nombreisopais: Tailandia
+  PAIS_215:
+    codigoisopais: TW
+    nombreisopais: Taiwán
+  PAIS_216:
+    codigoisopais: TZ
+    nombreisopais: Tanzania
+  PAIS_217:
+    codigoisopais: TJ
+    nombreisopais: Tayikistán
+  PAIS_218:
+    codigoisopais: IO
+    nombreisopais: 'Territorio Británico del Océano Índico'
+  PAIS_219:
+    codigoisopais: TF
+    nombreisopais: 'Territorios Australes Franceses'
+  PAIS_220:
+    codigoisopais: TL
+    nombreisopais: 'Timor Oriental'
+  PAIS_221:
+    codigoisopais: TG
+    nombreisopais: Togo
+  PAIS_222:
+    codigoisopais: TK
+    nombreisopais: Tokelau
+  PAIS_223:
+    codigoisopais: TO
+    nombreisopais: Tonga
+  PAIS_224:
+    codigoisopais: TT
+    nombreisopais: 'Trinidad y Tobago'
+  PAIS_225:
+    codigoisopais: TN
+    nombreisopais: Túnez
+  PAIS_226:
+    codigoisopais: TC
+    nombreisopais: 'Islas Turcas y Caicos'
+  PAIS_227:
+    codigoisopais: TM
+    nombreisopais: Turkmenistán
+  PAIS_228:
+    codigoisopais: TR
+    nombreisopais: Turquía
+  PAIS_229:
+    codigoisopais: TV
+    nombreisopais: Tuvalu
+  PAIS_230:
+    codigoisopais: UA
+    nombreisopais: Ucrania
+  PAIS_231:
+    codigoisopais: UG
+    nombreisopais: Uganda
+  PAIS_232:
+    codigoisopais: UY
+    nombreisopais: Uruguay
+  PAIS_233:
+    codigoisopais: UZ
+    nombreisopais: Uzbekistán
+  PAIS_234:
+    codigoisopais: VU
+    nombreisopais: Vanuatu
+  PAIS_235:
+    codigoisopais: VA
+    nombreisopais: 'Ciudad del Vaticano'
+  PAIS_236:
+    codigoisopais: VE
+    nombreisopais: Venezuela
+  PAIS_237:
+    codigoisopais: VN
+    nombreisopais: Vietnam
+  PAIS_238:
+    codigoisopais: VG
+    nombreisopais: 'Islas Vírgenes Británicas'
+  PAIS_239:
+    codigoisopais: VI
+    nombreisopais: 'Islas Vírgenes de los Estados Unidos'
+  PAIS_240:
+    codigoisopais: WF
+    nombreisopais: 'Wallis y Futuna'
+  PAIS_241:
+    codigoisopais: YE
+    nombreisopais: Yemen
+  PAIS_242:
+    codigoisopais: DJ
+    nombreisopais: Yibuti
+  PAIS_243:
+    codigoisopais: ZM
+    nombreisopais: Zambia
+  PAIS_244:
+    codigoisopais: ZW
+    nombreisopais: Zimbabue
+TIPO_SANGRE:
+  TIPO_SANGRE_1:
+    nombretiposangre: 'O Rh +'
+  TIPO_SANGRE_2:
+    nombretiposangre: 'O Rh -'
+  TIPO_SANGRE_3:
+    nombretiposangre: 'A Rh +'
+  TIPO_SANGRE_4:
+    nombretiposangre: 'A Rh -'
+  TIPO_SANGRE_5:
+    nombretiposangre: 'B Rh +'
+  TIPO_SANGRE_6:
+    nombretiposangre: 'B Rh -'
+  TIPO_SANGRE_7:
+    nombretiposangre: 'AB Rh +'
+  TIPO_SANGRE_8:
+    nombretiposangre: 'AB Rh -'
+MUNICIPIO:
+  MUNICIPIO_1:
+    nombremunicipio: 'San Salvador'
+NIVEL_ESTUDIO:
+  NIVEL_ESTUDIO_1:
+    nombrenivelestudio: Técnico
+  NIVEL_ESTUDIO_2:
+    nombrenivelestudio: Profesorado
+  NIVEL_ESTUDIO_3:
+    nombrenivelestudio: Licenciatura
+  NIVEL_ESTUDIO_4:
+    nombrenivelestudio: Ingeniería
+  NIVEL_ESTUDIO_5:
+    nombrenivelestudio: Arquitectura
+  NIVEL_ESTUDIO_6:
+    nombrenivelestudio: Maestría
+  NIVEL_ESTUDIO_7:
+    nombrenivelestudio: Doctorado
+ESTADO_CIVIL:
+  ESTADO_CIVIL_1:
+    nombreestadocivil: Soltero(a)
+  ESTADO_CIVIL_2:
+    nombreestadocivil: Casado(a)
+  ESTADO_CIVIL_3:
+    nombreestadocivil: Viudo(a)
+IDIOMA:
+  IDIOMA_1:
+    codisoidioma: AA
+    nombreisoidioma: Afar
+  IDIOMA_2:
+    codisoidioma: AB
+    nombreisoidioma: 'Abjaso (o abjasiano)'
+  IDIOMA_3:
+    codisoidioma: AE
+    nombreisoidioma: Avéstico
+  IDIOMA_4:
+    codisoidioma: AF
+    nombreisoidioma: Afrikaans
+  IDIOMA_5:
+    codisoidioma: AK
+    nombreisoidioma: Akano
+  IDIOMA_6:
+    codisoidioma: AM
+    nombreisoidioma: Amárico
+  IDIOMA_7:
+    codisoidioma: AN
+    nombreisoidioma: Aragonés
+  IDIOMA_8:
+    codisoidioma: AR
+    nombreisoidioma: Árabe
+  IDIOMA_9:
+    codisoidioma: AS
+    nombreisoidioma: Asamés
+  IDIOMA_10:
+    codisoidioma: AV
+    nombreisoidioma: Avar
+  IDIOMA_11:
+    codisoidioma: AY
+    nombreisoidioma: Aimara
+  IDIOMA_12:
+    codisoidioma: AZ
+    nombreisoidioma: Azerí
+  IDIOMA_13:
+    codisoidioma: BA
+    nombreisoidioma: Baskir
+  IDIOMA_14:
+    codisoidioma: BE
+    nombreisoidioma: Bielorruso
+  IDIOMA_15:
+    codisoidioma: BG
+    nombreisoidioma: Búlgaro
+  IDIOMA_16:
+    codisoidioma: BH
+    nombreisoidioma: Bhojpurí
+  IDIOMA_17:
+    codisoidioma: BI
+    nombreisoidioma: Bislama
+  IDIOMA_18:
+    codisoidioma: BM
+    nombreisoidioma: Bambara
+  IDIOMA_19:
+    codisoidioma: BN
+    nombreisoidioma: Bengalí
+  IDIOMA_20:
+    codisoidioma: BO
+    nombreisoidioma: Tibetano
+  IDIOMA_21:
+    codisoidioma: BR
+    nombreisoidioma: Bretón
+  IDIOMA_22:
+    codisoidioma: BS
+    nombreisoidioma: Bosnio
+  IDIOMA_23:
+    codisoidioma: CA
+    nombreisoidioma: Catalán
+  IDIOMA_24:
+    codisoidioma: CE
+    nombreisoidioma: Checheno
+  IDIOMA_25:
+    codisoidioma: CH
+    nombreisoidioma: Chamorro
+  IDIOMA_26:
+    codisoidioma: CO
+    nombreisoidioma: Corso
+  IDIOMA_27:
+    codisoidioma: CR
+    nombreisoidioma: Cree
+  IDIOMA_28:
+    codisoidioma: CS
+    nombreisoidioma: Checo
+  IDIOMA_29:
+    codisoidioma: CU
+    nombreisoidioma: 'Eslavo eclesiástico antiguo'
+  IDIOMA_30:
+    codisoidioma: CV
+    nombreisoidioma: Chuvasio
+  IDIOMA_31:
+    codisoidioma: CY
+    nombreisoidioma: Galés
+  IDIOMA_32:
+    codisoidioma: DA
+    nombreisoidioma: Danés
+  IDIOMA_33:
+    codisoidioma: DE
+    nombreisoidioma: Alemán
+  IDIOMA_34:
+    codisoidioma: DV
+    nombreisoidioma: Maldivo
+  IDIOMA_35:
+    codisoidioma: DZ
+    nombreisoidioma: Dzongkha
+  IDIOMA_36:
+    codisoidioma: EE
+    nombreisoidioma: Ewe
+  IDIOMA_37:
+    codisoidioma: EL
+    nombreisoidioma: 'Griego (moderno)'
+  IDIOMA_38:
+    codisoidioma: EN
+    nombreisoidioma: Inglés
+  IDIOMA_39:
+    codisoidioma: EO
+    nombreisoidioma: Esperanto
+  IDIOMA_40:
+    codisoidioma: ES
+    nombreisoidioma: 'Español (o castellano)'
+  IDIOMA_41:
+    codisoidioma: ET
+    nombreisoidioma: Estonio
+  IDIOMA_42:
+    codisoidioma: EU
+    nombreisoidioma: Euskera
+  IDIOMA_43:
+    codisoidioma: FA
+    nombreisoidioma: Persa
+  IDIOMA_44:
+    codisoidioma: FF
+    nombreisoidioma: Fula
+  IDIOMA_45:
+    codisoidioma: FI
+    nombreisoidioma: 'Finés (o finlandés)'
+  IDIOMA_46:
+    codisoidioma: FJ
+    nombreisoidioma: 'Fiyiano (o fiyi)'
+  IDIOMA_47:
+    codisoidioma: FO
+    nombreisoidioma: Feroés
+  IDIOMA_48:
+    codisoidioma: FR
+    nombreisoidioma: Francés
+  IDIOMA_49:
+    codisoidioma: FY
+    nombreisoidioma: 'Frisón (o frisio)'
+  IDIOMA_50:
+    codisoidioma: GA
+    nombreisoidioma: 'Irlandés (o gaélico)'
+  IDIOMA_51:
+    codisoidioma: GD
+    nombreisoidioma: 'Gaélico escocés'
+  IDIOMA_52:
+    codisoidioma: GL
+    nombreisoidioma: Gallego
+  IDIOMA_53:
+    codisoidioma: GN
+    nombreisoidioma: Guaraní
+  IDIOMA_54:
+    codisoidioma: GU
+    nombreisoidioma: 'Guyaratí (o guyaratí)'
+  IDIOMA_55:
+    codisoidioma: GV
+    nombreisoidioma: 'Manés (gaélico manés o de Isla de Man)'
+  IDIOMA_56:
+    codisoidioma: HA
+    nombreisoidioma: Hausa
+  IDIOMA_57:
+    codisoidioma: HE
+    nombreisoidioma: Hebreo
+  IDIOMA_58:
+    codisoidioma: HI
+    nombreisoidioma: 'Hindi (o hindú)'
+  IDIOMA_59:
+    codisoidioma: HO
+    nombreisoidioma: 'Hiri motu'
+  IDIOMA_60:
+    codisoidioma: HR
+    nombreisoidioma: Croata
+  IDIOMA_61:
+    codisoidioma: HT
+    nombreisoidioma: Haitiano
+  IDIOMA_62:
+    codisoidioma: HU
+    nombreisoidioma: Húngaro
+  IDIOMA_63:
+    codisoidioma: HY
+    nombreisoidioma: Armenio
+  IDIOMA_64:
+    codisoidioma: HZ
+    nombreisoidioma: Herero
+  IDIOMA_65:
+    codisoidioma: IA
+    nombreisoidioma: Interlingua
+  IDIOMA_66:
+    codisoidioma: ID
+    nombreisoidioma: Indonesio
+  IDIOMA_67:
+    codisoidioma: IE
+    nombreisoidioma: Occidental
+  IDIOMA_68:
+    codisoidioma: IG
+    nombreisoidioma: Igbo
+  IDIOMA_69:
+    codisoidioma: II
+    nombreisoidioma: 'Yi de sichuán'
+  IDIOMA_70:
+    codisoidioma: IK
+    nombreisoidioma: Inupiaq
+  IDIOMA_71:
+    codisoidioma: IO
+    nombreisoidioma: Ido
+  IDIOMA_72:
+    codisoidioma: IS
+    nombreisoidioma: Islandés
+  IDIOMA_73:
+    codisoidioma: IT
+    nombreisoidioma: Italiano
+  IDIOMA_74:
+    codisoidioma: IU
+    nombreisoidioma: Inuktitut
+  IDIOMA_75:
+    codisoidioma: JA
+    nombreisoidioma: Japonés
+  IDIOMA_76:
+    codisoidioma: JV
+    nombreisoidioma: Javanés
+  IDIOMA_77:
+    codisoidioma: KA
+    nombreisoidioma: Georgiano
+  IDIOMA_78:
+    codisoidioma: KG
+    nombreisoidioma: Kongo
+  IDIOMA_79:
+    codisoidioma: KI
+    nombreisoidioma: Kikuyu
+  IDIOMA_80:
+    codisoidioma: KJ
+    nombreisoidioma: Kuanyama
+  IDIOMA_81:
+    codisoidioma: KK
+    nombreisoidioma: 'Kazajo (o kazajio)'
+  IDIOMA_82:
+    codisoidioma: KL
+    nombreisoidioma: 'Groenlandés (o kalaallisut)'
+  IDIOMA_83:
+    codisoidioma: KM
+    nombreisoidioma: 'Camboyano (o jemer)'
+  IDIOMA_84:
+    codisoidioma: KN
+    nombreisoidioma: Canarés
+  IDIOMA_85:
+    codisoidioma: KO
+    nombreisoidioma: Coreano
+  IDIOMA_86:
+    codisoidioma: KR
+    nombreisoidioma: Kanuri
+  IDIOMA_87:
+    codisoidioma: KS
+    nombreisoidioma: Cachemiro
+  IDIOMA_88:
+    codisoidioma: KU
+    nombreisoidioma: Kurdo
+  IDIOMA_89:
+    codisoidioma: KV
+    nombreisoidioma: Komi
+  IDIOMA_90:
+    codisoidioma: KW
+    nombreisoidioma: Córnico
+  IDIOMA_91:
+    codisoidioma: KY
+    nombreisoidioma: Kirguís
+  IDIOMA_92:
+    codisoidioma: LA
+    nombreisoidioma: Latín
+  IDIOMA_93:
+    codisoidioma: LB
+    nombreisoidioma: Luxemburgués
+  IDIOMA_94:
+    codisoidioma: LG
+    nombreisoidioma: Luganda
+  IDIOMA_95:
+    codisoidioma: LI
+    nombreisoidioma: Limburgués
+  IDIOMA_96:
+    codisoidioma: LN
+    nombreisoidioma: Lingala
+  IDIOMA_97:
+    codisoidioma: LO
+    nombreisoidioma: Lao
+  IDIOMA_98:
+    codisoidioma: LT
+    nombreisoidioma: Lituano
+  IDIOMA_99:
+    codisoidioma: LU
+    nombreisoidioma: Luba-katanga
+  IDIOMA_100:
+    codisoidioma: LV
+    nombreisoidioma: Letón
+  IDIOMA_101:
+    codisoidioma: MG
+    nombreisoidioma: 'Malgache (o malagasy)'
+  IDIOMA_102:
+    codisoidioma: MH
+    nombreisoidioma: Marshalés
+  IDIOMA_103:
+    codisoidioma: MI
+    nombreisoidioma: Maorí
+  IDIOMA_104:
+    codisoidioma: MK
+    nombreisoidioma: Macedonio
+  IDIOMA_105:
+    codisoidioma: ML
+    nombreisoidioma: Malayalam
+  IDIOMA_106:
+    codisoidioma: MN
+    nombreisoidioma: Mongol
+  IDIOMA_107:
+    codisoidioma: MR
+    nombreisoidioma: Maratí
+  IDIOMA_108:
+    codisoidioma: MS
+    nombreisoidioma: Malayo
+  IDIOMA_109:
+    codisoidioma: MT
+    nombreisoidioma: Maltés
+  IDIOMA_110:
+    codisoidioma: MY
+    nombreisoidioma: Birmano
+  IDIOMA_111:
+    codisoidioma: NA
+    nombreisoidioma: Nauruano
+  IDIOMA_112:
+    codisoidioma: NB
+    nombreisoidioma: 'Noruego bokmål'
+  IDIOMA_113:
+    codisoidioma: ND
+    nombreisoidioma: 'Ndebele del norte'
+  IDIOMA_114:
+    codisoidioma: NE
+    nombreisoidioma: Nepalí
+  IDIOMA_115:
+    codisoidioma: NG
+    nombreisoidioma: Ndonga
+  IDIOMA_116:
+    codisoidioma: NL
+    nombreisoidioma: 'Neerlandés (u holandés)'
+  IDIOMA_117:
+    codisoidioma: NN
+    nombreisoidioma: Nynorsk
+  IDIOMA_118:
+    codisoidioma: NO
+    nombreisoidioma: Noruego
+  IDIOMA_119:
+    codisoidioma: NR
+    nombreisoidioma: 'Ndebele del sur'
+  IDIOMA_120:
+    codisoidioma: NV
+    nombreisoidioma: Navajo
+  IDIOMA_121:
+    codisoidioma: NY
+    nombreisoidioma: Chichewa
+  IDIOMA_122:
+    codisoidioma: OC
+    nombreisoidioma: Occitano
+  IDIOMA_123:
+    codisoidioma: OJ
+    nombreisoidioma: Ojibwa
+  IDIOMA_124:
+    codisoidioma: OM
+    nombreisoidioma: Oromo
+  IDIOMA_125:
+    codisoidioma: OR
+    nombreisoidioma: Oriya
+  IDIOMA_126:
+    codisoidioma: OS
+    nombreisoidioma: Osético
+  IDIOMA_127:
+    codisoidioma: PA
+    nombreisoidioma: 'Panyabí (o penyabi)'
+  IDIOMA_128:
+    codisoidioma: PI
+    nombreisoidioma: Pali
+  IDIOMA_129:
+    codisoidioma: PL
+    nombreisoidioma: Polaco
+  IDIOMA_130:
+    codisoidioma: PS
+    nombreisoidioma: 'Pastú (o pashto)'
+  IDIOMA_131:
+    codisoidioma: PT
+    nombreisoidioma: Portugués
+  IDIOMA_132:
+    codisoidioma: QU
+    nombreisoidioma: Quechua
+  IDIOMA_133:
+    codisoidioma: RM
+    nombreisoidioma: Retorrománico
+  IDIOMA_134:
+    codisoidioma: RN
+    nombreisoidioma: Kirundi
+  IDIOMA_135:
+    codisoidioma: RO
+    nombreisoidioma: Rumano
+  IDIOMA_136:
+    codisoidioma: RU
+    nombreisoidioma: Ruso
+  IDIOMA_137:
+    codisoidioma: RW
+    nombreisoidioma: Ruandés
+  IDIOMA_138:
+    codisoidioma: SA
+    nombreisoidioma: Sánscrito
+  IDIOMA_139:
+    codisoidioma: SC
+    nombreisoidioma: Sardo
+  IDIOMA_140:
+    codisoidioma: SD
+    nombreisoidioma: Sindhi
+  IDIOMA_141:
+    codisoidioma: SE
+    nombreisoidioma: 'Sami septentrional'
+  IDIOMA_142:
+    codisoidioma: SG
+    nombreisoidioma: Sango
+  IDIOMA_143:
+    codisoidioma: SH
+    nombreisoidioma: Serbocroata
+  IDIOMA_144:
+    codisoidioma: SI
+    nombreisoidioma: Cingalés
+  IDIOMA_145:
+    codisoidioma: SK
+    nombreisoidioma: Eslovaco
+  IDIOMA_146:
+    codisoidioma: SL
+    nombreisoidioma: Esloveno
+  IDIOMA_147:
+    codisoidioma: SM
+    nombreisoidioma: Samoano
+  IDIOMA_148:
+    codisoidioma: SN
+    nombreisoidioma: Shona
+  IDIOMA_149:
+    codisoidioma: SO
+    nombreisoidioma: Somalí
+  IDIOMA_150:
+    codisoidioma: SQ
+    nombreisoidioma: Albanés
+  IDIOMA_151:
+    codisoidioma: SR
+    nombreisoidioma: Serbio
+  IDIOMA_152:
+    codisoidioma: SS
+    nombreisoidioma: 'Suazi (swati o siswati)'
+  IDIOMA_153:
+    codisoidioma: ST
+    nombreisoidioma: Sesotho
+  IDIOMA_154:
+    codisoidioma: SU
+    nombreisoidioma: Sundanés
+  IDIOMA_155:
+    codisoidioma: SV
+    nombreisoidioma: Sueco
+  IDIOMA_156:
+    codisoidioma: SW
+    nombreisoidioma: Suajili
+  IDIOMA_157:
+    codisoidioma: TA
+    nombreisoidioma: Tamil
+  IDIOMA_158:
+    codisoidioma: TE
+    nombreisoidioma: Telugú
+  IDIOMA_159:
+    codisoidioma: TG
+    nombreisoidioma: Tayiko
+  IDIOMA_160:
+    codisoidioma: TH
+    nombreisoidioma: Tailandés
+  IDIOMA_161:
+    codisoidioma: TI
+    nombreisoidioma: Tigriña
+  IDIOMA_162:
+    codisoidioma: TK
+    nombreisoidioma: Turcomano
+  IDIOMA_163:
+    codisoidioma: TL
+    nombreisoidioma: Tagalo
+  IDIOMA_164:
+    codisoidioma: TN
+    nombreisoidioma: Setsuana
+  IDIOMA_165:
+    codisoidioma: TO
+    nombreisoidioma: Tongano
+  IDIOMA_166:
+    codisoidioma: TR
+    nombreisoidioma: Turco
+  IDIOMA_167:
+    codisoidioma: TS
+    nombreisoidioma: Tsonga
+  IDIOMA_168:
+    codisoidioma: TT
+    nombreisoidioma: Tártaro
+  IDIOMA_169:
+    codisoidioma: TW
+    nombreisoidioma: Twi
+  IDIOMA_170:
+    codisoidioma: TY
+    nombreisoidioma: Tahitiano
+  IDIOMA_171:
+    codisoidioma: UG
+    nombreisoidioma: Uigur
+  IDIOMA_172:
+    codisoidioma: UK
+    nombreisoidioma: Ucraniano
+  IDIOMA_173:
+    codisoidioma: UR
+    nombreisoidioma: Urdu
+  IDIOMA_174:
+    codisoidioma: UZ
+    nombreisoidioma: Uzbeko
+  IDIOMA_175:
+    codisoidioma: VE
+    nombreisoidioma: Venda
+  IDIOMA_176:
+    codisoidioma: VI
+    nombreisoidioma: Vietnamita
+  IDIOMA_177:
+    codisoidioma: WL
+    nombreisoidioma: Walisiano
+  IDIOMA_178:
+    codisoidioma: VO
+    nombreisoidioma: Volapük
+  IDIOMA_179:
+    codisoidioma: WA
+    nombreisoidioma: Valón
+  IDIOMA_180:
+    codisoidioma: WO
+    nombreisoidioma: Wolof
+  IDIOMA_181:
+    codisoidioma: XH
+    nombreisoidioma: Xhosa
+  IDIOMA_182:
+    codisoidioma: YI
+    nombreisoidioma: 'Yídish (o yiddish)'
+  IDIOMA_183:
+    codisoidioma: YO
+    nombreisoidioma: Yoruba
+  IDIOMA_184:
+    codisoidioma: ZA
+    nombreisoidioma: 'Chuan (o zhuang)'
+  IDIOMA_185:
+    codisoidioma: ZH
+    nombreisoidioma: Chino
+  IDIOMA_186:
+    codisoidioma: ZU
+    nombreisoidioma: Zulú
+DEPARTAMENTO:
+  DEPARTAMENTO_1:
+    nombredepartamento: Ahuachapán
+  DEPARTAMENTO_2:
+    nombredepartamento: Cabañas
+  DEPARTAMENTO_3:
+    nombredepartamento: Chalatenago
+  DEPARTAMENTO_4:
+    nombredepartamento: Cuscatlán
+  DEPARTAMENTO_5:
+    nombredepartamento: 'La Libertad'
+  DEPARTAMENTO_6:
+    nombredepartamento: 'La Paz'
+  DEPARTAMENTO_7:
+    nombredepartamento: 'La Unión'
+  DEPARTAMENTO_8:
+    nombredepartamento: Morazán
+  DEPARTAMENTO_9:
+    nombredepartamento: 'San Miguel'
+  DEPARTAMENTO_10:
+    nombredepartamento: 'San Salvador'
+  DEPARTAMENTO_11:
+    nombredepartamento: 'San Vicente'
+  DEPARTAMENTO_12:
+    nombredepartamento: 'Santa Ana'
+  DEPARTAMENTO_13:
+    nombredepartamento: Sonsonate
+  DEPARTAMENTO_14:
+    nombredepartamento: Usulután

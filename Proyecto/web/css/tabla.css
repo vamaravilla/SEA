@@ -1,0 +1,95 @@
+.tabla_datos
+{
+    width: 100%;
+}
+
+.tabla_datos > thead th
+{
+    color: #FFFFFF;
+    background-color: #0069b3;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    border-style: solid;
+}
+
+.tabla_datos > tbody .par
+{
+    background-color: #e3ecf4;
+}
+
+.tabla_datos > tbody .impar
+{
+    background-color: #FFFFFF;
+}
+
+/*
+.tabla_datos > tbody td
+{
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+}
+*/
+
+.tabla_datos tr:hover
+{
+    background-color: #d6dde2;
+}
+
+.tabla_datos td.boton
+{
+    width: 30px;
+    text-align: center;
+}
+
+.tabla_pie
+{
+    height:20px;
+}
+
+.paginacion_desc
+{
+  margin-left: 15px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #828f95;
+  float: left;
+  /*width:200px;*/
+}
+
+.paginacion_desc strong
+{
+  color: #176f94;
+}
+
+.paginacion
+{
+  margin-top: 10px;
+  float: right;
+  margin-right: 10px;
+  color: #176f94;
+  font-size: 110%;
+  font-weight: bold;
+  text-align: right;
+  width:200px;
+}
+
+.paginacion a
+{
+  margin: 0 1px;
+  text-decoration: none;
+  color: #828f95;
+  font-size: 75%;
+  vertical-align: 1px;
+  font-weight: normal;
+}
+
+.paginacion a:hover
+{
+  text-decoration: underline;
+}
+
+.paginacion img
+{
+  vertical-align: -2px;
+}

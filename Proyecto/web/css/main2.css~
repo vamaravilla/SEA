@@ -1,0 +1,230 @@
+/* USEO GENERAL */
+/* Esto es para centrar un div de 1000px de ancho */
+.contenido_centrado
+{
+	margin:0em auto;
+	width:1000px;
+}
+
+/* Esto es general, para centrar texto */
+.vert_medio1{display:table; _position:relative; overflow:hidden; width:100%; height:100%;}
+.vert_medio2{_position:absolute; _top:50%; display:table-cell; vertical-align:middle;}
+.vert_medio3{_position:relative; _top:-50%; text-align:center;}
+
+
+/* ESTRUCTURA GLOBAL DE LA PÁGINA */
+html,
+body,
+#contenedor_principal
+{
+	min-height: 100%; /* Not supported by IE 5/6, but required for Firefox/Opera */
+	width: 100%;
+	height: 100%;
+}
+
+/***************************************************************************
+* The "height" above is a hack for IE5+/Win. Below it's adjusted using
+* the child selector to hide from IE5+/Win.
+* Without this, Moz1.0 adds a vertical scrollbar, & Firefox1.0/Opera7.54
+* cover everything with the footer when the viewport gets too small.
+***************************************************************************/
+html>body,
+html>body #contenedor_principal
+{
+	height: auto;
+}
+
+body
+{
+	margin: 0;
+}
+
+#contenedor_principal
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:transparent;
+}
+
+#contenedor_superior
+{
+	
+}
+
+#contenedor_resto
+{
+	overflow:auto;
+}
+
+#contenedor_medio
+{
+	margin-bottom: 100px;
+	height: auto;
+}
+
+#bloque_cabeza
+{
+	width: 100%;
+	/*height: 100px;*/
+	background-image:url('../images/fondo/fondo_cabeza.gif');
+	position:relative;
+}
+
+#bloque_cuerpo
+{
+	width: 100%;
+	/*overflow:auto;*/
+	position:relative;
+}
+
+#contenedor_inferior
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-image:url('../images/fondo/fondo_pie.gif');
+	background-position: top left;
+	background-repeat:repeat-x;
+}
+
+
+/* Fondo fijo */
+#fondo_fijo {
+	width: 56.25em;
+	height: 500px;
+	position: fixed;
+	background-color:#FFF;
+	left: 50%;
+	margin-left:-28.125em;	/* La mitad del width de #fondo_fijo */
+	bottom:100px;
+	/*top: 0em;*/
+	z-index: 0;
+	overflow: hidden;
+	background-image: url('../images/fondo/buho.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+/* MENU */
+/* Menú de página */
+#menu_pagina
+{
+	height:60px;
+	vertical-align:bottom;
+}
+
+#contenedor_menu
+{
+	position:relative;
+	height:60px;
+	vertical-align:bottom;
+}
+
+/* ENCABEZADO */
+#cabeza
+{
+	background-image:url('../images/fondo/banner.gif');
+	height:100px;
+	display:block;
+}
+
+/* CUERPO */
+#contenedor_cuerpo
+{
+	position:relative;
+	/*background-image:url('../images/fondo/buho.png');
+	background-position:left bottom;
+	background-repeat:no-repeat;*/
+	padding:0.625em;
+	display:block;
+	overflow:visible;
+	/*height:200px;*/
+}
+
+#area_trabajo
+{
+    /* Se recomienda poner un div dentro del área de trabajo,
+    para que limite el alto mínimo de dicha área */
+	/*z-index:3;*/
+   position:relative;
+   padding:15px;
+	border-width:0.125em;
+	border-color:#accee7;
+	border-style:solid;
+	/*float:left;*/ /* Por alguna razón esto hace que el div padre no se ajuste al tamaño de este div */
+	width:720px;
+	left:0px;
+	margin-left:20px;
+	background-image: url('../images/fondo/blanco_op80.png');
+	height:auto;
+	display:block;
+}
+
+/* PIE DE PÁGINA */
+#pie
+{
+	text-align:center;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:0.625em;
+	color:#FFFFFF;
+	padding-top:30px;
+}
+
+#pie img
+{
+	vertical-align:middle;
+}
+
+/* ESTILOS PARA EL TEXTO DEL ÁREA DE TRABAJO */
+#area_trabajo h1
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#5586ce;
+}
+
+#area_trabajo
+{
+	font-family:Arial, Helvetica, Verdana, sans-serif;
+	font-size:14px;
+	color:#383838;
+}
+
+/* COLORES DE FONDO */
+.fondo_azul1{ background-color:#0069b3; }
+
+.fondo_azul2{ background-color:#5a9cce; }
+
+.fondo_gris1{ background-color:#393939; }
+
+.fondo_blanco{ background-color:#FFFFFF; }
+
+/* BORDES DE PRUEBA */
+/* Borrar después de usar. Solo como referencia. */
+.borde
+{
+	border-width:3px;
+	border-style:solid;
+}
+
+.borde_rojo
+{
+	border-color:#FF0000;
+}
+
+.borde_verde
+{
+	border-color:#00FF00;
+}
+
+.borde_azul
+{
+	border-color:#0000FF;
+}
+
+.borde_amarillo
+{
+	border-color:#FFFF00;
+}

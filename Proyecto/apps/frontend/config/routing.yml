@@ -1,0 +1,77 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+#Reglas personalizadas
+usuario_inicio:
+  url:   /
+  param: { module: ficha, action: index }
+
+#Reglas de módulo ficha
+
+#Nuevo 20110703
+ficha_mostrar_privado:
+  url:     /ficha/mostrar
+  class:   sfDoctrineRoute
+  options: { model: ACADEMICO, type: object }
+  param:   { module: ficha, action: mostrar }
+  requirements:
+    id: \d+
+    sf_method: [get]
+
+ficha_editar_privado:
+  url:     /ficha/editar.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: ACADEMICO, type: object }
+  param:   { module: ficha, action: editar, sf_format: html }
+  requirements: { sf_method: get }
+
+ficha_actualizar_privado:
+  url:     /ficha/actualizar.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: ACADEMICO, type: object }
+  param:   { module: ficha, action: actualizar, sf_format: html }
+  requirements: { sf_method: put }
+
+ficha_listar_academicos:
+  url:    /ficha/academico/lista
+  param:  { module: ficha, action: listarAcademicos }
+  
+ficha_mostrar_publico:
+  url:     /ficha/academico/:distintivo/:pk
+  class:   sfDoctrineRoute
+  options: { model: ACADEMICO, type: object }
+  param:   { module: ficha, action: mostrar }
+  requirements:
+    distintivo: \d+
+    sf_method: [get]
+
+ficha_editar_publico:
+  url:     /ficha/editar/:distintivo/:pk.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: ACADEMICO, type: object }
+  param:   { module: ficha, action: editar, sf_format: html }
+  requirements:
+    distintivo: \d+
+    sf_method: [get]
+
+ficha_crear:
+  url:      /ficha/academico/nuevo.:sf_format
+  class:    sfDoctrineRoute
+  options:  { model: ACADEMICO, type: object }
+  param:    { module: ficha, action: crear, sf_format: html }
+  requirements: { sf_method: post }
+  
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,129 @@
+/* Nivel 1: Inicio */
+
+/* Barra de menú */
+#menu
+{
+	position:absolute;
+	bottom:0px;
+	/*left:0px;*/
+	right:130px;
+	width:auto;
+}
+
+#menu td.izq
+{
+	width:10px;
+	height:30px;
+	background-image:url('../images/menu/principal/menu_izq.gif');
+}
+
+#menu td.centro
+{
+	position:relative;
+	width:300px;
+	height:30px;
+	background-image:url('../images/menu/principal/menu_centro.gif');
+}
+
+#menu td.der
+{
+	width:10px;
+	height:30px;
+	background-image:url('../images/menu/principal/menu_der.gif');
+}
+
+#menu_lista { padding:0em; margin-top:-40px; list-style:none; height:25px; z-index:500; font-family:arial, verdana, sans-serif; left:0em; position:absolute; }
+
+/* Ítems */
+#menu_lista li.m1_sup {display:block; float:right;}
+
+#menu_lista li.item{float:right; padding-left:15px; position:relative; }
+
+/* Para que no aparezca subrayado el texto del nombre del ítem */
+#menu_lista li > a { text-decoration:none; border-style:hidden; }
+
+#menu_lista li > a:link { border-style:hidden; }
+
+#menu_lista li > a:active { border-style:hidden; }
+
+#menu_lista li > a:visited { border-style:hidden; }
+
+/* Para poner y cambiar la imagen de los ítems */
+#menu_lista li > a > div { width:3em; height:3em; background-position:left; background-repeat:no-repeat; position:relative; }
+
+#menu_lista li:hover > a > div { width:4em; height:4em; }
+
+#menu_lista li > a > div.item1 {background-image:url('../images/menu/principal/folder_48.png'); }
+
+#menu_lista li:hover > a > div.item1 { background-image:url('../images/menu/principal/folder_64.png');}
+
+#menu_lista li > a >div.item2 { background-image:url('../images/menu/principal/books_48.png'); }
+
+#menu_lista li:hover > a > div.item2 { background-image:url('../images/menu/principal/books_64.png'); }
+
+#menu_lista li > a >div.item3 { background-image:url('../images/menu/principal/apple_48.png');  }
+
+#menu_lista li:hover > a > div.item3 { background-image:url('../images/menu/principal/apple_64.png'); }
+
+/* Datos generales de los nombres de ítems de menú superior */
+#menu_lista div.sup_nombre_tam1,
+#menu_lista :hover div.sup_nombre_tam1
+{top:50px; white-space:normal; width:100px; height:30px; min-height:30px; z-index:400; background:url('../images/menu/principal/sup_nombre_tam1.png'); color:#FFF; font-size:0.750em; position:relative; }
+
+
+/* Posiciones de los nombres según el ítem de menú */
+#menu_lista div.sup_item_nombre,
+#menu_lista :hover div.sup_item_nombre{ left:-20px; }
+
+/* Nivel 1: Fin */
+
+
+/* Nivel 2: Inicio */
+
+/* Para ocultar los submenús y nombres fuera de la pantalla */
+#menu_lista div.m1_oculto,
+#menu_lista :hover div.m1_oculto
+{position:absolute; visibility:hidden; /*height:0; margin:0; padding:0; list-style:none;*/}
+
+/* Para mostrar los submenús al seleccionar 1 opción del nivel superior */
+#menu_lista :hover div.m1_sub {visibility:visible; top:3.75em; /*white-space:nowrap;*/ width:auto; height:auto; z-index:300; padding-top:0.3125em; }
+
+
+/* Para mostrar el nombre del ítem de nivel superior */
+#menu_lista :hover div.sup_nombre_tam1 {visibility:visible;}
+
+/* Posiciones de los submenús */
+#menu div.sup_item3_sub,
+#menu_lista :hover div.sup_item_sub{ left:0.625em; }
+
+/* Diseño de los submenús */
+
+/* Tabla */
+#menu_lista table
+{
+	padding-left:0em;
+	width:13.75em;
+}
+
+/* Esquinas */
+#menu_lista td.esquina{ width:10px; height:10px; background-repeat:no-repeat; }
+
+#menu_lista td.esquina_arr_izq{ background-image:url('../images/menu/principal/esquina_arr_izq.png'); background-position:left; }
+
+#menu_lista td.esquina_arr_der{ background-image:url('../images/menu/principal/esquina_arr_der.png'); background-position:right; }
+
+#menu_lista td.esquina_aba_izq{ background-image:url('../images/menu/principal/esquina_aba_izq.png'); background-position:left; }
+
+#menu_lista td.esquina_aba_der{ background-image:url('../images/menu/principal/esquina_aba_der.png'); background-position:right; }
+
+/* Cuerpo */
+#menu_lista td.medio_fondo{ background-image:url('../images/menu/principal/sub_fondo.png');}
+
+#menu_lista td.medio_lista{ padding-top:0.625em; color:#FFFFFF; font-size:0.625em; }
+
+/* Enlaces */
+#menu_lista td.medio_lista > a { font-size:0.750em; color:#d85; text-decoration:none;}
+
+#menu_lista td a:hover { text-decoration:underline;}
+
+/* Nivel 2+: Fin */
