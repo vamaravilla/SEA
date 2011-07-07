@@ -1,0 +1,10 @@
+Modificaciones 20110703 en adelante:
+apps/frontend/config/app.yml
+apps/frontend/ficha
+apps/frontend/templates/_tblGeneral1.php
+apps/frontend/config/routing.yml
+lib/model/doctrine/ACADEMICO.class.php
+lib/model/doctrine/ACADEMICOTable.class.php
+data/fixtures/data.yml
+web/images/botones
+web/css/tabla.css
