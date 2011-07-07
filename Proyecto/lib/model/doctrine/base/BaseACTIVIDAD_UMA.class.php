@@ -10,6 +10,7 @@ Doctrine_Manager::getInstance()->bindComponent('ACTIVIDAD_UMA', 'doctrine');
  * @property integer $idcategoriauma
  * @property integer $idactividaduma
  * @property string $nombreactividaduma
+ * @property string $descripcionactividaduma
  * @property decimal $cantidadumadef
  * @property CATEGORIA_UMA $CATEGORIA_UMA
  * @property Doctrine_Collection $ACTXACT_UMA
@@ -17,24 +18,26 @@ Doctrine_Manager::getInstance()->bindComponent('ACTIVIDAD_UMA', 'doctrine');
  * @property Doctrine_Collection $ACTXACT_UMA_3
  * @property Doctrine_Collection $ACTXACT_UMA_4
  * 
- * @method integer             getIdcategoriauma()     Returns the current record's "idcategoriauma" value
- * @method integer             getIdactividaduma()     Returns the current record's "idactividaduma" value
- * @method string              getNombreactividaduma() Returns the current record's "nombreactividaduma" value
- * @method decimal             getCantidadumadef()     Returns the current record's "cantidadumadef" value
- * @method CATEGORIA_UMA       getCATEGORIAUMA()       Returns the current record's "CATEGORIA_UMA" value
- * @method Doctrine_Collection getACTXACTUMA()         Returns the current record's "ACTXACT_UMA" collection
- * @method Doctrine_Collection getACTXACTUMA2()        Returns the current record's "ACTXACT_UMA_2" collection
- * @method Doctrine_Collection getACTXACTUMA3()        Returns the current record's "ACTXACT_UMA_3" collection
- * @method Doctrine_Collection getACTXACTUMA4()        Returns the current record's "ACTXACT_UMA_4" collection
- * @method ACTIVIDAD_UMA       setIdcategoriauma()     Sets the current record's "idcategoriauma" value
- * @method ACTIVIDAD_UMA       setIdactividaduma()     Sets the current record's "idactividaduma" value
- * @method ACTIVIDAD_UMA       setNombreactividaduma() Sets the current record's "nombreactividaduma" value
- * @method ACTIVIDAD_UMA       setCantidadumadef()     Sets the current record's "cantidadumadef" value
- * @method ACTIVIDAD_UMA       setCATEGORIAUMA()       Sets the current record's "CATEGORIA_UMA" value
- * @method ACTIVIDAD_UMA       setACTXACTUMA()         Sets the current record's "ACTXACT_UMA" collection
- * @method ACTIVIDAD_UMA       setACTXACTUMA2()        Sets the current record's "ACTXACT_UMA_2" collection
- * @method ACTIVIDAD_UMA       setACTXACTUMA3()        Sets the current record's "ACTXACT_UMA_3" collection
- * @method ACTIVIDAD_UMA       setACTXACTUMA4()        Sets the current record's "ACTXACT_UMA_4" collection
+ * @method integer             getIdcategoriauma()          Returns the current record's "idcategoriauma" value
+ * @method integer             getIdactividaduma()          Returns the current record's "idactividaduma" value
+ * @method string              getNombreactividaduma()      Returns the current record's "nombreactividaduma" value
+ * @method string              getDescripcionactividaduma() Returns the current record's "descripcionactividaduma" value
+ * @method decimal             getCantidadumadef()          Returns the current record's "cantidadumadef" value
+ * @method CATEGORIA_UMA       getCATEGORIAUMA()            Returns the current record's "CATEGORIA_UMA" value
+ * @method Doctrine_Collection getACTXACTUMA()              Returns the current record's "ACTXACT_UMA" collection
+ * @method Doctrine_Collection getACTXACTUMA2()             Returns the current record's "ACTXACT_UMA_2" collection
+ * @method Doctrine_Collection getACTXACTUMA3()             Returns the current record's "ACTXACT_UMA_3" collection
+ * @method Doctrine_Collection getACTXACTUMA4()             Returns the current record's "ACTXACT_UMA_4" collection
+ * @method ACTIVIDAD_UMA       setIdcategoriauma()          Sets the current record's "idcategoriauma" value
+ * @method ACTIVIDAD_UMA       setIdactividaduma()          Sets the current record's "idactividaduma" value
+ * @method ACTIVIDAD_UMA       setNombreactividaduma()      Sets the current record's "nombreactividaduma" value
+ * @method ACTIVIDAD_UMA       setDescripcionactividaduma() Sets the current record's "descripcionactividaduma" value
+ * @method ACTIVIDAD_UMA       setCantidadumadef()          Sets the current record's "cantidadumadef" value
+ * @method ACTIVIDAD_UMA       setCATEGORIAUMA()            Sets the current record's "CATEGORIA_UMA" value
+ * @method ACTIVIDAD_UMA       setACTXACTUMA()              Sets the current record's "ACTXACT_UMA" collection
+ * @method ACTIVIDAD_UMA       setACTXACTUMA2()             Sets the current record's "ACTXACT_UMA_2" collection
+ * @method ACTIVIDAD_UMA       setACTXACTUMA3()             Sets the current record's "ACTXACT_UMA_3" collection
+ * @method ACTIVIDAD_UMA       setACTXACTUMA4()             Sets the current record's "ACTXACT_UMA_4" collection
  * 
  * @package    SEA-UCA_v1.0
  * @subpackage model
@@ -70,6 +73,15 @@ abstract class BaseACTIVIDAD_UMA extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 300,
+             ));
+        $this->hasColumn('descripcionactividaduma', 'string', null, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => '',
              ));
         $this->hasColumn('cantidadumadef', 'decimal', 2, array(
              'type' => 'decimal',

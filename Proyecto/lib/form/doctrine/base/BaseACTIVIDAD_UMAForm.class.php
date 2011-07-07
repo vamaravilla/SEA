@@ -15,17 +15,19 @@ abstract class BaseACTIVIDAD_UMAForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idcategoriauma'     => new sfWidgetFormInputHidden(),
-      'idactividaduma'     => new sfWidgetFormInputHidden(),
-      'nombreactividaduma' => new sfWidgetFormTextarea(),
-      'cantidadumadef'     => new sfWidgetFormInputText(),
+      'idcategoriauma'          => new sfWidgetFormInputHidden(),
+      'idactividaduma'          => new sfWidgetFormInputHidden(),
+      'nombreactividaduma'      => new sfWidgetFormTextarea(),
+      'descripcionactividaduma' => new sfWidgetFormTextarea(),
+      'cantidadumadef'          => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
-      'idcategoriauma'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcategoriauma')), 'empty_value' => $this->getObject()->get('idcategoriauma'), 'required' => false)),
-      'idactividaduma'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividaduma')), 'empty_value' => $this->getObject()->get('idactividaduma'), 'required' => false)),
-      'nombreactividaduma' => new sfValidatorString(array('max_length' => 300)),
-      'cantidadumadef'     => new sfValidatorNumber(array('required' => false)),
+      'idcategoriauma'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcategoriauma')), 'empty_value' => $this->getObject()->get('idcategoriauma'), 'required' => false)),
+      'idactividaduma'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividaduma')), 'empty_value' => $this->getObject()->get('idactividaduma'), 'required' => false)),
+      'nombreactividaduma'      => new sfValidatorString(array('max_length' => 300)),
+      'descripcionactividaduma' => new sfValidatorString(array('required' => false)),
+      'cantidadumadef'          => new sfValidatorNumber(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('actividad_uma[%s]');

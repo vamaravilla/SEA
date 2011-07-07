@@ -22,21 +22,21 @@ Doctrine_Manager::getInstance()->bindComponent('ACADEMICO', 'doctrine');
  * @property integer $esjubilado
  * @property integer $usalentes
  * @property integer $poseetransporte
- * @property integer $idmunicipionac
- * @property integer $iddeptonac
  * @property integer $idpaisnac
+ * @property integer $idestadonac
+ * @property integer $idciudadnac
  * @property integer $idpaisciudadania
  * @property integer $idtiposangre
  * @property integer $idnivelestudio
  * @property integer $idestadocivil
  * @property integer $idusuario
  * @property USUARIO $USUARIO
- * @property DEPARTAMENTO $DEPARTAMENTO
+ * @property CIUDAD $CIUDAD
+ * @property CIUDAD $CIUDAD_3
+ * @property CIUDAD $CIUDAD_4
  * @property ESTADO_CIVIL $ESTADO_CIVIL
- * @property MUNICIPIO $MUNICIPIO
  * @property NIVEL_ESTUDIO $NIVEL_ESTUDIO
  * @property PAIS $PAIS
- * @property PAIS $PAIS_7
  * @property TIPO_SANGRE $TIPO_SANGRE
  * @property Doctrine_Collection $ACADEMICOXIDIOMA
  * @property Doctrine_Collection $ACADEMICOXMATERIA
@@ -63,21 +63,21 @@ Doctrine_Manager::getInstance()->bindComponent('ACADEMICO', 'doctrine');
  * @method integer             getEsjubilado()           Returns the current record's "esjubilado" value
  * @method integer             getUsalentes()            Returns the current record's "usalentes" value
  * @method integer             getPoseetransporte()      Returns the current record's "poseetransporte" value
- * @method integer             getIdmunicipionac()       Returns the current record's "idmunicipionac" value
- * @method integer             getIddeptonac()           Returns the current record's "iddeptonac" value
  * @method integer             getIdpaisnac()            Returns the current record's "idpaisnac" value
+ * @method integer             getIdestadonac()          Returns the current record's "idestadonac" value
+ * @method integer             getIdciudadnac()          Returns the current record's "idciudadnac" value
  * @method integer             getIdpaisciudadania()     Returns the current record's "idpaisciudadania" value
  * @method integer             getIdtiposangre()         Returns the current record's "idtiposangre" value
  * @method integer             getIdnivelestudio()       Returns the current record's "idnivelestudio" value
  * @method integer             getIdestadocivil()        Returns the current record's "idestadocivil" value
  * @method integer             getIdusuario()            Returns the current record's "idusuario" value
  * @method USUARIO             getUSUARIO()              Returns the current record's "USUARIO" value
- * @method DEPARTAMENTO        getDEPARTAMENTO()         Returns the current record's "DEPARTAMENTO" value
+ * @method CIUDAD              getCIUDAD()               Returns the current record's "CIUDAD" value
+ * @method CIUDAD              getCIUDAD3()              Returns the current record's "CIUDAD_3" value
+ * @method CIUDAD              getCIUDAD4()              Returns the current record's "CIUDAD_4" value
  * @method ESTADO_CIVIL        getESTADOCIVIL()          Returns the current record's "ESTADO_CIVIL" value
- * @method MUNICIPIO           getMUNICIPIO()            Returns the current record's "MUNICIPIO" value
  * @method NIVEL_ESTUDIO       getNIVELESTUDIO()         Returns the current record's "NIVEL_ESTUDIO" value
  * @method PAIS                getPAIS()                 Returns the current record's "PAIS" value
- * @method PAIS                getPAIS7()                Returns the current record's "PAIS_7" value
  * @method TIPO_SANGRE         getTIPOSANGRE()           Returns the current record's "TIPO_SANGRE" value
  * @method Doctrine_Collection getACADEMICOXIDIOMA()     Returns the current record's "ACADEMICOXIDIOMA" collection
  * @method Doctrine_Collection getACADEMICOXMATERIA()    Returns the current record's "ACADEMICOXMATERIA" collection
@@ -103,21 +103,21 @@ Doctrine_Manager::getInstance()->bindComponent('ACADEMICO', 'doctrine');
  * @method ACADEMICO           setEsjubilado()           Sets the current record's "esjubilado" value
  * @method ACADEMICO           setUsalentes()            Sets the current record's "usalentes" value
  * @method ACADEMICO           setPoseetransporte()      Sets the current record's "poseetransporte" value
- * @method ACADEMICO           setIdmunicipionac()       Sets the current record's "idmunicipionac" value
- * @method ACADEMICO           setIddeptonac()           Sets the current record's "iddeptonac" value
  * @method ACADEMICO           setIdpaisnac()            Sets the current record's "idpaisnac" value
+ * @method ACADEMICO           setIdestadonac()          Sets the current record's "idestadonac" value
+ * @method ACADEMICO           setIdciudadnac()          Sets the current record's "idciudadnac" value
  * @method ACADEMICO           setIdpaisciudadania()     Sets the current record's "idpaisciudadania" value
  * @method ACADEMICO           setIdtiposangre()         Sets the current record's "idtiposangre" value
  * @method ACADEMICO           setIdnivelestudio()       Sets the current record's "idnivelestudio" value
  * @method ACADEMICO           setIdestadocivil()        Sets the current record's "idestadocivil" value
  * @method ACADEMICO           setIdusuario()            Sets the current record's "idusuario" value
  * @method ACADEMICO           setUSUARIO()              Sets the current record's "USUARIO" value
- * @method ACADEMICO           setDEPARTAMENTO()         Sets the current record's "DEPARTAMENTO" value
+ * @method ACADEMICO           setCIUDAD()               Sets the current record's "CIUDAD" value
+ * @method ACADEMICO           setCIUDAD3()              Sets the current record's "CIUDAD_3" value
+ * @method ACADEMICO           setCIUDAD4()              Sets the current record's "CIUDAD_4" value
  * @method ACADEMICO           setESTADOCIVIL()          Sets the current record's "ESTADO_CIVIL" value
- * @method ACADEMICO           setMUNICIPIO()            Sets the current record's "MUNICIPIO" value
  * @method ACADEMICO           setNIVELESTUDIO()         Sets the current record's "NIVEL_ESTUDIO" value
  * @method ACADEMICO           setPAIS()                 Sets the current record's "PAIS" value
- * @method ACADEMICO           setPAIS7()                Sets the current record's "PAIS_7" value
  * @method ACADEMICO           setTIPOSANGRE()           Sets the current record's "TIPO_SANGRE" value
  * @method ACADEMICO           setACADEMICOXIDIOMA()     Sets the current record's "ACADEMICOXIDIOMA" collection
  * @method ACADEMICO           setACADEMICOXMATERIA()    Sets the current record's "ACADEMICOXMATERIA" collection
@@ -273,25 +273,25 @@ abstract class BaseACADEMICO extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 1,
              ));
-        $this->hasColumn('idmunicipionac', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('iddeptonac', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
         $this->hasColumn('idpaisnac', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => true,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
+        $this->hasColumn('idestadonac', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => true,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
+        $this->hasColumn('idciudadnac', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => true,
@@ -354,27 +354,27 @@ abstract class BaseACADEMICO extends sfDoctrineRecord
              'local' => 'idusuario',
              'foreign' => 'idusuario'));
 
-        $this->hasOne('DEPARTAMENTO', array(
-             'local' => 'iddeptonac',
-             'foreign' => 'iddepartamento'));
+        $this->hasOne('CIUDAD', array(
+             'local' => 'idciudadnac',
+             'foreign' => 'idciudad'));
+
+        $this->hasOne('CIUDAD as CIUDAD_3', array(
+             'local' => 'idestadonac',
+             'foreign' => 'idestado'));
+
+        $this->hasOne('CIUDAD as CIUDAD_4', array(
+             'local' => 'idpaisnac',
+             'foreign' => 'idpais'));
 
         $this->hasOne('ESTADO_CIVIL', array(
              'local' => 'idestadocivil',
              'foreign' => 'idestadocivil'));
-
-        $this->hasOne('MUNICIPIO', array(
-             'local' => 'idmunicipionac',
-             'foreign' => 'idmunicipio'));
 
         $this->hasOne('NIVEL_ESTUDIO', array(
              'local' => 'idnivelestudio',
              'foreign' => 'idnivelestudio'));
 
         $this->hasOne('PAIS', array(
-             'local' => 'idpaisnac',
-             'foreign' => 'idpais'));
-
-        $this->hasOne('PAIS as PAIS_7', array(
              'local' => 'idpaisciudadania',
              'foreign' => 'idpais'));
 

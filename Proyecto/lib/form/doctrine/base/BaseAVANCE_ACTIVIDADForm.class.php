@@ -15,23 +15,37 @@ abstract class BaseAVANCE_ACTIVIDADForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'    => new sfWidgetFormInputHidden(),
-      'idactividad'    => new sfWidgetFormInputHidden(),
-      'idavanceact'    => new sfWidgetFormInputHidden(),
-      'fechainicioav'  => new sfWidgetFormDate(),
-      'fechafinav'     => new sfWidgetFormDate(),
-      'fechareporteav' => new sfWidgetFormDate(),
-      'porcentajeav'   => new sfWidgetFormInputText(),
+      'idacademico'          => new sfWidgetFormInputHidden(),
+      'idactividad'          => new sfWidgetFormInputHidden(),
+      'idavance'             => new sfWidgetFormInputHidden(),
+      'nombreavance'         => new sfWidgetFormTextarea(),
+      'descripcionavance'    => new sfWidgetFormTextarea(),
+      'fechainicioav'        => new sfWidgetFormDate(),
+      'fechafinav'           => new sfWidgetFormDate(),
+      'fechareporteav'       => new sfWidgetFormDate(),
+      'ciclorealizacion'     => new sfWidgetFormInputText(),
+      'aniociclorealizacion' => new sfWidgetFormInputText(),
+      'porcentajeavance'     => new sfWidgetFormInputText(),
+      'archivoavance'        => new sfWidgetFormTextarea(),
+      'cantumaasignada'      => new sfWidgetFormInputText(),
+      'observacionavance'    => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
-      'idacademico'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
-      'idactividad'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividad')), 'empty_value' => $this->getObject()->get('idactividad'), 'required' => false)),
-      'idavanceact'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idavanceact')), 'empty_value' => $this->getObject()->get('idavanceact'), 'required' => false)),
-      'fechainicioav'  => new sfValidatorDate(),
-      'fechafinav'     => new sfValidatorDate(),
-      'fechareporteav' => new sfValidatorDate(),
-      'porcentajeav'   => new sfValidatorNumber(),
+      'idacademico'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
+      'idactividad'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividad')), 'empty_value' => $this->getObject()->get('idactividad'), 'required' => false)),
+      'idavance'             => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idavance')), 'empty_value' => $this->getObject()->get('idavance'), 'required' => false)),
+      'nombreavance'         => new sfValidatorString(array('max_length' => 300)),
+      'descripcionavance'    => new sfValidatorString(array('required' => false)),
+      'fechainicioav'        => new sfValidatorDate(),
+      'fechafinav'           => new sfValidatorDate(),
+      'fechareporteav'       => new sfValidatorDate(),
+      'ciclorealizacion'     => new sfValidatorInteger(),
+      'aniociclorealizacion' => new sfValidatorInteger(),
+      'porcentajeavance'     => new sfValidatorNumber(),
+      'archivoavance'        => new sfValidatorString(array('max_length' => 500, 'required' => false)),
+      'cantumaasignada'      => new sfValidatorNumber(array('required' => false)),
+      'observacionavance'    => new sfValidatorString(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('avance_actividad[%s]');

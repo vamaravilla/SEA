@@ -10,15 +10,8 @@ Doctrine_Manager::getInstance()->bindComponent('ACTIVIDAD', 'doctrine');
  * @property integer $idacademico
  * @property integer $idactividad
  * @property string $nombreactividad
- * @property date $fechainicioactividad
- * @property date $fechafinactividad
- * @property date $fechareporteact
- * @property decimal $cantumaasignada
- * @property integer $ciclorealizacion
- * @property integer $aniociclorealizacion
- * @property integer $porcentajeavanceact
+ * @property string $descripcionactividad
  * @property string $observacionactividad
- * @property string $archivoactividad
  * @property integer $idtipoactividad
  * @property integer $idestadoactividad
  * @property ESTADO_ACTIVIDAD $ESTADO_ACTIVIDAD
@@ -32,15 +25,8 @@ Doctrine_Manager::getInstance()->bindComponent('ACTIVIDAD', 'doctrine');
  * @method integer             getIdacademico()          Returns the current record's "idacademico" value
  * @method integer             getIdactividad()          Returns the current record's "idactividad" value
  * @method string              getNombreactividad()      Returns the current record's "nombreactividad" value
- * @method date                getFechainicioactividad() Returns the current record's "fechainicioactividad" value
- * @method date                getFechafinactividad()    Returns the current record's "fechafinactividad" value
- * @method date                getFechareporteact()      Returns the current record's "fechareporteact" value
- * @method decimal             getCantumaasignada()      Returns the current record's "cantumaasignada" value
- * @method integer             getCiclorealizacion()     Returns the current record's "ciclorealizacion" value
- * @method integer             getAniociclorealizacion() Returns the current record's "aniociclorealizacion" value
- * @method integer             getPorcentajeavanceact()  Returns the current record's "porcentajeavanceact" value
+ * @method string              getDescripcionactividad() Returns the current record's "descripcionactividad" value
  * @method string              getObservacionactividad() Returns the current record's "observacionactividad" value
- * @method string              getArchivoactividad()     Returns the current record's "archivoactividad" value
  * @method integer             getIdtipoactividad()      Returns the current record's "idtipoactividad" value
  * @method integer             getIdestadoactividad()    Returns the current record's "idestadoactividad" value
  * @method ESTADO_ACTIVIDAD    getESTADOACTIVIDAD()      Returns the current record's "ESTADO_ACTIVIDAD" value
@@ -53,15 +39,8 @@ Doctrine_Manager::getInstance()->bindComponent('ACTIVIDAD', 'doctrine');
  * @method ACTIVIDAD           setIdacademico()          Sets the current record's "idacademico" value
  * @method ACTIVIDAD           setIdactividad()          Sets the current record's "idactividad" value
  * @method ACTIVIDAD           setNombreactividad()      Sets the current record's "nombreactividad" value
- * @method ACTIVIDAD           setFechainicioactividad() Sets the current record's "fechainicioactividad" value
- * @method ACTIVIDAD           setFechafinactividad()    Sets the current record's "fechafinactividad" value
- * @method ACTIVIDAD           setFechareporteact()      Sets the current record's "fechareporteact" value
- * @method ACTIVIDAD           setCantumaasignada()      Sets the current record's "cantumaasignada" value
- * @method ACTIVIDAD           setCiclorealizacion()     Sets the current record's "ciclorealizacion" value
- * @method ACTIVIDAD           setAniociclorealizacion() Sets the current record's "aniociclorealizacion" value
- * @method ACTIVIDAD           setPorcentajeavanceact()  Sets the current record's "porcentajeavanceact" value
+ * @method ACTIVIDAD           setDescripcionactividad() Sets the current record's "descripcionactividad" value
  * @method ACTIVIDAD           setObservacionactividad() Sets the current record's "observacionactividad" value
- * @method ACTIVIDAD           setArchivoactividad()     Sets the current record's "archivoactividad" value
  * @method ACTIVIDAD           setIdtipoactividad()      Sets the current record's "idtipoactividad" value
  * @method ACTIVIDAD           setIdestadoactividad()    Sets the current record's "idestadoactividad" value
  * @method ACTIVIDAD           setESTADOACTIVIDAD()      Sets the current record's "ESTADO_ACTIVIDAD" value
@@ -107,68 +86,14 @@ abstract class BaseACTIVIDAD extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 300,
              ));
-        $this->hasColumn('fechainicioactividad', 'date', 25, array(
-             'type' => 'date',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 25,
-             ));
-        $this->hasColumn('fechafinactividad', 'date', 25, array(
-             'type' => 'date',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 25,
-             ));
-        $this->hasColumn('fechareporteact', 'date', 25, array(
-             'type' => 'date',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 25,
-             ));
-        $this->hasColumn('cantumaasignada', 'decimal', 2, array(
-             'type' => 'decimal',
+        $this->hasColumn('descripcionactividad', 'string', null, array(
+             'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 2,
-             ));
-        $this->hasColumn('ciclorealizacion', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('aniociclorealizacion', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('porcentajeavanceact', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
+             'length' => '',
              ));
         $this->hasColumn('observacionactividad', 'string', null, array(
              'type' => 'string',
@@ -178,15 +103,6 @@ abstract class BaseACTIVIDAD extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => '',
-             ));
-        $this->hasColumn('archivoactividad', 'string', 300, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => false,
-             'autoincrement' => false,
-             'length' => 300,
              ));
         $this->hasColumn('idtipoactividad', 'integer', 4, array(
              'type' => 'integer',

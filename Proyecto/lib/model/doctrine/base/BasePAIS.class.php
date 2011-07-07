@@ -11,21 +11,18 @@ Doctrine_Manager::getInstance()->bindComponent('PAIS', 'doctrine');
  * @property string $codigoisopais
  * @property string $nombreisopais
  * @property Doctrine_Collection $ACADEMICO
- * @property Doctrine_Collection $ACADEMICO_7
- * @property Doctrine_Collection $DIRECCION
+ * @property Doctrine_Collection $ESTADO
  * 
  * @method integer             getIdpais()        Returns the current record's "idpais" value
  * @method string              getCodigoisopais() Returns the current record's "codigoisopais" value
  * @method string              getNombreisopais() Returns the current record's "nombreisopais" value
  * @method Doctrine_Collection getACADEMICO()     Returns the current record's "ACADEMICO" collection
- * @method Doctrine_Collection getACADEMICO7()    Returns the current record's "ACADEMICO_7" collection
- * @method Doctrine_Collection getDIRECCION()     Returns the current record's "DIRECCION" collection
+ * @method Doctrine_Collection getESTADO()        Returns the current record's "ESTADO" collection
  * @method PAIS                setIdpais()        Sets the current record's "idpais" value
  * @method PAIS                setCodigoisopais() Sets the current record's "codigoisopais" value
  * @method PAIS                setNombreisopais() Sets the current record's "nombreisopais" value
  * @method PAIS                setACADEMICO()     Sets the current record's "ACADEMICO" collection
- * @method PAIS                setACADEMICO7()    Sets the current record's "ACADEMICO_7" collection
- * @method PAIS                setDIRECCION()     Sets the current record's "DIRECCION" collection
+ * @method PAIS                setESTADO()        Sets the current record's "ESTADO" collection
  * 
  * @package    SEA-UCA_v1.0
  * @subpackage model
@@ -70,14 +67,10 @@ abstract class BasePAIS extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('ACADEMICO', array(
              'local' => 'idpais',
-             'foreign' => 'idpaisnac'));
-
-        $this->hasMany('ACADEMICO as ACADEMICO_7', array(
-             'local' => 'idpais',
              'foreign' => 'idpaisciudadania'));
 
-        $this->hasMany('DIRECCION', array(
+        $this->hasMany('ESTADO', array(
              'local' => 'idpais',
-             'foreign' => 'idpaisdir'));
+             'foreign' => 'idpais'));
     }
 }

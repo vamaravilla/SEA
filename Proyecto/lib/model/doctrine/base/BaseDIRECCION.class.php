@@ -10,34 +10,34 @@ Doctrine_Manager::getInstance()->bindComponent('DIRECCION', 'doctrine');
  * @property integer $idacademico
  * @property integer $iddireccion
  * @property string $contenidodir
- * @property integer $idmunicipiodir
- * @property integer $iddeptodir
  * @property integer $idpaisdir
- * @property PAIS $PAIS
+ * @property integer $idestadodir
+ * @property integer $idciudaddir
+ * @property CIUDAD $CIUDAD
+ * @property CIUDAD $CIUDAD_2
+ * @property CIUDAD $CIUDAD_3
  * @property ACADEMICO $ACADEMICO
- * @property DEPARTAMENTO $DEPARTAMENTO
- * @property MUNICIPIO $MUNICIPIO
  * 
- * @method integer      getIdacademico()    Returns the current record's "idacademico" value
- * @method integer      getIddireccion()    Returns the current record's "iddireccion" value
- * @method string       getContenidodir()   Returns the current record's "contenidodir" value
- * @method integer      getIdmunicipiodir() Returns the current record's "idmunicipiodir" value
- * @method integer      getIddeptodir()     Returns the current record's "iddeptodir" value
- * @method integer      getIdpaisdir()      Returns the current record's "idpaisdir" value
- * @method PAIS         getPAIS()           Returns the current record's "PAIS" value
- * @method ACADEMICO    getACADEMICO()      Returns the current record's "ACADEMICO" value
- * @method DEPARTAMENTO getDEPARTAMENTO()   Returns the current record's "DEPARTAMENTO" value
- * @method MUNICIPIO    getMUNICIPIO()      Returns the current record's "MUNICIPIO" value
- * @method DIRECCION    setIdacademico()    Sets the current record's "idacademico" value
- * @method DIRECCION    setIddireccion()    Sets the current record's "iddireccion" value
- * @method DIRECCION    setContenidodir()   Sets the current record's "contenidodir" value
- * @method DIRECCION    setIdmunicipiodir() Sets the current record's "idmunicipiodir" value
- * @method DIRECCION    setIddeptodir()     Sets the current record's "iddeptodir" value
- * @method DIRECCION    setIdpaisdir()      Sets the current record's "idpaisdir" value
- * @method DIRECCION    setPAIS()           Sets the current record's "PAIS" value
- * @method DIRECCION    setACADEMICO()      Sets the current record's "ACADEMICO" value
- * @method DIRECCION    setDEPARTAMENTO()   Sets the current record's "DEPARTAMENTO" value
- * @method DIRECCION    setMUNICIPIO()      Sets the current record's "MUNICIPIO" value
+ * @method integer   getIdacademico()  Returns the current record's "idacademico" value
+ * @method integer   getIddireccion()  Returns the current record's "iddireccion" value
+ * @method string    getContenidodir() Returns the current record's "contenidodir" value
+ * @method integer   getIdpaisdir()    Returns the current record's "idpaisdir" value
+ * @method integer   getIdestadodir()  Returns the current record's "idestadodir" value
+ * @method integer   getIdciudaddir()  Returns the current record's "idciudaddir" value
+ * @method CIUDAD    getCIUDAD()       Returns the current record's "CIUDAD" value
+ * @method CIUDAD    getCIUDAD2()      Returns the current record's "CIUDAD_2" value
+ * @method CIUDAD    getCIUDAD3()      Returns the current record's "CIUDAD_3" value
+ * @method ACADEMICO getACADEMICO()    Returns the current record's "ACADEMICO" value
+ * @method DIRECCION setIdacademico()  Sets the current record's "idacademico" value
+ * @method DIRECCION setIddireccion()  Sets the current record's "iddireccion" value
+ * @method DIRECCION setContenidodir() Sets the current record's "contenidodir" value
+ * @method DIRECCION setIdpaisdir()    Sets the current record's "idpaisdir" value
+ * @method DIRECCION setIdestadodir()  Sets the current record's "idestadodir" value
+ * @method DIRECCION setIdciudaddir()  Sets the current record's "idciudaddir" value
+ * @method DIRECCION setCIUDAD()       Sets the current record's "CIUDAD" value
+ * @method DIRECCION setCIUDAD2()      Sets the current record's "CIUDAD_2" value
+ * @method DIRECCION setCIUDAD3()      Sets the current record's "CIUDAD_3" value
+ * @method DIRECCION setACADEMICO()    Sets the current record's "ACADEMICO" value
  * 
  * @package    SEA-UCA_v1.0
  * @subpackage model
@@ -70,29 +70,29 @@ abstract class BaseDIRECCION extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => false,
+             'notnull' => true,
              'autoincrement' => false,
              'length' => 200,
              ));
-        $this->hasColumn('idmunicipiodir', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('iddeptodir', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
         $this->hasColumn('idpaisdir', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => true,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
+        $this->hasColumn('idestadodir', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => true,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 4,
+             ));
+        $this->hasColumn('idciudaddir', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => true,
@@ -106,20 +106,20 @@ abstract class BaseDIRECCION extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('PAIS', array(
+        $this->hasOne('CIUDAD', array(
+             'local' => 'idciudaddir',
+             'foreign' => 'idciudad'));
+
+        $this->hasOne('CIUDAD as CIUDAD_2', array(
+             'local' => 'idestadodir',
+             'foreign' => 'idestado'));
+
+        $this->hasOne('CIUDAD as CIUDAD_3', array(
              'local' => 'idpaisdir',
              'foreign' => 'idpais'));
 
         $this->hasOne('ACADEMICO', array(
              'local' => 'idacademico',
              'foreign' => 'idacademico'));
-
-        $this->hasOne('DEPARTAMENTO', array(
-             'local' => 'iddeptodir',
-             'foreign' => 'iddepartamento'));
-
-        $this->hasOne('MUNICIPIO', array(
-             'local' => 'idmunicipiodir',
-             'foreign' => 'idmunicipio'));
     }
 }

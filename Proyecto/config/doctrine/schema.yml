@@ -106,21 +106,21 @@ ACADEMICO:
       primary: false
       notnull: false
       autoincrement: false
-    idmunicipionac:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
-    iddeptonac:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
     idpaisnac:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    idestadonac:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    idciudadnac:
       type: integer(4)
       fixed: false
       unsigned: true
@@ -167,28 +167,29 @@ ACADEMICO:
       local: idusuario
       foreign: idusuario
       type: one
-    DEPARTAMENTO:
-      local: iddeptonac
-      foreign: iddepartamento
+    CIUDAD:
+      local: idciudadnac
+      foreign: idciudad
+      type: one
+    CIUDAD_3:
+      class: CIUDAD
+      local: idestadonac
+      foreign: idestado
+      type: one
+    CIUDAD_4:
+      class: CIUDAD
+      local: idpaisnac
+      foreign: idpais
       type: one
     ESTADO_CIVIL:
       local: idestadocivil
       foreign: idestadocivil
-      type: one
-    MUNICIPIO:
-      local: idmunicipionac
-      foreign: idmunicipio
       type: one
     NIVEL_ESTUDIO:
       local: idnivelestudio
       foreign: idnivelestudio
       type: one
     PAIS:
-      local: idpaisnac
-      foreign: idpais
-      type: one
-    PAIS_7:
-      class: PAIS
       local: idpaisciudadania
       foreign: idpais
       type: one
@@ -424,64 +425,15 @@ ACTIVIDAD:
       primary: false
       notnull: true
       autoincrement: false
-    fechainicioactividad:
-      type: date(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    fechafinactividad:
-      type: date(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    fechareporteact:
-      type: date(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    cantumaasignada:
-      type: decimal(2)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    ciclorealizacion:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    aniociclorealizacion:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    porcentajeavanceact:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    observacionactividad:
+    descripcionactividad:
       type: string()
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
-    archivoactividad:
-      type: string(300)
+    observacionactividad:
+      type: string()
       fixed: false
       unsigned: false
       primary: false
@@ -554,6 +506,13 @@ ACTIVIDAD_UMA:
       unsigned: false
       primary: false
       notnull: true
+      autoincrement: false
+    descripcionactividaduma:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
       autoincrement: false
     cantidadumadef:
       type: decimal(2)
@@ -650,12 +609,26 @@ AVANCE_ACTIVIDAD:
       unsigned: true
       primary: true
       autoincrement: false
-    idavanceact:
+    idavance:
       type: integer(4)
       fixed: false
       unsigned: true
       primary: true
       autoincrement: true
+    nombreavance:
+      type: string(300)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    descripcionavance:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
     fechainicioav:
       type: date(25)
       fixed: false
@@ -677,12 +650,47 @@ AVANCE_ACTIVIDAD:
       primary: false
       notnull: true
       autoincrement: false
-    porcentajeav:
+    ciclorealizacion:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    aniociclorealizacion:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    porcentajeavance:
       type: decimal(2)
       fixed: false
       unsigned: false
       primary: false
       notnull: true
+      autoincrement: false
+    archivoavance:
+      type: string(500)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    cantumaasignada:
+      type: decimal(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    observacionavance:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
       autoincrement: false
   relations:
     ACTIVIDAD:
@@ -815,6 +823,73 @@ CATEGORIA_UMA:
       local: idcategoriauma
       foreign: idcategoriauma
       type: many
+CIUDAD:
+  connection: doctrine
+  tableName: CIUDAD
+  columns:
+    idpais:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    idestado:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    idciudad:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    nombreciudad:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ESTADO:
+      local: idestado
+      foreign: idestado
+      type: one
+    ESTADO_2:
+      class: ESTADO
+      local: idpais
+      foreign: idpais
+      type: one
+    ACADEMICO:
+      local: idciudad
+      foreign: idciudadnac
+      type: many
+    ACADEMICO_3:
+      class: ACADEMICO
+      local: idestado
+      foreign: idestadonac
+      type: many
+    ACADEMICO_4:
+      class: ACADEMICO
+      local: idpais
+      foreign: idpaisnac
+      type: many
+    DIRECCION:
+      local: idciudad
+      foreign: idciudaddir
+      type: many
+    DIRECCION_2:
+      class: DIRECCION
+      local: idestado
+      foreign: idestadodir
+      type: many
+    DIRECCION_3:
+      class: DIRECCION
+      local: idpais
+      foreign: idpaisdir
+      type: many
 CONTACTO_EMER:
   connection: doctrine
   tableName: CONTACTO_EMER
@@ -887,32 +962,6 @@ DATO_ACTIVIDAD:
       local: iddatoactividad
       foreign: iddatoactividad
       type: many
-DEPARTAMENTO:
-  connection: doctrine
-  tableName: DEPARTAMENTO
-  columns:
-    iddepartamento:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: true
-    nombredepartamento:
-      type: string(150)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    ACADEMICO:
-      local: iddepartamento
-      foreign: iddeptonac
-      type: many
-    DIRECCION:
-      local: iddepartamento
-      foreign: iddeptodir
-      type: many
 DIRECCION:
   connection: doctrine
   tableName: DIRECCION
@@ -934,20 +983,6 @@ DIRECCION:
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
-      autoincrement: false
-    idmunicipiodir:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
-    iddeptodir:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
       notnull: true
       autoincrement: false
     idpaisdir:
@@ -957,22 +992,38 @@ DIRECCION:
       primary: false
       notnull: true
       autoincrement: false
+    idestadodir:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    idciudaddir:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
-    PAIS:
+    CIUDAD:
+      local: idciudaddir
+      foreign: idciudad
+      type: one
+    CIUDAD_2:
+      class: CIUDAD
+      local: idestadodir
+      foreign: idestado
+      type: one
+    CIUDAD_3:
+      class: CIUDAD
       local: idpaisdir
       foreign: idpais
       type: one
     ACADEMICO:
       local: idacademico
       foreign: idacademico
-      type: one
-    DEPARTAMENTO:
-      local: iddeptodir
-      foreign: iddepartamento
-      type: one
-    MUNICIPIO:
-      local: idmunicipiodir
-      foreign: idmunicipio
       type: one
 DOC_IDENTIFICACION:
   connection: doctrine
@@ -1027,6 +1078,43 @@ DOC_IDENTIFICACION:
       local: idacademico
       foreign: idacademico
       type: one
+ESTADO:
+  connection: doctrine
+  tableName: ESTADO
+  columns:
+    idpais:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    idestado:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    nombreestado:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PAIS:
+      local: idpais
+      foreign: idpais
+      type: one
+    CIUDAD:
+      local: idestado
+      foreign: idestado
+      type: many
+    CIUDAD_2:
+      class: CIUDAD
+      local: idpais
+      foreign: idpais
+      type: many
 ESTADO_ACTIVIDAD:
   connection: doctrine
   tableName: ESTADO_ACTIVIDAD
@@ -1367,32 +1455,6 @@ MODULO:
       local: idmodulo
       foreign: idmodulo
       type: many
-MUNICIPIO:
-  connection: doctrine
-  tableName: MUNICIPIO
-  columns:
-    idmunicipio:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: true
-    nombremunicipio:
-      type: string(150)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-  relations:
-    ACADEMICO:
-      local: idmunicipio
-      foreign: idmunicipionac
-      type: many
-    DIRECCION:
-      local: idmunicipio
-      foreign: idmunicipiodir
-      type: many
 NIVEL_ESTUDIO:
   connection: doctrine
   tableName: NIVEL_ESTUDIO
@@ -1479,16 +1541,11 @@ PAIS:
   relations:
     ACADEMICO:
       local: idpais
-      foreign: idpaisnac
-      type: many
-    ACADEMICO_7:
-      class: ACADEMICO
-      local: idpais
       foreign: idpaisciudadania
       type: many
-    DIRECCION:
+    ESTADO:
       local: idpais
-      foreign: idpaisdir
+      foreign: idpais
       type: many
 PERFIL:
   connection: doctrine
