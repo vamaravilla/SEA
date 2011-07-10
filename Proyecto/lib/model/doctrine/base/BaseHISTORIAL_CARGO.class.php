@@ -11,15 +11,13 @@ Doctrine_Manager::getInstance()->bindComponent('HISTORIAL_CARGO', 'doctrine');
  * @property date $fechainicio
  * @property date $fechafin
  * @property integer $idacademico
- * @property integer $idcargo
- * @property integer $idunidadorganizativa
+ * @property integer $idcargoxunidadorg
  * @property integer $idtipocontratacion
  * @property integer $idtipocontratacionex
  * @property integer $idtiempocontratacion
  * @property TIEMPO_CONTRATACION $TIEMPO_CONTRATACION
  * @property ACADEMICO $ACADEMICO
  * @property CARGOXUNIDAD_ORG $CARGOXUNIDAD_ORG
- * @property CARGOXUNIDAD_ORG $CARGOXUNIDAD_ORG_4
  * @property TIPO_CONTRATACION $TIPO_CONTRATACION
  * @property TIPO_CONTRATACION_EX $TIPO_CONTRATACION_EX
  * 
@@ -27,30 +25,26 @@ Doctrine_Manager::getInstance()->bindComponent('HISTORIAL_CARGO', 'doctrine');
  * @method date                 getFechainicio()          Returns the current record's "fechainicio" value
  * @method date                 getFechafin()             Returns the current record's "fechafin" value
  * @method integer              getIdacademico()          Returns the current record's "idacademico" value
- * @method integer              getIdcargo()              Returns the current record's "idcargo" value
- * @method integer              getIdunidadorganizativa() Returns the current record's "idunidadorganizativa" value
+ * @method integer              getIdcargoxunidadorg()    Returns the current record's "idcargoxunidadorg" value
  * @method integer              getIdtipocontratacion()   Returns the current record's "idtipocontratacion" value
  * @method integer              getIdtipocontratacionex() Returns the current record's "idtipocontratacionex" value
  * @method integer              getIdtiempocontratacion() Returns the current record's "idtiempocontratacion" value
  * @method TIEMPO_CONTRATACION  getTIEMPOCONTRATACION()   Returns the current record's "TIEMPO_CONTRATACION" value
  * @method ACADEMICO            getACADEMICO()            Returns the current record's "ACADEMICO" value
  * @method CARGOXUNIDAD_ORG     getCARGOXUNIDADORG()      Returns the current record's "CARGOXUNIDAD_ORG" value
- * @method CARGOXUNIDAD_ORG     getCARGOXUNIDADORG4()     Returns the current record's "CARGOXUNIDAD_ORG_4" value
  * @method TIPO_CONTRATACION    getTIPOCONTRATACION()     Returns the current record's "TIPO_CONTRATACION" value
  * @method TIPO_CONTRATACION_EX getTIPOCONTRATACIONEX()   Returns the current record's "TIPO_CONTRATACION_EX" value
  * @method HISTORIAL_CARGO      setIdhistorialcargo()     Sets the current record's "idhistorialcargo" value
  * @method HISTORIAL_CARGO      setFechainicio()          Sets the current record's "fechainicio" value
  * @method HISTORIAL_CARGO      setFechafin()             Sets the current record's "fechafin" value
  * @method HISTORIAL_CARGO      setIdacademico()          Sets the current record's "idacademico" value
- * @method HISTORIAL_CARGO      setIdcargo()              Sets the current record's "idcargo" value
- * @method HISTORIAL_CARGO      setIdunidadorganizativa() Sets the current record's "idunidadorganizativa" value
+ * @method HISTORIAL_CARGO      setIdcargoxunidadorg()    Sets the current record's "idcargoxunidadorg" value
  * @method HISTORIAL_CARGO      setIdtipocontratacion()   Sets the current record's "idtipocontratacion" value
  * @method HISTORIAL_CARGO      setIdtipocontratacionex() Sets the current record's "idtipocontratacionex" value
  * @method HISTORIAL_CARGO      setIdtiempocontratacion() Sets the current record's "idtiempocontratacion" value
  * @method HISTORIAL_CARGO      setTIEMPOCONTRATACION()   Sets the current record's "TIEMPO_CONTRATACION" value
  * @method HISTORIAL_CARGO      setACADEMICO()            Sets the current record's "ACADEMICO" value
  * @method HISTORIAL_CARGO      setCARGOXUNIDADORG()      Sets the current record's "CARGOXUNIDAD_ORG" value
- * @method HISTORIAL_CARGO      setCARGOXUNIDADORG4()     Sets the current record's "CARGOXUNIDAD_ORG_4" value
  * @method HISTORIAL_CARGO      setTIPOCONTRATACION()     Sets the current record's "TIPO_CONTRATACION" value
  * @method HISTORIAL_CARGO      setTIPOCONTRATACIONEX()   Sets the current record's "TIPO_CONTRATACION_EX" value
  * 
@@ -99,16 +93,7 @@ abstract class BaseHISTORIAL_CARGO extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('idcargo', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('idunidadorganizativa', 'integer', 4, array(
+        $this->hasColumn('idcargoxunidadorg', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => true,
@@ -158,12 +143,8 @@ abstract class BaseHISTORIAL_CARGO extends sfDoctrineRecord
              'foreign' => 'idacademico'));
 
         $this->hasOne('CARGOXUNIDAD_ORG', array(
-             'local' => 'idcargo',
-             'foreign' => 'idcargo'));
-
-        $this->hasOne('CARGOXUNIDAD_ORG as CARGOXUNIDAD_ORG_4', array(
-             'local' => 'idunidadorganizativa',
-             'foreign' => 'idunidadorganizativa'));
+             'local' => 'idcargoxunidadorg',
+             'foreign' => 'idcargoxunidadorg'));
 
         $this->hasOne('TIPO_CONTRATACION', array(
              'local' => 'idtipocontratacion',

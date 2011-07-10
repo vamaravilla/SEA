@@ -2,19 +2,12 @@
 <br />
 <?php
 
-$arrCamposEnlace
-    = array
-        (
-            '0' => 'apellidonombre',
-            '1' => 'hola',
-        );
 $arrCampos
     = array
         (
             'codigo'            => 'Código',
             'apellidonombre'    => 'Apellido, Nombre',
         );
-$strCampoEnlace = 'apellidonombre';
         
 include_partial('global/tblGeneral1',
     array(

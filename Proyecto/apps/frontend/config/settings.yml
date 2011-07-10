@@ -5,6 +5,7 @@ prod:
   .settings:
     no_script_name:         true
     logging_enabled:        false
+    cache:                  false
 
 dev:
   .settings:
@@ -35,4 +36,7 @@ all:
     use_database:           true
     
     #Internacionalización
-    default_culture: fr_FR
+    default_culture: es_MX
+  .actions:
+    login_module: login
+    login_action: indexLogin

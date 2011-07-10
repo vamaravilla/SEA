@@ -11,16 +11,17 @@
 class fichaActions extends sfActions
 {
     
-
-    public function executeIndex(/*sfWebRequest $request*/)   //No pongo el request porque no se necesita
+    /*
+    public function executeIndex()   //No pongo el request porque no se necesita
     {
         //$this->forward('default', 'module');
         $this->getUser()->setAuthenticated(true);
         $this->getUser()->addCredential('user');
         $this->getUser()->setAttribute('idUsuario', 1, 'user');
     }
-  
-    public function executeMostrar(sfWebRequest $swrRequest)
+    */
+
+    public function executeMostrarFicha(sfWebRequest $swrRequest)
     {
         
         $objPk = $swrRequest->getParameter('pk');
@@ -31,7 +32,7 @@ class fichaActions extends sfActions
         //Código para que dependiendo del usuario, lo que se muestre sea poco o mucho
     }
   
-    public function executeEditar(sfWebRequest $swrRequest)
+    public function executeEditarFicha(sfWebRequest $swrRequest)
     {
         //$this->getUser()->setCulture('es_MX');
         $objPk = $swrRequest->getParameter('pk');
@@ -42,7 +43,7 @@ class fichaActions extends sfActions
         $this->formulario = new ACADEMICOForm($acdAcademico);
     }
   
-    public function executeActualizar(sfWebRequest $swrRequest)
+    public function executeActualizarFicha(sfWebRequest $swrRequest)
     {
         $acadAcademico = $this->getRoute()->getObject();
         $this->formulario = new ACADEMICOForm($acadAcademico);
@@ -55,13 +56,16 @@ class fichaActions extends sfActions
         $acdAcademico = null;
         if (is_null($objPk))
         {
+            in_array(null, null);
             if ($intPropio != 0)
             {
-                $idUsuario = $this->getUser()->getAttribute('idUsuario');
-                $acdAcademico = ACADEMICO::obtenerAcademicoPorIdUsuario(1);
+                $usrUsuario = $this->getUser()->getAttribute('usuario');
+                $this->idUsuario = $usrUsuario->getIdusuario();
+                $acdAcademico = ACADEMICOTable::getInstance()->findOneByIdusuario($usrUsuario->getIdusuario()); //$usrUsuario->getIdusuario());
             }
             else
             {
+                in_array($cosa3, $cosa4);
                 $acdAcademico = $this->getRoute()->getObject();
             }
         }
@@ -83,6 +87,7 @@ class fichaActions extends sfActions
         {
             $acadAcademico = $sfFormulario->save();
             $intPropio = $swrRequest->getParameter('propio',0);
+            $this->getUser()->setFlash('aviso', 'Información guardada exitosamente');
             if ($intPropio == 0)
             {
                 $this->redirect('ficha_mostrar_publico', array('sf_subject' => $acadAcademico, 'distintivo' => $acadAcademico->getCodigoacademico(),));

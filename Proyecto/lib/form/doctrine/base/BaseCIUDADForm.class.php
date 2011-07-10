@@ -15,17 +15,15 @@ abstract class BaseCIUDADForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idpais'       => new sfWidgetFormInputHidden(),
-      'idestado'     => new sfWidgetFormInputHidden(),
       'idciudad'     => new sfWidgetFormInputHidden(),
       'nombreciudad' => new sfWidgetFormInputText(),
+      'idestado'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idpais'       => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idpais')), 'empty_value' => $this->getObject()->get('idpais'), 'required' => false)),
-      'idestado'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idestado')), 'empty_value' => $this->getObject()->get('idestado'), 'required' => false)),
       'idciudad'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idciudad')), 'empty_value' => $this->getObject()->get('idciudad'), 'required' => false)),
       'nombreciudad' => new sfValidatorString(array('max_length' => 150)),
+      'idestado'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO'))),
     ));
 
     $this->widgetSchema->setNameFormat('ciudad[%s]');

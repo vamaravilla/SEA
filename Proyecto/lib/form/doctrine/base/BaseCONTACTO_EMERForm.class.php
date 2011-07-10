@@ -15,19 +15,19 @@ abstract class BaseCONTACTO_EMERForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'         => new sfWidgetFormInputHidden(),
       'idcontactoemer'      => new sfWidgetFormInputHidden(),
       'nombrecontactoemer'  => new sfWidgetFormInputText(),
       'numtelcontactoemer'  => new sfWidgetFormInputText(),
       'tipotelcontactoemer' => new sfWidgetFormInputText(),
+      'idacademico'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idacademico'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
       'idcontactoemer'      => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcontactoemer')), 'empty_value' => $this->getObject()->get('idcontactoemer'), 'required' => false)),
       'nombrecontactoemer'  => new sfValidatorString(array('max_length' => 150)),
       'numtelcontactoemer'  => new sfValidatorString(array('max_length' => 25, 'required' => false)),
       'tipotelcontactoemer' => new sfValidatorInteger(),
+      'idacademico'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'))),
     ));
 
     $this->widgetSchema->setNameFormat('contacto_emer[%s]');

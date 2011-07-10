@@ -1,10 +1,27 @@
 Modificaciones 20110703 en adelante:
-apps/frontend/config/app.yml
-apps/frontend/ficha
-apps/frontend/templates/_tblGeneral1.php
++apps/frontend/config/app.yml
++apps/frontend/modules/ficha
++apps/frontend/modules/actividades
++apps/frontend/templates/_tblGeneral1.php
 apps/frontend/config/routing.yml
-lib/model/doctrine/ACADEMICO.class.php
-lib/model/doctrine/ACADEMICOTable.class.php
-data/fixtures/data.yml
-web/images/botones
-web/css/tabla.css
++lib/form/FrmColeccionDatosActividad.class.php
++lib/form/sfValidatorTrilean.class.php
++lib/form/sfWidgetFormTrilean.class.php
++lib/form/doctrine/VALOR_DATO_ACTForm.class.php
++lib/form/doctrine/ACTIVIDADForm.class.php
++lib/form/doctrine/AVANCE_ACTIVIDADForm.class.php
+Nota: en este formulario poner un validador de expresión regular al campo 'cantumaasignada' y 'porcentajeavance'
++lib/model/doctrine/ACADEMICO.class.php
++lib/model/doctrine/ACADEMICOTable.class.php
++lib/model/doctrine/ACTIVIDADTable.class.php
++lib/model/doctrine/AVANCE_ACTIVIDADTable.class.php
++lib/model/doctrine/AVANCE_ACTIVIDAD.class.php
++data/fixtures/data.yml
++web/images/botones
++web/images/iconos
++web/css/tabla.css
++web/css/flash.css
+
+Nuevo modulo
+
+NOTA: Las PK solo deben ser autoincrementados, o las foráneas en relaciones N:N.

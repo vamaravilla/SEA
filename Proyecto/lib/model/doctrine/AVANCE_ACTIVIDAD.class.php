@@ -12,4 +12,34 @@
  */
 class AVANCE_ACTIVIDAD extends BaseAVANCE_ACTIVIDAD
 {
+    public function getFecha_Texto(string $strNombreCampo) {
+        return $this->getDateTimeObject($strNombreCampo)->format('d/m/Y');
+    }
+    
+    public function obtenerDato($strCampo)
+    {
+        $strValor = '';
+        switch($strCampo)
+        {
+            case 'id':
+                $strValor = $this->getIdavance();
+                break;
+            case 'nombreavance':
+                $strValor = $this->getNombreAvance();
+                break;
+            case 'fechainicio':
+                $strValor = $this->getFecha_Texto('fechainicio');
+                break;
+            case 'fechafin':
+                $strValor = $this->getFecha_texto('fechafin');
+                break;
+            case 'fechareporte':
+                $strValor = $this->getFecha_Texto('fechareporte');
+                break;
+            case 'nombreactividad':
+                $strValor = $this->ACTIVIDAD->getnombreactividad();
+                break;
+        }
+        return $strValor;
+    }
 }

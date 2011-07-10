@@ -16,4 +16,14 @@ class ACCIONTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ACCION');
     }
+    
+    public function obtenerAccionesPorModuloYPerfil($modModulo, $perPerfil)
+    {
+        $query = $this->createQuery('a')
+                    ->innerJoin('a.MODULO m')
+                    ->innerJoin('a.ACCIONXPERFIL axp')
+                    ->where('m.idModulo=?', $modModulo->getIdmodulo())
+                    ->andWhere('axp.idPerfil=?', $perPerfil->getIdperfil());
+        return $query->execute();
+    }
 }

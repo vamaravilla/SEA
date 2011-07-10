@@ -12,4 +12,6 @@
  */
 class PERFIL extends BasePERFIL
 {
+    
+   
 }

@@ -16,4 +16,37 @@ class MODULOTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('MODULO');
     }
+    
+    public static function obtenerModulosPerfil($perfil){
+        
+        $modulos = array();
+               
+        foreach($perfil->ACCIONXPERFIL as $accionxperfil){
+            $modulo = $accionxperfil->getMODULO();
+            if(!in_array($modulo->getCodmodulo(), $modulos)){
+                
+                $modulos[$modulo->getCodmodulo()] = $modulo;
+            }
+        }
+        
+        return $modulos;
+    }
+    
+    public static function obtenerModulosPerfil2(PERFIL $perfil)
+    {
+        $query = Doctrine_Query::create()
+                ->from('MODULO m')
+                ->select('m.idModulo, m.nombreModulo, m.descripcionModulo')
+                ->innerJoin('m.ACCION a') //->where('a.codaccion < 20')
+                ->innerJoin('a.ACCIONXPERFIL axp')
+                ->innerJoin('axp.PERFIL p')
+                ->where('p.idPerfil=?', $perfil->getIdperfil())
+                ->groupBy('m.idModulo');
+        return $query->execute();
+    }
+    
+//    public static function ObtenerMODULOS(ACCIONXPERFIL $accionesxperfil){
+//        
+//    } 
+    
 }

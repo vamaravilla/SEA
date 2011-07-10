@@ -10,7 +10,50 @@
  */
 class VALOR_DATO_ACTForm extends BaseVALOR_DATO_ACTForm
 {
-  public function configure()
-  {
-  }
+    public function configure()
+    {
+        if (!$vdaValorDatoAct = $this->getObject())
+        {
+            throw new InvalidArgumentException('Debe proporcionarse una valor de datos de actividad');
+        }
+        if (!$daDatoAct = $vdaValorDatoAct->DATO_ACTIVIDAD)
+        {
+            throw new InvalidArgumentException('Debe proporcionarse una valor de datos de actividad');
+        }
+        
+        $boolEsRequerido = $daDatoAct->getEsrequerido();
+                
+        switch($daDatoAct)
+        {
+            case 0: //Booleano
+                $this->widgetSchema['valorbooleanact']
+                    = new sfWidgetFormTrilean(array('permite_nulo' => $boolEsRequerido));
+                $this->validatorSchema['valorbooleanact']
+                        = new sfValidatorTrilean(array('permite_nulo' => $boolEsRequerido));
+                break;
+            case 1: //Entero
+                $this->validatorSchema['valorenteroact']
+                    = new sfValidatorInteger(array('required' => $boolEsRequerido));
+                $this->useFields(array('valorenteroact'));
+                break;
+            case 2: //Real
+                $this->useFields(array('valorrealact'));
+                $this->validatorSchema['valorrealact']
+                    = new sfValidatorNumber(array('required' => $boolEsRequerido));
+                break;
+            case 3: //Cadena
+                $this->useFields(array('valorcadenaact'));
+                break;
+            case 4: //Fecha
+                $this->widgetSchema['valorfechaact']
+                    = new seaWidgetFormInputTextDate();
+                $this->validatorSchema['valorfechaact']
+                    = new seaValidatorDate(array(), array('id' => 'valorfechaact',));
+                $this->useFields(array('valorfechaact'));
+                break;
+            case 5: //Lista de opciones
+                $this->useFields(array('idopciondatoact'));
+                break;
+        }
+    }
 }

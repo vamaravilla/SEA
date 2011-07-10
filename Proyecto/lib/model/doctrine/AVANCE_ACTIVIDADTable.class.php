@@ -16,4 +16,22 @@ class AVANCE_ACTIVIDADTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('AVANCE_ACTIVIDAD');
     }
+    
+    public function ObtenerConsultaAvances(array $arrParamFiltro)
+    {
+        $query = Doctrine_Query::create()
+                    ->select('avn.idAvanceActividad, avn.nombreAvance, avn.fechaInicioAv, avn.fechaFinAv, avn.fechaReporteAv, act.idActividad, act.nombreActividad')
+                    ->from('AVANCE_ACTIVIDAD avn')
+                    ->innerJoin('avn.ACTIVIDAD act');
+        return $query;
+    }
+    
+    public function ObtenerConsultaAvancePorActividad(ACTIVIDAD $actActividad)
+    {
+        $query = Doctrine_Query::create()
+                    ->select('avn.idAvanceActividad, avn.nombreAvance, avn.fechaInicioAv, avn.fechaFinAv, avn.fechaReporteAv')
+                    ->from('AVANCE_ACTIVIDAD avn')
+                    ->where('avn.idActividad = ?', $actActividad->getIdactividad());
+        return $query;
+    }
 }

@@ -1,79 +1,39 @@
 PERFIL:
   PERFIL_1:
-    nombreperfil: Academico
-ACADEMICO:
-<?php $i = 1; ?>
-<?php for (; $i <= 100; $i++){ ?>
-  ACADEMICO_<?php echo $i ?>:
-    codigoacademico: '000<?php echo $i ?>'
-    primernombreacad: Juan_<?php echo $i."\n" ?>
-    segundonombreacad: Alberto_<?php echo $i."\n" ?>
-    primerapellidoacad: Pérez_<?php echo $i."\n" ?>
-    segundoapellidoacad: Sosa_<?php echo $i."\n" ?>
-    apellidocasadaacad: ''
-    sexoacad: '0'
-    fechanacimientoacad: '1988-11-26'
-    usalentes: '0'
-    espensionado: '0'
-    esjubilado: '0'
-    usalentes: '0'
-    poseetransporte: '0'
-    esnacional: '1'
-    MUNICIPIO: MUNICIPIO_1
-    DEPARTAMENTO: DEPARTAMENTO_10
-    PAIS: PAIS_66
-    PAIS_7: PAIS_66
-    TIPO_SANGRE: TIPO_SANGRE_1
-    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
-    ESTADO_CIVIL: ESTADO_CIVIL_1
-    USUARIO: USUARIO_<?php echo $i."\n" ?>
-<?php } ?>
-<?php for(; $i <= 200; $i++){ ?>
-  ACADEMICO_<?php echo $i ?>:
-    codigoacademico: '000<?php echo $i ?>'
-    primernombreacad: María_<?php echo $i."\n" ?>
-    segundonombreacad: Rosa_<?php echo $i."\n" ?>
-    primerapellidoacad: Menjívar_<?php echo $i."\n" ?>
-    segundoapellidoacad: Mejía_<?php echo $i."\n" ?>
-    apellidocasadaacad: '<?php echo fmod($i,2) ? 'Ruiz' : '' ?>'
-    sexoacad: '1'
-    fechanacimientoacad: '1970-11-20'
-    usalentes: '0'
-    espensionado: '0'
-    esjubilado: '0'
-    usalentes: '0'
-    poseetransporte: '0'
-    esnacional: '1'
-    MUNICIPIO: MUNICIPIO_1
-    DEPARTAMENTO: DEPARTAMENTO_10
-    PAIS: PAIS_66
-    PAIS_7: PAIS_66
-    TIPO_SANGRE: TIPO_SANGRE_1
-    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
-    ESTADO_CIVIL: ESTADO_CIVIL_1
-    USUARIO: USUARIO_<?php echo $i."\n" ?>
-<?php } ?>
-ESTADO_ACTIVIDAD:
-  ESTADO_ACTIVIDAD_1:
-    nombreestadoactividad: Nueva
-    permiteedicion: '1'
-    esestadoinicial: '1'
-  ESTADO_ACTIVIDAD_2:
-    nombreestadoactividad: 'En revisión'
-    permiteedicion: '1'
-    esestadoinicial: '0'
-  ESTADO_ACTIVIDAD_3:
-    nombreestadoactividad: Aprobada
-    permiteedicion: '0'
-    esestadoinicial: '0'
-  ESTADO_ACTIVIDAD_4:
-    nombreestadoactividad: Denegada
-    permiteedicion: '0'
-    esestadoinicial: '0'
-  ESTADO_ACTIVIDAD_5:
-    nombreestadoactividad: 'Devuelta para revisión'
-    permiteedicion: '1'
-    esestadoinicial: '0'
+    nombreperfil: VRA
+  PERFIL_2:
+    nombreperfil: 'JEFE DEPARTAMENTO'
+  PERFIL_3:
+    nombreperfil: DECANATO
+  PERFIL_4:
+    nombreperfil: 'COMISION ACADÉMICA'
+  PERFIL_5:
+    nombreperfil: ACADÉMICO
+MODULO:
+  MODULO_1:
+    codmodulo: fi
+    nombremodulo: 'Datos pesonales'
+    urlmodulo: ficha
+    imgmodulo: ''
+    imgsobremodulo: ''
+    imgactivomodulo: ''
+    descripcionmodulo: 'Información relacionada con los datos básicos del catedrático.'
+  MODULO_2:
+    codmodulo: lo
+    nombremodulo: 'Logros académicos'
+    urlmodulo: logros
+    imgmodulo: ''
+    imgsobremodulo: ''
+    imgactivomodulo: ''
+    descripcionmodulo: 'Registro de las actividades realizadas por los catedráticos.'
+  MODULO_3:
+    codmodulo: as
+    nombremodulo: 'Asignación de UMA'
+    urlmodulo: umas
+    imgmodulo: ''
+    imgsobremodulo: ''
+    imgactivomodulo: ''
+    descripcionmodulo: 'Asignación de unidades de mérito académico.'
 TIPO_DOC_IDENT:
   TIPO_DOC_IDENT_1:
     nombretipodocident: 'DUI (Documento Único de Identidad)'
@@ -85,20 +45,853 @@ TIPO_DOC_IDENT:
     nombretipodocident: 'Carnet de residente en El Salvador'
   TIPO_DOC_IDENT_5:
     nombretipodocident: 'Otro documento'
+TIPO_SANGRE:
+  TIPO_SANGRE_1:
+    nombretiposangre: 'O Rh +'
+  TIPO_SANGRE_2:
+    nombretiposangre: 'O Rh -'
+  TIPO_SANGRE_3:
+    nombretiposangre: 'A Rh +'
+  TIPO_SANGRE_4:
+    nombretiposangre: 'A Rh -'
+  TIPO_SANGRE_5:
+    nombretiposangre: 'B Rh +'
+  TIPO_SANGRE_6:
+    nombretiposangre: 'B Rh -'
+  TIPO_SANGRE_7:
+    nombretiposangre: 'AB Rh +'
+  TIPO_SANGRE_8:
+    nombretiposangre: 'AB Rh -'
+NIVEL_ESTUDIO:
+  NIVEL_ESTUDIO_1:
+    nombrenivelestudio: Técnico
+  NIVEL_ESTUDIO_2:
+    nombrenivelestudio: Profesorado
+  NIVEL_ESTUDIO_3:
+    nombrenivelestudio: Licenciatura
+  NIVEL_ESTUDIO_4:
+    nombrenivelestudio: Ingeniería
+  NIVEL_ESTUDIO_5:
+    nombrenivelestudio: Arquitectura
+  NIVEL_ESTUDIO_6:
+    nombrenivelestudio: Maestría
+  NIVEL_ESTUDIO_7:
+    nombrenivelestudio: Doctorado
+ACCION:
+  ACCION_1:
+    MODULO: MODULO_1
+    codaccion: '10'
+    nombreaccion: 'Buscar Académico'
+    urlaccion: buscarFicha
+  ACCION_2:
+    MODULO: MODULO_1
+    codaccion: '20'
+    nombreaccion: 'Modificar datos de Académico'
+    urlaccion: modificarFicha
+  ACCION_3:
+    MODULO: MODULO_1
+    codaccion: '20'
+    nombreaccion: 'Eliminar Académico'
+    urlaccion: eliminarFicha
+  ACCION_4:
+    MODULO: MODULO_1
+    codaccion: '12'
+    nombreaccion: 'Mostrar datos de Académico'
+    urlaccion: mostrarFicha
+  ACCION_5:
+    MODULO: MODULO_1
+    codaccion: '12'
+    nombreaccion: 'Asignar UMA'
+    urlaccion: asignarUma
+  ACCION_6:
+    MODULO: MODULO_1
+    codaccion: '12'
+    nombreaccion: 'Mostrar logros'
+    urlaccion: mostrarLogros
+  ACCION_7:
+    MODULO: MODULO_1
+    codaccion: '10'
+    nombreaccion: 'Agregar Académico'
+    urlaccion: agregarFicha
+  ACCION_8:
+    MODULO: MODULO_2
+    codaccion: '10'
+    nombreaccion: 'Agregar Logro'
+    urlaccion: agregarLogro
+  ACCION_9:
+    MODULO: MODULO_2
+    codaccion: '10'
+    nombreaccion: 'Buscar Logro'
+    urlaccion: buscarLogro
+  ACCION_10:
+    MODULO: MODULO_2
+    codaccion: '20'
+    nombreaccion: 'Modificar Logro'
+    urlaccion: modificarLogro
+  ACCION_11:
+    MODULO: MODULO_2
+    codaccion: '20'
+    nombreaccion: 'Aprobar Logro'
+    urlaccion: aprobarLogro
+  ACCION_12:
+    MODULO: MODULO_3
+    codaccion: '10'
+    nombreaccion: 'Modificar clasificaciones'
+    urlaccion: modificarClasificacion
+  ACCION_13:
+    MODULO: MODULO_1
+    codaccion: '30'
+    nombreaccion: 'Datos personales y curriculares de académicos'
+    urlaccion: reporteDatosFicha
+  ACCION_14:
+    MODULO: MODULO_1
+    codaccion: '30'
+    nombreaccion: 'Academicos por departamento y escalafón'
+    urlaccion: reporteListadoFicha
+  ACCION_15:
+    MODULO: MODULO_1
+    codaccion: '30'
+    nombreaccion: 'Academicos por tipo y tiempo de contratación'
+    urlaccion: reporteContratacion
+  ACCION_16:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'MINED, MINEC y CONACYT'
+    urlaccion: reporteMined
+  ACCION_17:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Titulos obtenidos por académico'
+    urlaccion: reporteTitulos
+  ACCION_18:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Investigaciones y publicaciones'
+    urlaccion: reporteInvestigaciones
+  ACCION_19:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Temas de investigación'
+    urlaccion: reporteTemasInv
+  ACCION_20:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Diplomados, cursos y talleres'
+    urlaccion: reporteDiplomados
+  ACCION_21:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Seminarios, foros y conferencias'
+    urlaccion: reporteSeminarios
+  ACCION_22:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Activiades académicas por periodo'
+    urlaccion: reporteActividades
+  ACCION_23:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Historial de actividades académicas'
+    urlaccion: reporteHistorialAct
+  ACCION_24:
+    MODULO: MODULO_2
+    codaccion: '30'
+    nombreaccion: 'Académicos y materias impartidas'
+    urlaccion: reporteMaterias
+  ACCION_25:
+    MODULO: MODULO_3
+    codaccion: '30'
+    nombreaccion: 'UMA asignadas por periodo'
+    urlaccion: reporteUma
+  ACCION_26:
+    MODULO: MODULO_3
+    codaccion: '30'
+    nombreaccion: 'UMA académicos por departamento'
+    urlaccion: reporteUmaDepto
+ACCIONXPERFIL:
+  ACCIONXPERFIL_1_1:
+    ACCION: ACCION_1
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_2_1:
+    ACCION: ACCION_2
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_3_1:
+    ACCION: ACCION_3
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_4_1:
+    ACCION: ACCION_4
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_5_1:
+    ACCION: ACCION_5
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_6_1:
+    ACCION: ACCION_6
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_7_1:
+    ACCION: ACCION_7
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_11_1:
+    ACCION: ACCION_11
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_12_1:
+    ACCION: ACCION_12
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_13_1:
+    ACCION: ACCION_13
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_14_1:
+    ACCION: ACCION_14
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_15_1:
+    ACCION: ACCION_15
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_16_1:
+    ACCION: ACCION_16
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_17_1:
+    ACCION: ACCION_17
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_18_1:
+    ACCION: ACCION_18
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_19_1:
+    ACCION: ACCION_19
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_20_1:
+    ACCION: ACCION_20
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_21_1:
+    ACCION: ACCION_21
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_22_1:
+    ACCION: ACCION_22
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_23_1:
+    ACCION: ACCION_23
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_24_1:
+    ACCION: ACCION_24
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_25_1:
+    ACCION: ACCION_25
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_26_1:
+    ACCION: ACCION_26
+    PERFIL: PERFIL_1
+  ACCIONXPERFIL_1_2:
+    ACCION: ACCION_1
+    PERFIL: PERFIL_2
+  ACCIONXPERFIL_4_2:
+    ACCION: ACCION_4
+    PERFIL: PERFIL_2
+  ACCIONXPERFIL_6_2:
+    ACCION: ACCION_6
+    PERFIL: PERFIL_2
+  ACCIONXPERFIL_11_2:
+    ACCION: ACCION_11
+    PERFIL: PERFIL_2
+  ACCIONXPERFIL_1_3:
+    ACCION: ACCION_1
+    PERFIL: PERFIL_3
+  ACCIONXPERFIL_4_3:
+    ACCION: ACCION_4
+    PERFIL: PERFIL_3
+  ACCIONXPERFIL_1_4:
+    ACCION: ACCION_1
+    PERFIL: PERFIL_4
+  ACCIONXPERFIL_4_4:
+    ACCION: ACCION_4
+    PERFIL: PERFIL_4
+  ACCIONXPERFIL_6_4:
+    ACCION: ACCION_6
+    PERFIL: PERFIL_4
+  ACCIONXPERFIL_2_5:
+    ACCION: ACCION_2
+    PERFIL: PERFIL_5
+  ACCIONXPERFIL_4_5:
+    ACCION: ACCION_4
+    PERFIL: PERFIL_5
+  ACCIONXPERFIL_8_5:
+    ACCION: ACCION_8
+    PERFIL: PERFIL_5
+  ACCIONXPERFIL_9_5:
+    ACCION: ACCION_9
+    PERFIL: PERFIL_5
+  ACCIONXPERFIL_10_5:
+    ACCION: ACCION_10
+    PERFIL: PERFIL_5
+CIUDAD:
+  CIUDAD_1:
+    nombreciudad: 'San Salvador'
+    ESTADO: ESTADO_10
+IDIOMA:
+  IDIOMA_1:
+    codisoidioma: AA
+    nombreisoidioma: Afar
+  IDIOMA_2:
+    codisoidioma: AB
+    nombreisoidioma: 'Abjaso (o abjasiano)'
+  IDIOMA_3:
+    codisoidioma: AE
+    nombreisoidioma: Avéstico
+  IDIOMA_4:
+    codisoidioma: AF
+    nombreisoidioma: Afrikaans
+  IDIOMA_5:
+    codisoidioma: AK
+    nombreisoidioma: Akano
+  IDIOMA_6:
+    codisoidioma: AM
+    nombreisoidioma: Amárico
+  IDIOMA_7:
+    codisoidioma: AN
+    nombreisoidioma: Aragonés
+  IDIOMA_8:
+    codisoidioma: AR
+    nombreisoidioma: Árabe
+  IDIOMA_9:
+    codisoidioma: AS
+    nombreisoidioma: Asamés
+  IDIOMA_10:
+    codisoidioma: AV
+    nombreisoidioma: Avar
+  IDIOMA_11:
+    codisoidioma: AY
+    nombreisoidioma: Aimara
+  IDIOMA_12:
+    codisoidioma: AZ
+    nombreisoidioma: Azerí
+  IDIOMA_13:
+    codisoidioma: BA
+    nombreisoidioma: Baskir
+  IDIOMA_14:
+    codisoidioma: BE
+    nombreisoidioma: Bielorruso
+  IDIOMA_15:
+    codisoidioma: BG
+    nombreisoidioma: Búlgaro
+  IDIOMA_16:
+    codisoidioma: BH
+    nombreisoidioma: Bhojpurí
+  IDIOMA_17:
+    codisoidioma: BI
+    nombreisoidioma: Bislama
+  IDIOMA_18:
+    codisoidioma: BM
+    nombreisoidioma: Bambara
+  IDIOMA_19:
+    codisoidioma: BN
+    nombreisoidioma: Bengalí
+  IDIOMA_20:
+    codisoidioma: BO
+    nombreisoidioma: Tibetano
+  IDIOMA_21:
+    codisoidioma: BR
+    nombreisoidioma: Bretón
+  IDIOMA_22:
+    codisoidioma: BS
+    nombreisoidioma: Bosnio
+  IDIOMA_23:
+    codisoidioma: CA
+    nombreisoidioma: Catalán
+  IDIOMA_24:
+    codisoidioma: CE
+    nombreisoidioma: Checheno
+  IDIOMA_25:
+    codisoidioma: CH
+    nombreisoidioma: Chamorro
+  IDIOMA_26:
+    codisoidioma: CO
+    nombreisoidioma: Corso
+  IDIOMA_27:
+    codisoidioma: CR
+    nombreisoidioma: Cree
+  IDIOMA_28:
+    codisoidioma: CS
+    nombreisoidioma: Checo
+  IDIOMA_29:
+    codisoidioma: CU
+    nombreisoidioma: 'Eslavo eclesiástico antiguo'
+  IDIOMA_30:
+    codisoidioma: CV
+    nombreisoidioma: Chuvasio
+  IDIOMA_31:
+    codisoidioma: CY
+    nombreisoidioma: Galés
+  IDIOMA_32:
+    codisoidioma: DA
+    nombreisoidioma: Danés
+  IDIOMA_33:
+    codisoidioma: DE
+    nombreisoidioma: Alemán
+  IDIOMA_34:
+    codisoidioma: DV
+    nombreisoidioma: Maldivo
+  IDIOMA_35:
+    codisoidioma: DZ
+    nombreisoidioma: Dzongkha
+  IDIOMA_36:
+    codisoidioma: EE
+    nombreisoidioma: Ewe
+  IDIOMA_37:
+    codisoidioma: EL
+    nombreisoidioma: 'Griego (moderno)'
+  IDIOMA_38:
+    codisoidioma: EN
+    nombreisoidioma: Inglés
+  IDIOMA_39:
+    codisoidioma: EO
+    nombreisoidioma: Esperanto
+  IDIOMA_40:
+    codisoidioma: ES
+    nombreisoidioma: 'Español (o castellano)'
+  IDIOMA_41:
+    codisoidioma: ET
+    nombreisoidioma: Estonio
+  IDIOMA_42:
+    codisoidioma: EU
+    nombreisoidioma: Euskera
+  IDIOMA_43:
+    codisoidioma: FA
+    nombreisoidioma: Persa
+  IDIOMA_44:
+    codisoidioma: FF
+    nombreisoidioma: Fula
+  IDIOMA_45:
+    codisoidioma: FI
+    nombreisoidioma: 'Finés (o finlandés)'
+  IDIOMA_46:
+    codisoidioma: FJ
+    nombreisoidioma: 'Fiyiano (o fiyi)'
+  IDIOMA_47:
+    codisoidioma: FO
+    nombreisoidioma: Feroés
+  IDIOMA_48:
+    codisoidioma: FR
+    nombreisoidioma: Francés
+  IDIOMA_49:
+    codisoidioma: FY
+    nombreisoidioma: 'Frisón (o frisio)'
+  IDIOMA_50:
+    codisoidioma: GA
+    nombreisoidioma: 'Irlandés (o gaélico)'
+  IDIOMA_51:
+    codisoidioma: GD
+    nombreisoidioma: 'Gaélico escocés'
+  IDIOMA_52:
+    codisoidioma: GL
+    nombreisoidioma: Gallego
+  IDIOMA_53:
+    codisoidioma: GN
+    nombreisoidioma: Guaraní
+  IDIOMA_54:
+    codisoidioma: GU
+    nombreisoidioma: 'Guyaratí (o guyaratí)'
+  IDIOMA_55:
+    codisoidioma: GV
+    nombreisoidioma: 'Manés (gaélico manés o de Isla de Man)'
+  IDIOMA_56:
+    codisoidioma: HA
+    nombreisoidioma: Hausa
+  IDIOMA_57:
+    codisoidioma: HE
+    nombreisoidioma: Hebreo
+  IDIOMA_58:
+    codisoidioma: HI
+    nombreisoidioma: 'Hindi (o hindú)'
+  IDIOMA_59:
+    codisoidioma: HO
+    nombreisoidioma: 'Hiri motu'
+  IDIOMA_60:
+    codisoidioma: HR
+    nombreisoidioma: Croata
+  IDIOMA_61:
+    codisoidioma: HT
+    nombreisoidioma: Haitiano
+  IDIOMA_62:
+    codisoidioma: HU
+    nombreisoidioma: Húngaro
+  IDIOMA_63:
+    codisoidioma: HY
+    nombreisoidioma: Armenio
+  IDIOMA_64:
+    codisoidioma: HZ
+    nombreisoidioma: Herero
+  IDIOMA_65:
+    codisoidioma: IA
+    nombreisoidioma: Interlingua
+  IDIOMA_66:
+    codisoidioma: ID
+    nombreisoidioma: Indonesio
+  IDIOMA_67:
+    codisoidioma: IE
+    nombreisoidioma: Occidental
+  IDIOMA_68:
+    codisoidioma: IG
+    nombreisoidioma: Igbo
+  IDIOMA_69:
+    codisoidioma: II
+    nombreisoidioma: 'Yi de sichuán'
+  IDIOMA_70:
+    codisoidioma: IK
+    nombreisoidioma: Inupiaq
+  IDIOMA_71:
+    codisoidioma: IO
+    nombreisoidioma: Ido
+  IDIOMA_72:
+    codisoidioma: IS
+    nombreisoidioma: Islandés
+  IDIOMA_73:
+    codisoidioma: IT
+    nombreisoidioma: Italiano
+  IDIOMA_74:
+    codisoidioma: IU
+    nombreisoidioma: Inuktitut
+  IDIOMA_75:
+    codisoidioma: JA
+    nombreisoidioma: Japonés
+  IDIOMA_76:
+    codisoidioma: JV
+    nombreisoidioma: Javanés
+  IDIOMA_77:
+    codisoidioma: KA
+    nombreisoidioma: Georgiano
+  IDIOMA_78:
+    codisoidioma: KG
+    nombreisoidioma: Kongo
+  IDIOMA_79:
+    codisoidioma: KI
+    nombreisoidioma: Kikuyu
+  IDIOMA_80:
+    codisoidioma: KJ
+    nombreisoidioma: Kuanyama
+  IDIOMA_81:
+    codisoidioma: KK
+    nombreisoidioma: 'Kazajo (o kazajio)'
+  IDIOMA_82:
+    codisoidioma: KL
+    nombreisoidioma: 'Groenlandés (o kalaallisut)'
+  IDIOMA_83:
+    codisoidioma: KM
+    nombreisoidioma: 'Camboyano (o jemer)'
+  IDIOMA_84:
+    codisoidioma: KN
+    nombreisoidioma: Canarés
+  IDIOMA_85:
+    codisoidioma: KO
+    nombreisoidioma: Coreano
+  IDIOMA_86:
+    codisoidioma: KR
+    nombreisoidioma: Kanuri
+  IDIOMA_87:
+    codisoidioma: KS
+    nombreisoidioma: Cachemiro
+  IDIOMA_88:
+    codisoidioma: KU
+    nombreisoidioma: Kurdo
+  IDIOMA_89:
+    codisoidioma: KV
+    nombreisoidioma: Komi
+  IDIOMA_90:
+    codisoidioma: KW
+    nombreisoidioma: Córnico
+  IDIOMA_91:
+    codisoidioma: KY
+    nombreisoidioma: Kirguís
+  IDIOMA_92:
+    codisoidioma: LA
+    nombreisoidioma: Latín
+  IDIOMA_93:
+    codisoidioma: LB
+    nombreisoidioma: Luxemburgués
+  IDIOMA_94:
+    codisoidioma: LG
+    nombreisoidioma: Luganda
+  IDIOMA_95:
+    codisoidioma: LI
+    nombreisoidioma: Limburgués
+  IDIOMA_96:
+    codisoidioma: LN
+    nombreisoidioma: Lingala
+  IDIOMA_97:
+    codisoidioma: LO
+    nombreisoidioma: Lao
+  IDIOMA_98:
+    codisoidioma: LT
+    nombreisoidioma: Lituano
+  IDIOMA_99:
+    codisoidioma: LU
+    nombreisoidioma: Luba-katanga
+  IDIOMA_100:
+    codisoidioma: LV
+    nombreisoidioma: Letón
+  IDIOMA_101:
+    codisoidioma: MG
+    nombreisoidioma: 'Malgache (o malagasy)'
+  IDIOMA_102:
+    codisoidioma: MH
+    nombreisoidioma: Marshalés
+  IDIOMA_103:
+    codisoidioma: MI
+    nombreisoidioma: Maorí
+  IDIOMA_104:
+    codisoidioma: MK
+    nombreisoidioma: Macedonio
+  IDIOMA_105:
+    codisoidioma: ML
+    nombreisoidioma: Malayalam
+  IDIOMA_106:
+    codisoidioma: MN
+    nombreisoidioma: Mongol
+  IDIOMA_107:
+    codisoidioma: MR
+    nombreisoidioma: Maratí
+  IDIOMA_108:
+    codisoidioma: MS
+    nombreisoidioma: Malayo
+  IDIOMA_109:
+    codisoidioma: MT
+    nombreisoidioma: Maltés
+  IDIOMA_110:
+    codisoidioma: MY
+    nombreisoidioma: Birmano
+  IDIOMA_111:
+    codisoidioma: NA
+    nombreisoidioma: Nauruano
+  IDIOMA_112:
+    codisoidioma: NB
+    nombreisoidioma: 'Noruego bokmål'
+  IDIOMA_113:
+    codisoidioma: ND
+    nombreisoidioma: 'Ndebele del norte'
+  IDIOMA_114:
+    codisoidioma: NE
+    nombreisoidioma: Nepalí
+  IDIOMA_115:
+    codisoidioma: NG
+    nombreisoidioma: Ndonga
+  IDIOMA_116:
+    codisoidioma: NL
+    nombreisoidioma: 'Neerlandés (u holandés)'
+  IDIOMA_117:
+    codisoidioma: NN
+    nombreisoidioma: Nynorsk
+  IDIOMA_118:
+    codisoidioma: NO
+    nombreisoidioma: Noruego
+  IDIOMA_119:
+    codisoidioma: NR
+    nombreisoidioma: 'Ndebele del sur'
+  IDIOMA_120:
+    codisoidioma: NV
+    nombreisoidioma: Navajo
+  IDIOMA_121:
+    codisoidioma: NY
+    nombreisoidioma: Chichewa
+  IDIOMA_122:
+    codisoidioma: OC
+    nombreisoidioma: Occitano
+  IDIOMA_123:
+    codisoidioma: OJ
+    nombreisoidioma: Ojibwa
+  IDIOMA_124:
+    codisoidioma: OM
+    nombreisoidioma: Oromo
+  IDIOMA_125:
+    codisoidioma: OR
+    nombreisoidioma: Oriya
+  IDIOMA_126:
+    codisoidioma: OS
+    nombreisoidioma: Osético
+  IDIOMA_127:
+    codisoidioma: PA
+    nombreisoidioma: 'Panyabí (o penyabi)'
+  IDIOMA_128:
+    codisoidioma: PI
+    nombreisoidioma: Pali
+  IDIOMA_129:
+    codisoidioma: PL
+    nombreisoidioma: Polaco
+  IDIOMA_130:
+    codisoidioma: PS
+    nombreisoidioma: 'Pastú (o pashto)'
+  IDIOMA_131:
+    codisoidioma: PT
+    nombreisoidioma: Portugués
+  IDIOMA_132:
+    codisoidioma: QU
+    nombreisoidioma: Quechua
+  IDIOMA_133:
+    codisoidioma: RM
+    nombreisoidioma: Retorrománico
+  IDIOMA_134:
+    codisoidioma: RN
+    nombreisoidioma: Kirundi
+  IDIOMA_135:
+    codisoidioma: RO
+    nombreisoidioma: Rumano
+  IDIOMA_136:
+    codisoidioma: RU
+    nombreisoidioma: Ruso
+  IDIOMA_137:
+    codisoidioma: RW
+    nombreisoidioma: Ruandés
+  IDIOMA_138:
+    codisoidioma: SA
+    nombreisoidioma: Sánscrito
+  IDIOMA_139:
+    codisoidioma: SC
+    nombreisoidioma: Sardo
+  IDIOMA_140:
+    codisoidioma: SD
+    nombreisoidioma: Sindhi
+  IDIOMA_141:
+    codisoidioma: SE
+    nombreisoidioma: 'Sami septentrional'
+  IDIOMA_142:
+    codisoidioma: SG
+    nombreisoidioma: Sango
+  IDIOMA_143:
+    codisoidioma: SH
+    nombreisoidioma: Serbocroata
+  IDIOMA_144:
+    codisoidioma: SI
+    nombreisoidioma: Cingalés
+  IDIOMA_145:
+    codisoidioma: SK
+    nombreisoidioma: Eslovaco
+  IDIOMA_146:
+    codisoidioma: SL
+    nombreisoidioma: Esloveno
+  IDIOMA_147:
+    codisoidioma: SM
+    nombreisoidioma: Samoano
+  IDIOMA_148:
+    codisoidioma: SN
+    nombreisoidioma: Shona
+  IDIOMA_149:
+    codisoidioma: SO
+    nombreisoidioma: Somalí
+  IDIOMA_150:
+    codisoidioma: SQ
+    nombreisoidioma: Albanés
+  IDIOMA_151:
+    codisoidioma: SR
+    nombreisoidioma: Serbio
+  IDIOMA_152:
+    codisoidioma: SS
+    nombreisoidioma: 'Suazi (swati o siswati)'
+  IDIOMA_153:
+    codisoidioma: ST
+    nombreisoidioma: Sesotho
+  IDIOMA_154:
+    codisoidioma: SU
+    nombreisoidioma: Sundanés
+  IDIOMA_155:
+    codisoidioma: SV
+    nombreisoidioma: Sueco
+  IDIOMA_156:
+    codisoidioma: SW
+    nombreisoidioma: Suajili
+  IDIOMA_157:
+    codisoidioma: TA
+    nombreisoidioma: Tamil
+  IDIOMA_158:
+    codisoidioma: TE
+    nombreisoidioma: Telugú
+  IDIOMA_159:
+    codisoidioma: TG
+    nombreisoidioma: Tayiko
+  IDIOMA_160:
+    codisoidioma: TH
+    nombreisoidioma: Tailandés
+  IDIOMA_161:
+    codisoidioma: TI
+    nombreisoidioma: Tigriña
+  IDIOMA_162:
+    codisoidioma: TK
+    nombreisoidioma: Turcomano
+  IDIOMA_163:
+    codisoidioma: TL
+    nombreisoidioma: Tagalo
+  IDIOMA_164:
+    codisoidioma: TN
+    nombreisoidioma: Setsuana
+  IDIOMA_165:
+    codisoidioma: TO
+    nombreisoidioma: Tongano
+  IDIOMA_166:
+    codisoidioma: TR
+    nombreisoidioma: Turco
+  IDIOMA_167:
+    codisoidioma: TS
+    nombreisoidioma: Tsonga
+  IDIOMA_168:
+    codisoidioma: TT
+    nombreisoidioma: Tártaro
+  IDIOMA_169:
+    codisoidioma: TW
+    nombreisoidioma: Twi
+  IDIOMA_170:
+    codisoidioma: TY
+    nombreisoidioma: Tahitiano
+  IDIOMA_171:
+    codisoidioma: UG
+    nombreisoidioma: Uigur
+  IDIOMA_172:
+    codisoidioma: UK
+    nombreisoidioma: Ucraniano
+  IDIOMA_173:
+    codisoidioma: UR
+    nombreisoidioma: Urdu
+  IDIOMA_174:
+    codisoidioma: UZ
+    nombreisoidioma: Uzbeko
+  IDIOMA_175:
+    codisoidioma: VE
+    nombreisoidioma: Venda
+  IDIOMA_176:
+    codisoidioma: VI
+    nombreisoidioma: Vietnamita
+  IDIOMA_177:
+    codisoidioma: WL
+    nombreisoidioma: Walisiano
+  IDIOMA_178:
+    codisoidioma: VO
+    nombreisoidioma: Volapük
+  IDIOMA_179:
+    codisoidioma: WA
+    nombreisoidioma: Valón
+  IDIOMA_180:
+    codisoidioma: WO
+    nombreisoidioma: Wolof
+  IDIOMA_181:
+    codisoidioma: XH
+    nombreisoidioma: Xhosa
+  IDIOMA_182:
+    codisoidioma: YI
+    nombreisoidioma: 'Yídish (o yiddish)'
+  IDIOMA_183:
+    codisoidioma: YO
+    nombreisoidioma: Yoruba
+  IDIOMA_184:
+    codisoidioma: ZA
+    nombreisoidioma: 'Chuan (o zhuang)'
+  IDIOMA_185:
+    codisoidioma: ZH
+    nombreisoidioma: Chino
+  IDIOMA_186:
+    codisoidioma: ZU
+    nombreisoidioma: Zulú
 USUARIO:
-<?php $i = 1; ?>
-<?php for(; $i <= 100; $i++){ ?>
-  USUARIO_<?php echo $i ?>:
-    nombreusuario: juanperez<?php echo $i."\n" ?>
+  USUARIO_1:
+    nombreusuario: guillermogutierrez
     contraseniausuario: '12345'
     PERFIL: PERFIL_1
-<?php } ?>
-<?php for(; $i <= 200; $i++){ ?>
-  USUARIO_<?php echo $i ?>:
-    nombreusuario: juanperez<?php echo $i."\n" ?>
-    contraseniausuario: '12345'
-    PERFIL: PERFIL_1
-<?php } ?>
+  USUARIO_2:
+    nombreusuario: victormaravilla
+    contraseniausuario: s
+    PERFIL: PERFIL_5
 PAIS:
   PAIS_1:
     codigoisopais: AF
@@ -832,41 +1625,49 @@ PAIS:
   PAIS_244:
     codigoisopais: ZW
     nombreisopais: Zimbabue
-TIPO_SANGRE:
-  TIPO_SANGRE_1:
-    nombretiposangre: 'O Rh +'
-  TIPO_SANGRE_2:
-    nombretiposangre: 'O Rh -'
-  TIPO_SANGRE_3:
-    nombretiposangre: 'A Rh +'
-  TIPO_SANGRE_4:
-    nombretiposangre: 'A Rh -'
-  TIPO_SANGRE_5:
-    nombretiposangre: 'B Rh +'
-  TIPO_SANGRE_6:
-    nombretiposangre: 'B Rh -'
-  TIPO_SANGRE_7:
-    nombretiposangre: 'AB Rh +'
-  TIPO_SANGRE_8:
-    nombretiposangre: 'AB Rh -'
-MUNICIPIO:
-  MUNICIPIO_1:
-    nombremunicipio: 'San Salvador'
-NIVEL_ESTUDIO:
-  NIVEL_ESTUDIO_1:
-    nombrenivelestudio: Técnico
-  NIVEL_ESTUDIO_2:
-    nombrenivelestudio: Profesorado
-  NIVEL_ESTUDIO_3:
-    nombrenivelestudio: Licenciatura
-  NIVEL_ESTUDIO_4:
-    nombrenivelestudio: Ingeniería
-  NIVEL_ESTUDIO_5:
-    nombrenivelestudio: Arquitectura
-  NIVEL_ESTUDIO_6:
-    nombrenivelestudio: Maestría
-  NIVEL_ESTUDIO_7:
-    nombrenivelestudio: Doctorado
+ESTADO:
+  ESTADO_1:
+    nombreestado: Ahuachapán
+    PAIS: PAIS_66
+  ESTADO_2:
+    nombreestado: Cabañas
+    PAIS: PAIS_66
+  ESTADO_3:
+    nombreestado: Chalatenago
+    PAIS: PAIS_66
+  ESTADO_4:
+    nombreestado: Cuscatlán
+    PAIS: PAIS_66
+  ESTADO_5:
+    nombreestado: 'La Libertad'
+    PAIS: PAIS_66
+  ESTADO_6:
+    nombreestado: 'La Paz'
+    PAIS: PAIS_66
+  ESTADO_7:
+    nombreestado: 'La Unión'
+    PAIS: PAIS_66
+  ESTADO_8:
+    nombreestado: Morazán
+    PAIS: PAIS_66
+  ESTADO_9:
+    nombreestado: 'San Miguel'
+    PAIS: PAIS_66
+  ESTADO_10:
+    nombreestado: 'San Salvador'
+    PAIS: PAIS_66
+  ESTADO_11:
+    nombreestado: 'San Vicente'
+    PAIS: PAIS_66
+  ESTADO_12:
+    nombreestado: 'Santa Ana'
+    PAIS: PAIS_66
+  ESTADO_13:
+    nombreestado: Sonsonate
+    PAIS: PAIS_66
+  ESTADO_14:
+    nombreestado: Usulután
+    PAIS: PAIS_66
 ESTADO_CIVIL:
   ESTADO_CIVIL_1:
     nombreestadocivil: Soltero(a)
@@ -874,591 +1675,86 @@ ESTADO_CIVIL:
     nombreestadocivil: Casado(a)
   ESTADO_CIVIL_3:
     nombreestadocivil: Viudo(a)
-IDIOMA:
-  IDIOMA_1:
-    codisoidioma: AA
-    nombreisoidioma: Afar
-  IDIOMA_2:
-    codisoidioma: AB
-    nombreisoidioma: 'Abjaso (o abjasiano)'
-  IDIOMA_3:
-    codisoidioma: AE
-    nombreisoidioma: Avéstico
-  IDIOMA_4:
-    codisoidioma: AF
-    nombreisoidioma: Afrikaans
-  IDIOMA_5:
-    codisoidioma: AK
-    nombreisoidioma: Akano
-  IDIOMA_6:
-    codisoidioma: AM
-    nombreisoidioma: Amárico
-  IDIOMA_7:
-    codisoidioma: AN
-    nombreisoidioma: Aragonés
-  IDIOMA_8:
-    codisoidioma: AR
-    nombreisoidioma: Árabe
-  IDIOMA_9:
-    codisoidioma: AS
-    nombreisoidioma: Asamés
-  IDIOMA_10:
-    codisoidioma: AV
-    nombreisoidioma: Avar
-  IDIOMA_11:
-    codisoidioma: AY
-    nombreisoidioma: Aimara
-  IDIOMA_12:
-    codisoidioma: AZ
-    nombreisoidioma: Azerí
-  IDIOMA_13:
-    codisoidioma: BA
-    nombreisoidioma: Baskir
-  IDIOMA_14:
-    codisoidioma: BE
-    nombreisoidioma: Bielorruso
-  IDIOMA_15:
-    codisoidioma: BG
-    nombreisoidioma: Búlgaro
-  IDIOMA_16:
-    codisoidioma: BH
-    nombreisoidioma: Bhojpurí
-  IDIOMA_17:
-    codisoidioma: BI
-    nombreisoidioma: Bislama
-  IDIOMA_18:
-    codisoidioma: BM
-    nombreisoidioma: Bambara
-  IDIOMA_19:
-    codisoidioma: BN
-    nombreisoidioma: Bengalí
-  IDIOMA_20:
-    codisoidioma: BO
-    nombreisoidioma: Tibetano
-  IDIOMA_21:
-    codisoidioma: BR
-    nombreisoidioma: Bretón
-  IDIOMA_22:
-    codisoidioma: BS
-    nombreisoidioma: Bosnio
-  IDIOMA_23:
-    codisoidioma: CA
-    nombreisoidioma: Catalán
-  IDIOMA_24:
-    codisoidioma: CE
-    nombreisoidioma: Checheno
-  IDIOMA_25:
-    codisoidioma: CH
-    nombreisoidioma: Chamorro
-  IDIOMA_26:
-    codisoidioma: CO
-    nombreisoidioma: Corso
-  IDIOMA_27:
-    codisoidioma: CR
-    nombreisoidioma: Cree
-  IDIOMA_28:
-    codisoidioma: CS
-    nombreisoidioma: Checo
-  IDIOMA_29:
-    codisoidioma: CU
-    nombreisoidioma: 'Eslavo eclesiástico antiguo'
-  IDIOMA_30:
-    codisoidioma: CV
-    nombreisoidioma: Chuvasio
-  IDIOMA_31:
-    codisoidioma: CY
-    nombreisoidioma: Galés
-  IDIOMA_32:
-    codisoidioma: DA
-    nombreisoidioma: Danés
-  IDIOMA_33:
-    codisoidioma: DE
-    nombreisoidioma: Alemán
-  IDIOMA_34:
-    codisoidioma: DV
-    nombreisoidioma: Maldivo
-  IDIOMA_35:
-    codisoidioma: DZ
-    nombreisoidioma: Dzongkha
-  IDIOMA_36:
-    codisoidioma: EE
-    nombreisoidioma: Ewe
-  IDIOMA_37:
-    codisoidioma: EL
-    nombreisoidioma: 'Griego (moderno)'
-  IDIOMA_38:
-    codisoidioma: EN
-    nombreisoidioma: Inglés
-  IDIOMA_39:
-    codisoidioma: EO
-    nombreisoidioma: Esperanto
-  IDIOMA_40:
-    codisoidioma: ES
-    nombreisoidioma: 'Español (o castellano)'
-  IDIOMA_41:
-    codisoidioma: ET
-    nombreisoidioma: Estonio
-  IDIOMA_42:
-    codisoidioma: EU
-    nombreisoidioma: Euskera
-  IDIOMA_43:
-    codisoidioma: FA
-    nombreisoidioma: Persa
-  IDIOMA_44:
-    codisoidioma: FF
-    nombreisoidioma: Fula
-  IDIOMA_45:
-    codisoidioma: FI
-    nombreisoidioma: 'Finés (o finlandés)'
-  IDIOMA_46:
-    codisoidioma: FJ
-    nombreisoidioma: 'Fiyiano (o fiyi)'
-  IDIOMA_47:
-    codisoidioma: FO
-    nombreisoidioma: Feroés
-  IDIOMA_48:
-    codisoidioma: FR
-    nombreisoidioma: Francés
-  IDIOMA_49:
-    codisoidioma: FY
-    nombreisoidioma: 'Frisón (o frisio)'
-  IDIOMA_50:
-    codisoidioma: GA
-    nombreisoidioma: 'Irlandés (o gaélico)'
-  IDIOMA_51:
-    codisoidioma: GD
-    nombreisoidioma: 'Gaélico escocés'
-  IDIOMA_52:
-    codisoidioma: GL
-    nombreisoidioma: Gallego
-  IDIOMA_53:
-    codisoidioma: GN
-    nombreisoidioma: Guaraní
-  IDIOMA_54:
-    codisoidioma: GU
-    nombreisoidioma: 'Guyaratí (o guyaratí)'
-  IDIOMA_55:
-    codisoidioma: GV
-    nombreisoidioma: 'Manés (gaélico manés o de Isla de Man)'
-  IDIOMA_56:
-    codisoidioma: HA
-    nombreisoidioma: Hausa
-  IDIOMA_57:
-    codisoidioma: HE
-    nombreisoidioma: Hebreo
-  IDIOMA_58:
-    codisoidioma: HI
-    nombreisoidioma: 'Hindi (o hindú)'
-  IDIOMA_59:
-    codisoidioma: HO
-    nombreisoidioma: 'Hiri motu'
-  IDIOMA_60:
-    codisoidioma: HR
-    nombreisoidioma: Croata
-  IDIOMA_61:
-    codisoidioma: HT
-    nombreisoidioma: Haitiano
-  IDIOMA_62:
-    codisoidioma: HU
-    nombreisoidioma: Húngaro
-  IDIOMA_63:
-    codisoidioma: HY
-    nombreisoidioma: Armenio
-  IDIOMA_64:
-    codisoidioma: HZ
-    nombreisoidioma: Herero
-  IDIOMA_65:
-    codisoidioma: IA
-    nombreisoidioma: Interlingua
-  IDIOMA_66:
-    codisoidioma: ID
-    nombreisoidioma: Indonesio
-  IDIOMA_67:
-    codisoidioma: IE
-    nombreisoidioma: Occidental
-  IDIOMA_68:
-    codisoidioma: IG
-    nombreisoidioma: Igbo
-  IDIOMA_69:
-    codisoidioma: II
-    nombreisoidioma: 'Yi de sichuán'
-  IDIOMA_70:
-    codisoidioma: IK
-    nombreisoidioma: Inupiaq
-  IDIOMA_71:
-    codisoidioma: IO
-    nombreisoidioma: Ido
-  IDIOMA_72:
-    codisoidioma: IS
-    nombreisoidioma: Islandés
-  IDIOMA_73:
-    codisoidioma: IT
-    nombreisoidioma: Italiano
-  IDIOMA_74:
-    codisoidioma: IU
-    nombreisoidioma: Inuktitut
-  IDIOMA_75:
-    codisoidioma: JA
-    nombreisoidioma: Japonés
-  IDIOMA_76:
-    codisoidioma: JV
-    nombreisoidioma: Javanés
-  IDIOMA_77:
-    codisoidioma: KA
-    nombreisoidioma: Georgiano
-  IDIOMA_78:
-    codisoidioma: KG
-    nombreisoidioma: Kongo
-  IDIOMA_79:
-    codisoidioma: KI
-    nombreisoidioma: Kikuyu
-  IDIOMA_80:
-    codisoidioma: KJ
-    nombreisoidioma: Kuanyama
-  IDIOMA_81:
-    codisoidioma: KK
-    nombreisoidioma: 'Kazajo (o kazajio)'
-  IDIOMA_82:
-    codisoidioma: KL
-    nombreisoidioma: 'Groenlandés (o kalaallisut)'
-  IDIOMA_83:
-    codisoidioma: KM
-    nombreisoidioma: 'Camboyano (o jemer)'
-  IDIOMA_84:
-    codisoidioma: KN
-    nombreisoidioma: Canarés
-  IDIOMA_85:
-    codisoidioma: KO
-    nombreisoidioma: Coreano
-  IDIOMA_86:
-    codisoidioma: KR
-    nombreisoidioma: Kanuri
-  IDIOMA_87:
-    codisoidioma: KS
-    nombreisoidioma: Cachemiro
-  IDIOMA_88:
-    codisoidioma: KU
-    nombreisoidioma: Kurdo
-  IDIOMA_89:
-    codisoidioma: KV
-    nombreisoidioma: Komi
-  IDIOMA_90:
-    codisoidioma: KW
-    nombreisoidioma: Córnico
-  IDIOMA_91:
-    codisoidioma: KY
-    nombreisoidioma: Kirguís
-  IDIOMA_92:
-    codisoidioma: LA
-    nombreisoidioma: Latín
-  IDIOMA_93:
-    codisoidioma: LB
-    nombreisoidioma: Luxemburgués
-  IDIOMA_94:
-    codisoidioma: LG
-    nombreisoidioma: Luganda
-  IDIOMA_95:
-    codisoidioma: LI
-    nombreisoidioma: Limburgués
-  IDIOMA_96:
-    codisoidioma: LN
-    nombreisoidioma: Lingala
-  IDIOMA_97:
-    codisoidioma: LO
-    nombreisoidioma: Lao
-  IDIOMA_98:
-    codisoidioma: LT
-    nombreisoidioma: Lituano
-  IDIOMA_99:
-    codisoidioma: LU
-    nombreisoidioma: Luba-katanga
-  IDIOMA_100:
-    codisoidioma: LV
-    nombreisoidioma: Letón
-  IDIOMA_101:
-    codisoidioma: MG
-    nombreisoidioma: 'Malgache (o malagasy)'
-  IDIOMA_102:
-    codisoidioma: MH
-    nombreisoidioma: Marshalés
-  IDIOMA_103:
-    codisoidioma: MI
-    nombreisoidioma: Maorí
-  IDIOMA_104:
-    codisoidioma: MK
-    nombreisoidioma: Macedonio
-  IDIOMA_105:
-    codisoidioma: ML
-    nombreisoidioma: Malayalam
-  IDIOMA_106:
-    codisoidioma: MN
-    nombreisoidioma: Mongol
-  IDIOMA_107:
-    codisoidioma: MR
-    nombreisoidioma: Maratí
-  IDIOMA_108:
-    codisoidioma: MS
-    nombreisoidioma: Malayo
-  IDIOMA_109:
-    codisoidioma: MT
-    nombreisoidioma: Maltés
-  IDIOMA_110:
-    codisoidioma: MY
-    nombreisoidioma: Birmano
-  IDIOMA_111:
-    codisoidioma: NA
-    nombreisoidioma: Nauruano
-  IDIOMA_112:
-    codisoidioma: NB
-    nombreisoidioma: 'Noruego bokmål'
-  IDIOMA_113:
-    codisoidioma: ND
-    nombreisoidioma: 'Ndebele del norte'
-  IDIOMA_114:
-    codisoidioma: NE
-    nombreisoidioma: Nepalí
-  IDIOMA_115:
-    codisoidioma: NG
-    nombreisoidioma: Ndonga
-  IDIOMA_116:
-    codisoidioma: NL
-    nombreisoidioma: 'Neerlandés (u holandés)'
-  IDIOMA_117:
-    codisoidioma: NN
-    nombreisoidioma: Nynorsk
-  IDIOMA_118:
-    codisoidioma: NO
-    nombreisoidioma: Noruego
-  IDIOMA_119:
-    codisoidioma: NR
-    nombreisoidioma: 'Ndebele del sur'
-  IDIOMA_120:
-    codisoidioma: NV
-    nombreisoidioma: Navajo
-  IDIOMA_121:
-    codisoidioma: NY
-    nombreisoidioma: Chichewa
-  IDIOMA_122:
-    codisoidioma: OC
-    nombreisoidioma: Occitano
-  IDIOMA_123:
-    codisoidioma: OJ
-    nombreisoidioma: Ojibwa
-  IDIOMA_124:
-    codisoidioma: OM
-    nombreisoidioma: Oromo
-  IDIOMA_125:
-    codisoidioma: OR
-    nombreisoidioma: Oriya
-  IDIOMA_126:
-    codisoidioma: OS
-    nombreisoidioma: Osético
-  IDIOMA_127:
-    codisoidioma: PA
-    nombreisoidioma: 'Panyabí (o penyabi)'
-  IDIOMA_128:
-    codisoidioma: PI
-    nombreisoidioma: Pali
-  IDIOMA_129:
-    codisoidioma: PL
-    nombreisoidioma: Polaco
-  IDIOMA_130:
-    codisoidioma: PS
-    nombreisoidioma: 'Pastú (o pashto)'
-  IDIOMA_131:
-    codisoidioma: PT
-    nombreisoidioma: Portugués
-  IDIOMA_132:
-    codisoidioma: QU
-    nombreisoidioma: Quechua
-  IDIOMA_133:
-    codisoidioma: RM
-    nombreisoidioma: Retorrománico
-  IDIOMA_134:
-    codisoidioma: RN
-    nombreisoidioma: Kirundi
-  IDIOMA_135:
-    codisoidioma: RO
-    nombreisoidioma: Rumano
-  IDIOMA_136:
-    codisoidioma: RU
-    nombreisoidioma: Ruso
-  IDIOMA_137:
-    codisoidioma: RW
-    nombreisoidioma: Ruandés
-  IDIOMA_138:
-    codisoidioma: SA
-    nombreisoidioma: Sánscrito
-  IDIOMA_139:
-    codisoidioma: SC
-    nombreisoidioma: Sardo
-  IDIOMA_140:
-    codisoidioma: SD
-    nombreisoidioma: Sindhi
-  IDIOMA_141:
-    codisoidioma: SE
-    nombreisoidioma: 'Sami septentrional'
-  IDIOMA_142:
-    codisoidioma: SG
-    nombreisoidioma: Sango
-  IDIOMA_143:
-    codisoidioma: SH
-    nombreisoidioma: Serbocroata
-  IDIOMA_144:
-    codisoidioma: SI
-    nombreisoidioma: Cingalés
-  IDIOMA_145:
-    codisoidioma: SK
-    nombreisoidioma: Eslovaco
-  IDIOMA_146:
-    codisoidioma: SL
-    nombreisoidioma: Esloveno
-  IDIOMA_147:
-    codisoidioma: SM
-    nombreisoidioma: Samoano
-  IDIOMA_148:
-    codisoidioma: SN
-    nombreisoidioma: Shona
-  IDIOMA_149:
-    codisoidioma: SO
-    nombreisoidioma: Somalí
-  IDIOMA_150:
-    codisoidioma: SQ
-    nombreisoidioma: Albanés
-  IDIOMA_151:
-    codisoidioma: SR
-    nombreisoidioma: Serbio
-  IDIOMA_152:
-    codisoidioma: SS
-    nombreisoidioma: 'Suazi (swati o siswati)'
-  IDIOMA_153:
-    codisoidioma: ST
-    nombreisoidioma: Sesotho
-  IDIOMA_154:
-    codisoidioma: SU
-    nombreisoidioma: Sundanés
-  IDIOMA_155:
-    codisoidioma: SV
-    nombreisoidioma: Sueco
-  IDIOMA_156:
-    codisoidioma: SW
-    nombreisoidioma: Suajili
-  IDIOMA_157:
-    codisoidioma: TA
-    nombreisoidioma: Tamil
-  IDIOMA_158:
-    codisoidioma: TE
-    nombreisoidioma: Telugú
-  IDIOMA_159:
-    codisoidioma: TG
-    nombreisoidioma: Tayiko
-  IDIOMA_160:
-    codisoidioma: TH
-    nombreisoidioma: Tailandés
-  IDIOMA_161:
-    codisoidioma: TI
-    nombreisoidioma: Tigriña
-  IDIOMA_162:
-    codisoidioma: TK
-    nombreisoidioma: Turcomano
-  IDIOMA_163:
-    codisoidioma: TL
-    nombreisoidioma: Tagalo
-  IDIOMA_164:
-    codisoidioma: TN
-    nombreisoidioma: Setsuana
-  IDIOMA_165:
-    codisoidioma: TO
-    nombreisoidioma: Tongano
-  IDIOMA_166:
-    codisoidioma: TR
-    nombreisoidioma: Turco
-  IDIOMA_167:
-    codisoidioma: TS
-    nombreisoidioma: Tsonga
-  IDIOMA_168:
-    codisoidioma: TT
-    nombreisoidioma: Tártaro
-  IDIOMA_169:
-    codisoidioma: TW
-    nombreisoidioma: Twi
-  IDIOMA_170:
-    codisoidioma: TY
-    nombreisoidioma: Tahitiano
-  IDIOMA_171:
-    codisoidioma: UG
-    nombreisoidioma: Uigur
-  IDIOMA_172:
-    codisoidioma: UK
-    nombreisoidioma: Ucraniano
-  IDIOMA_173:
-    codisoidioma: UR
-    nombreisoidioma: Urdu
-  IDIOMA_174:
-    codisoidioma: UZ
-    nombreisoidioma: Uzbeko
-  IDIOMA_175:
-    codisoidioma: VE
-    nombreisoidioma: Venda
-  IDIOMA_176:
-    codisoidioma: VI
-    nombreisoidioma: Vietnamita
-  IDIOMA_177:
-    codisoidioma: WL
-    nombreisoidioma: Walisiano
-  IDIOMA_178:
-    codisoidioma: VO
-    nombreisoidioma: Volapük
-  IDIOMA_179:
-    codisoidioma: WA
-    nombreisoidioma: Valón
-  IDIOMA_180:
-    codisoidioma: WO
-    nombreisoidioma: Wolof
-  IDIOMA_181:
-    codisoidioma: XH
-    nombreisoidioma: Xhosa
-  IDIOMA_182:
-    codisoidioma: YI
-    nombreisoidioma: 'Yídish (o yiddish)'
-  IDIOMA_183:
-    codisoidioma: YO
-    nombreisoidioma: Yoruba
-  IDIOMA_184:
-    codisoidioma: ZA
-    nombreisoidioma: 'Chuan (o zhuang)'
-  IDIOMA_185:
-    codisoidioma: ZH
-    nombreisoidioma: Chino
-  IDIOMA_186:
-    codisoidioma: ZU
-    nombreisoidioma: Zulú
-DEPARTAMENTO:
-  DEPARTAMENTO_1:
-    nombredepartamento: Ahuachapán
-  DEPARTAMENTO_2:
-    nombredepartamento: Cabañas
-  DEPARTAMENTO_3:
-    nombredepartamento: Chalatenago
-  DEPARTAMENTO_4:
-    nombredepartamento: Cuscatlán
-  DEPARTAMENTO_5:
-    nombredepartamento: 'La Libertad'
-  DEPARTAMENTO_6:
-    nombredepartamento: 'La Paz'
-  DEPARTAMENTO_7:
-    nombredepartamento: 'La Unión'
-  DEPARTAMENTO_8:
-    nombredepartamento: Morazán
-  DEPARTAMENTO_9:
-    nombredepartamento: 'San Miguel'
-  DEPARTAMENTO_10:
-    nombredepartamento: 'San Salvador'
-  DEPARTAMENTO_11:
-    nombredepartamento: 'San Vicente'
-  DEPARTAMENTO_12:
-    nombredepartamento: 'Santa Ana'
-  DEPARTAMENTO_13:
-    nombredepartamento: Sonsonate
-  DEPARTAMENTO_14:
-    nombredepartamento: Usulután
+ESTADO_ACTIVIDAD:
+  ESTADO_ACTIVIDAD_1:
+    nombreestadoactividad: Nueva
+    permiteedicion: '1'
+    esestadoinicial: '1'
+  ESTADO_ACTIVIDAD_2:
+    nombreestadoactividad: 'En revisión'
+    permiteedicion: '1'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_3:
+    nombreestadoactividad: Aprobada
+    permiteedicion: '0'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_4:
+    nombreestadoactividad: Denegada
+    permiteedicion: '0'
+    esestadoinicial: '0'
+  ESTADO_ACTIVIDAD_5:
+    nombreestadoactividad: 'Devuelta para revisión'
+    permiteedicion: '1'
+    esestadoinicial: '0'
+ACADEMICO:
+<?php $i = 1; ?>
+<?php for (; $i <= 100; $i++){ ?>
+  ACADEMICO_<?php echo $i ?>:
+    codigoacademico: '000<?php echo $i ?>'
+    primernombreacad: Juan_<?php echo $i."\n" ?>
+    segundonombreacad: Alberto_<?php echo $i."\n" ?>
+    primerapellidoacad: Pérez_<?php echo $i."\n" ?>
+    segundoapellidoacad: Sosa_<?php echo $i."\n" ?>
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    usalentes: '0'
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    esnacional: '1'
+    CIUDAD: CIUDAD_1
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    PAIS: PAIS_66
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_<?php echo $i."\n" ?>
+<?php } ?>
+<?php for(; $i <= 200; $i++){ ?>
+  ACADEMICO_<?php echo $i ?>:
+    codigoacademico: '000<?php echo $i ?>'
+    primernombreacad: María_<?php echo $i."\n" ?>
+    segundonombreacad: Rosa_<?php echo $i."\n" ?>
+    primerapellidoacad: Menjívar_<?php echo $i."\n" ?>
+    segundoapellidoacad: Mejía_<?php echo $i."\n" ?>
+    apellidocasadaacad: '<?php echo fmod($i,2) ? 'Ruiz' : '' ?>'
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    usalentes: '0'
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    esnacional: '1'
+    CIUDAD: CIUDAD_1
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    PAIS: PAIS_66
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_<?php echo $i."\n" ?>
+<?php } ?>
+USUARIO:
+<?php $i = 1; ?>
+<?php for(; $i <= 100; $i++){ ?>
+  USUARIO_<?php echo $i ?>:
+    nombreusuario: juanperez<?php echo $i."\n" ?>
+    contraseniausuario: '12345'
+    PERFIL: PERFIL_1
+<?php } ?>
+<?php for(; $i <= 200; $i++){ ?>
+  USUARIO_<?php echo $i ?>:
+    nombreusuario: mariamenjivar<?php echo $i."\n" ?>
+    contraseniausuario: '12345'
+    PERFIL: PERFIL_5
+<?php } ?>

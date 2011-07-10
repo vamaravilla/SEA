@@ -15,16 +15,12 @@ abstract class BaseACTXACT_UMAForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idcategoriaumasup' => new sfWidgetFormInputHidden(),
       'idactividadumasup' => new sfWidgetFormInputHidden(),
-      'idcategoriauma'    => new sfWidgetFormInputHidden(),
       'idactividaduma'    => new sfWidgetFormInputHidden(),
     ));
 
     $this->setValidators(array(
-      'idcategoriaumasup' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcategoriaumasup')), 'empty_value' => $this->getObject()->get('idcategoriaumasup'), 'required' => false)),
       'idactividadumasup' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividadumasup')), 'empty_value' => $this->getObject()->get('idactividadumasup'), 'required' => false)),
-      'idcategoriauma'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcategoriauma')), 'empty_value' => $this->getObject()->get('idcategoriauma'), 'required' => false)),
       'idactividaduma'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividaduma')), 'empty_value' => $this->getObject()->get('idactividaduma'), 'required' => false)),
     ));
 

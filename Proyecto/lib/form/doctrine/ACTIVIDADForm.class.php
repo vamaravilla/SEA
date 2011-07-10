@@ -12,5 +12,15 @@ class ACTIVIDADForm extends BaseACTIVIDADForm
 {
   public function configure()
   {
+      $this->widgetSchema['nombreactividad'] = new sfWidgetFormInputText();
+      if ($this->getOption('mostrar_observaciones') == true)
+      {
+          unset($this['observacionactividad']);
+      }
+      $actActividad = $this->getObject();
+      if ($this->getObject()->isNew() && ($eacEstadoinicial = ESTADO_ACTIVIDADTable::getInstance()->findOneByEsestadoinicial(true)))
+      {
+          $this->widgetSchema['idestadoactividad']->addOption('default', $eacEstadoinicial);
+      }
   }
 }

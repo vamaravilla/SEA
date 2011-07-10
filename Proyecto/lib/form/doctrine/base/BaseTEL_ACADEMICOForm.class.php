@@ -15,17 +15,17 @@ abstract class BaseTEL_ACADEMICOForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'      => new sfWidgetFormInputHidden(),
       'idtelacademico'   => new sfWidgetFormInputHidden(),
       'numtelacademico'  => new sfWidgetFormInputText(),
       'tipotelacademico' => new sfWidgetFormInputText(),
+      'idacademico'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idacademico'      => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
       'idtelacademico'   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idtelacademico')), 'empty_value' => $this->getObject()->get('idtelacademico'), 'required' => false)),
       'numtelacademico'  => new sfValidatorString(array('max_length' => 25)),
       'tipotelacademico' => new sfValidatorInteger(),
+      'idacademico'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'))),
     ));
 
     $this->widgetSchema->setNameFormat('tel_academico[%s]');

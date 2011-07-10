@@ -19,7 +19,10 @@ class sfValidatorTrilean extends sfValidatorBase {
     {
         $this->addOption('true_values', array('true', 't', 'yes', 'y', 'on', '1'));
         $this->addOption('false_values', array('false', 'f', 'no', 'n', 'off', '0'));
-        $this->addOption('null_values', array('null', null));
+        if ($this->getOption('permite_nulo'))
+        {
+            $this->addOption('null_values', array('null', null));
+        }
     }
  
     protected function doClean($value)
@@ -34,7 +37,7 @@ class sfValidatorTrilean extends sfValidatorBase {
             return false;
         }
 
-        if (in_array($value, $this->getOption('null_values')))
+        if ($this->getOption('permite_nulo') && in_array($value, $this->getOption('null_values')))
         {
             return null;
         }

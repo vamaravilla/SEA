@@ -12,4 +12,10 @@
  */
 class USUARIO extends BaseUSUARIO
 {
+    public static function obtenerUsuarioPorIdUsuario($idUsuario)
+    {
+        $query = Doctrine_Query::create()->from('USUARIO usu')
+                    ->where('usu.idUsuario = ?', $idUsuario);
+        return $query->fetchOne();
+    }
 }

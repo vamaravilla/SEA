@@ -10,6 +10,16 @@
 	width:auto;
 }
 
+#nombreusr
+{
+    position:absolute;
+    /*vertical-align: bottom;*/
+    color: white;
+    bottom:0px;
+}
+
+
+
 #menu td.izq
 {
 	width:10px;
@@ -53,17 +63,17 @@
 
 #menu_lista li:hover > a > div { width:4em; height:4em; }
 
-#menu_lista li > a > div.item1 {background-image:url('../images/menu/principal/folder_48.png'); }
+#menu_lista li > a > div.fi {background-image:url('../images/menu/principal/folder_48.png'); }
 
-#menu_lista li:hover > a > div.item1 { background-image:url('../images/menu/principal/folder_64.png');}
+#menu_lista li:hover > a > div.fi { background-image:url('../images/menu/principal/folder_64.png');}
 
-#menu_lista li > a >div.item2 { background-image:url('../images/menu/principal/books_48.png'); }
+#menu_lista li > a >div.as { background-image:url('../images/menu/principal/books_48.png'); }
 
-#menu_lista li:hover > a > div.item2 { background-image:url('../images/menu/principal/books_64.png'); }
+#menu_lista li:hover > a > div.as { background-image:url('../images/menu/principal/books_64.png'); }
 
-#menu_lista li > a >div.item3 { background-image:url('../images/menu/principal/apple_48.png');  }
+#menu_lista li > a >div.lo { background-image:url('../images/menu/principal/apple_48.png');  }
 
-#menu_lista li:hover > a > div.item3 { background-image:url('../images/menu/principal/apple_64.png'); }
+#menu_lista li:hover > a > div.lo { background-image:url('../images/menu/principal/apple_64.png'); }
 
 /* Datos generales de los nombres de ítems de menú superior */
 #menu_lista div.sup_nombre_tam1,

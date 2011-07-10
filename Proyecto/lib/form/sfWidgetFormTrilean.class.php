@@ -25,9 +25,12 @@ class sfWidgetFormTrilean extends sfWidgetFormChoice {
         $this->options['choices']
             = array(
                 0 => 'No',
-                1 => 'Sí',
-                'null' => 'No sabe'
+                1 => 'Sí'
             );
+        if ($this->getOption('permite_nulo') == true)
+        {
+            $this->options['choices']['nulo'] = 'No sabe';
+        }
         parent::configure();
     }
  

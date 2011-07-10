@@ -15,23 +15,25 @@ abstract class BaseMODULOForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idmodulo'        => new sfWidgetFormInputHidden(),
-      'codmodulo'       => new sfWidgetFormInputText(),
-      'nombremodulo'    => new sfWidgetFormInputText(),
-      'urlmodulo'       => new sfWidgetFormTextarea(),
-      'imgmodulo'       => new sfWidgetFormTextarea(),
-      'imgsobremodulo'  => new sfWidgetFormTextarea(),
-      'imgactivomodulo' => new sfWidgetFormTextarea(),
+      'idmodulo'          => new sfWidgetFormInputHidden(),
+      'codmodulo'         => new sfWidgetFormInputText(),
+      'nombremodulo'      => new sfWidgetFormInputText(),
+      'descripcionmodulo' => new sfWidgetFormTextarea(),
+      'urlmodulo'         => new sfWidgetFormTextarea(),
+      'imgmodulo'         => new sfWidgetFormTextarea(),
+      'imgsobremodulo'    => new sfWidgetFormTextarea(),
+      'imgactivomodulo'   => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
-      'idmodulo'        => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idmodulo')), 'empty_value' => $this->getObject()->get('idmodulo'), 'required' => false)),
-      'codmodulo'       => new sfValidatorString(array('max_length' => 2)),
-      'nombremodulo'    => new sfValidatorString(array('max_length' => 100)),
-      'urlmodulo'       => new sfValidatorString(array('max_length' => 300, 'required' => false)),
-      'imgmodulo'       => new sfValidatorString(array('max_length' => 300)),
-      'imgsobremodulo'  => new sfValidatorString(array('max_length' => 300)),
-      'imgactivomodulo' => new sfValidatorString(array('max_length' => 300)),
+      'idmodulo'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idmodulo')), 'empty_value' => $this->getObject()->get('idmodulo'), 'required' => false)),
+      'codmodulo'         => new sfValidatorString(array('max_length' => 2)),
+      'nombremodulo'      => new sfValidatorString(array('max_length' => 100)),
+      'descripcionmodulo' => new sfValidatorString(),
+      'urlmodulo'         => new sfValidatorString(array('max_length' => 300, 'required' => false)),
+      'imgmodulo'         => new sfValidatorString(array('max_length' => 300)),
+      'imgsobremodulo'    => new sfValidatorString(array('max_length' => 300)),
+      'imgactivomodulo'   => new sfValidatorString(array('max_length' => 300)),
     ));
 
     $this->widgetSchema->setNameFormat('modulo[%s]');

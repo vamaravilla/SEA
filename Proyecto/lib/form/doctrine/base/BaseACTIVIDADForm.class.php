@@ -15,23 +15,21 @@ abstract class BaseACTIVIDADForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'          => new sfWidgetFormInputHidden(),
       'idactividad'          => new sfWidgetFormInputHidden(),
       'nombreactividad'      => new sfWidgetFormTextarea(),
       'descripcionactividad' => new sfWidgetFormTextarea(),
       'observacionactividad' => new sfWidgetFormTextarea(),
       'idtipoactividad'      => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('TIPO_ACTIVIDAD'), 'add_empty' => false)),
-      'idestadoactividad'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO_ACTIVIDAD'), 'add_empty' => false)),
+      'idacademico'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idacademico'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
       'idactividad'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividad')), 'empty_value' => $this->getObject()->get('idactividad'), 'required' => false)),
       'nombreactividad'      => new sfValidatorString(array('max_length' => 300)),
       'descripcionactividad' => new sfValidatorString(array('required' => false)),
       'observacionactividad' => new sfValidatorString(array('required' => false)),
       'idtipoactividad'      => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('TIPO_ACTIVIDAD'))),
-      'idestadoactividad'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO_ACTIVIDAD'))),
+      'idacademico'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ACADEMICO'))),
     ));
 
     $this->widgetSchema->setNameFormat('actividad[%s]');

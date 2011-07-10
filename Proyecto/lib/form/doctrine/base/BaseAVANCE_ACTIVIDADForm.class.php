@@ -15,8 +15,6 @@ abstract class BaseAVANCE_ACTIVIDADForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'          => new sfWidgetFormInputHidden(),
-      'idactividad'          => new sfWidgetFormInputHidden(),
       'idavance'             => new sfWidgetFormInputHidden(),
       'nombreavance'         => new sfWidgetFormTextarea(),
       'descripcionavance'    => new sfWidgetFormTextarea(),
@@ -29,11 +27,11 @@ abstract class BaseAVANCE_ACTIVIDADForm extends BaseFormDoctrine
       'archivoavance'        => new sfWidgetFormTextarea(),
       'cantumaasignada'      => new sfWidgetFormInputText(),
       'observacionavance'    => new sfWidgetFormTextarea(),
+      'idactividad'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ACTIVIDAD'), 'add_empty' => false)),
+      'idestadoactividad'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO_ACTIVIDAD'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idacademico'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
-      'idactividad'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividad')), 'empty_value' => $this->getObject()->get('idactividad'), 'required' => false)),
       'idavance'             => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idavance')), 'empty_value' => $this->getObject()->get('idavance'), 'required' => false)),
       'nombreavance'         => new sfValidatorString(array('max_length' => 300)),
       'descripcionavance'    => new sfValidatorString(array('required' => false)),
@@ -46,6 +44,8 @@ abstract class BaseAVANCE_ACTIVIDADForm extends BaseFormDoctrine
       'archivoavance'        => new sfValidatorString(array('max_length' => 500, 'required' => false)),
       'cantumaasignada'      => new sfValidatorNumber(array('required' => false)),
       'observacionavance'    => new sfValidatorString(array('required' => false)),
+      'idactividad'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ACTIVIDAD'))),
+      'idestadoactividad'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ESTADO_ACTIVIDAD'))),
     ));
 
     $this->widgetSchema->setNameFormat('avance_actividad[%s]');

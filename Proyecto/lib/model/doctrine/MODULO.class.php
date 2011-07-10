@@ -12,4 +12,5 @@
  */
 class MODULO extends BaseMODULO
 {
+
 }

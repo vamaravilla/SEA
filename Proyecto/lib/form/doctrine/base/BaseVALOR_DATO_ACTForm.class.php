@@ -15,26 +15,26 @@ abstract class BaseVALOR_DATO_ACTForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idacademico'     => new sfWidgetFormInputHidden(),
-      'idactividad'     => new sfWidgetFormInputHidden(),
-      'iddatoactividad' => new sfWidgetFormInputHidden(),
+      'idvalordatoact'  => new sfWidgetFormInputHidden(),
       'valorbooleanact' => new sfWidgetFormInputText(),
       'valorenteroact'  => new sfWidgetFormInputText(),
       'valorrealact'    => new sfWidgetFormInputText(),
       'valorfechaact'   => new sfWidgetFormDate(),
       'valorcadenaact'  => new sfWidgetFormInputText(),
+      'idactividad'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ACTIVIDAD'), 'add_empty' => false)),
+      'iddatoactividad' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('DATO_ACTIVIDAD'), 'add_empty' => false)),
       'idopciondatoact' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('OPCION_DATO_ACT'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'idacademico'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idacademico')), 'empty_value' => $this->getObject()->get('idacademico'), 'required' => false)),
-      'idactividad'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idactividad')), 'empty_value' => $this->getObject()->get('idactividad'), 'required' => false)),
-      'iddatoactividad' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('iddatoactividad')), 'empty_value' => $this->getObject()->get('iddatoactividad'), 'required' => false)),
+      'idvalordatoact'  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idvalordatoact')), 'empty_value' => $this->getObject()->get('idvalordatoact'), 'required' => false)),
       'valorbooleanact' => new sfValidatorInteger(array('required' => false)),
       'valorenteroact'  => new sfValidatorInteger(array('required' => false)),
-      'valorrealact'    => new sfValidatorInteger(array('required' => false)),
+      'valorrealact'    => new sfValidatorNumber(array('required' => false)),
       'valorfechaact'   => new sfValidatorDate(array('required' => false)),
       'valorcadenaact'  => new sfValidatorString(array('max_length' => 75, 'required' => false)),
+      'idactividad'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ACTIVIDAD'))),
+      'iddatoactividad' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('DATO_ACTIVIDAD'))),
       'idopciondatoact' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('OPCION_DATO_ACT'), 'required' => false)),
     ));
 

@@ -106,20 +106,6 @@ ACADEMICO:
       primary: false
       notnull: false
       autoincrement: false
-    idpaisnac:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
-    idestadonac:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
     idciudadnac:
       type: integer(4)
       fixed: false
@@ -170,16 +156,6 @@ ACADEMICO:
     CIUDAD:
       local: idciudadnac
       foreign: idciudad
-      type: one
-    CIUDAD_3:
-      class: CIUDAD
-      local: idestadonac
-      foreign: idestado
-      type: one
-    CIUDAD_4:
-      class: CIUDAD
-      local: idpaisnac
-      foreign: idpais
       type: one
     ESTADO_CIVIL:
       local: idestadocivil
@@ -268,12 +244,6 @@ ACADEMICOXMATERIA:
       unsigned: true
       primary: true
       autoincrement: false
-    idunidadorganizativa:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idmateria:
       type: integer(4)
       fixed: false
@@ -306,11 +276,6 @@ ACADEMICOXMATERIA:
       local: idmateria
       foreign: idmateria
       type: one
-    MATERIA_2:
-      class: MATERIA
-      local: idunidadorganizativa
-      foreign: idunidadorganizativa
-      type: one
     ACADEMICO:
       local: idacademico
       foreign: idacademico
@@ -319,12 +284,6 @@ ACCION:
   connection: doctrine
   tableName: ACCION
   columns:
-    idmodulo:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idaccion:
       type: integer(4)
       fixed: false
@@ -352,6 +311,13 @@ ACCION:
       primary: false
       notnull: false
       autoincrement: false
+    idmodulo:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     MODULO:
       local: idmodulo
@@ -361,21 +327,10 @@ ACCION:
       local: idaccion
       foreign: idaccion
       type: many
-    ACCIONXPERFIL_3:
-      class: ACCIONXPERFIL
-      local: idmodulo
-      foreign: idmodulo
-      type: many
 ACCIONXPERFIL:
   connection: doctrine
   tableName: ACCIONXPERFIL
   columns:
-    idmodulo:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idaccion:
       type: integer(4)
       fixed: false
@@ -397,21 +352,10 @@ ACCIONXPERFIL:
       local: idaccion
       foreign: idaccion
       type: one
-    ACCION_3:
-      class: ACCION
-      local: idmodulo
-      foreign: idmodulo
-      type: one
 ACTIVIDAD:
   connection: doctrine
   tableName: ACTIVIDAD
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idactividad:
       type: integer(4)
       fixed: false
@@ -446,7 +390,7 @@ ACTIVIDAD:
       primary: false
       notnull: true
       autoincrement: false
-    idestadoactividad:
+    idacademico:
       type: integer(4)
       fixed: false
       unsigned: true
@@ -454,10 +398,6 @@ ACTIVIDAD:
       notnull: true
       autoincrement: false
   relations:
-    ESTADO_ACTIVIDAD:
-      local: idestadoactividad
-      foreign: idestadoactividad
-      type: one
     ACADEMICO:
       local: idacademico
       foreign: idacademico
@@ -470,30 +410,14 @@ ACTIVIDAD:
       local: idactividad
       foreign: idactividad
       type: many
-    AVANCE_ACTIVIDAD_2:
-      class: AVANCE_ACTIVIDAD
-      local: idacademico
-      foreign: idacademico
-      type: many
     VALOR_DATO_ACT:
       local: idactividad
       foreign: idactividad
-      type: many
-    VALOR_DATO_ACT_3:
-      class: VALOR_DATO_ACT
-      local: idacademico
-      foreign: idacademico
       type: many
 ACTIVIDAD_UMA:
   connection: doctrine
   tableName: ACTIVIDAD_UMA
   columns:
-    idcategoriauma:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idactividaduma:
       type: integer(4)
       fixed: false
@@ -521,6 +445,13 @@ ACTIVIDAD_UMA:
       primary: false
       notnull: false
       autoincrement: false
+    idcategoriauma:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     CATEGORIA_UMA:
       local: idcategoriauma
@@ -532,36 +463,14 @@ ACTIVIDAD_UMA:
       type: many
     ACTXACT_UMA_2:
       class: ACTXACT_UMA
-      local: idcategoriauma
-      foreign: idcategoriauma
-      type: many
-    ACTXACT_UMA_3:
-      class: ACTXACT_UMA
       local: idactividaduma
       foreign: idactividadumasup
-      type: many
-    ACTXACT_UMA_4:
-      class: ACTXACT_UMA
-      local: idcategoriauma
-      foreign: idcategoriaumasup
       type: many
 ACTXACT_UMA:
   connection: doctrine
   tableName: ACTXACT_UMA
   columns:
-    idcategoriaumasup:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idactividadumasup:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
-    idcategoriauma:
       type: integer(4)
       fixed: false
       unsigned: true
@@ -580,35 +489,13 @@ ACTXACT_UMA:
       type: one
     ACTIVIDAD_UMA_2:
       class: ACTIVIDAD_UMA
-      local: idcategoriauma
-      foreign: idcategoriauma
-      type: one
-    ACTIVIDAD_UMA_3:
-      class: ACTIVIDAD_UMA
       local: idactividadumasup
       foreign: idactividaduma
-      type: one
-    ACTIVIDAD_UMA_4:
-      class: ACTIVIDAD_UMA
-      local: idcategoriaumasup
-      foreign: idcategoriauma
       type: one
 AVANCE_ACTIVIDAD:
   connection: doctrine
   tableName: AVANCE_ACTIVIDAD
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
-    idactividad:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idavance:
       type: integer(4)
       fixed: false
@@ -692,15 +579,28 @@ AVANCE_ACTIVIDAD:
       primary: false
       notnull: false
       autoincrement: false
+    idactividad:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    idestadoactividad:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
+    ESTADO_ACTIVIDAD:
+      local: idestadoactividad
+      foreign: idestadoactividad
+      type: one
     ACTIVIDAD:
       local: idactividad
       foreign: idactividad
-      type: one
-    ACTIVIDAD_2:
-      class: ACTIVIDAD
-      local: idacademico
-      foreign: idacademico
       type: one
 CARGO:
   connection: doctrine
@@ -746,17 +646,25 @@ CARGOXUNIDAD_ORG:
   connection: doctrine
   tableName: CARGOXUNIDAD_ORG
   columns:
-    idcargo:
+    idcargoxunidadorg:
       type: integer(4)
       fixed: false
       unsigned: true
       primary: true
+      autoincrement: true
+    idcargo:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
       autoincrement: false
     idunidadorganizativa:
       type: integer(4)
       fixed: false
       unsigned: true
-      primary: true
+      primary: false
+      notnull: true
       autoincrement: false
   relations:
     UNIDAD_ORGANIZATIVA:
@@ -768,13 +676,8 @@ CARGOXUNIDAD_ORG:
       foreign: idcargo
       type: one
     HISTORIAL_CARGO:
-      local: idcargo
-      foreign: idcargo
-      type: many
-    HISTORIAL_CARGO_4:
-      class: HISTORIAL_CARGO
-      local: idunidadorganizativa
-      foreign: idunidadorganizativa
+      local: idcargoxunidadorg
+      foreign: idcargoxunidadorg
       type: many
 CATEGORIA_UMA:
   connection: doctrine
@@ -827,18 +730,6 @@ CIUDAD:
   connection: doctrine
   tableName: CIUDAD
   columns:
-    idpais:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
-    idestado:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idciudad:
       type: integer(4)
       fixed: false
@@ -852,54 +743,30 @@ CIUDAD:
       primary: false
       notnull: true
       autoincrement: false
+    idestado:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     ESTADO:
       local: idestado
       foreign: idestado
       type: one
-    ESTADO_2:
-      class: ESTADO
-      local: idpais
-      foreign: idpais
-      type: one
     ACADEMICO:
       local: idciudad
       foreign: idciudadnac
-      type: many
-    ACADEMICO_3:
-      class: ACADEMICO
-      local: idestado
-      foreign: idestadonac
-      type: many
-    ACADEMICO_4:
-      class: ACADEMICO
-      local: idpais
-      foreign: idpaisnac
       type: many
     DIRECCION:
       local: idciudad
       foreign: idciudaddir
       type: many
-    DIRECCION_2:
-      class: DIRECCION
-      local: idestado
-      foreign: idestadodir
-      type: many
-    DIRECCION_3:
-      class: DIRECCION
-      local: idpais
-      foreign: idpaisdir
-      type: many
 CONTACTO_EMER:
   connection: doctrine
   tableName: CONTACTO_EMER
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idcontactoemer:
       type: integer(4)
       fixed: false
@@ -927,6 +794,13 @@ CONTACTO_EMER:
       primary: false
       notnull: true
       autoincrement: false
+    idacademico:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     ACADEMICO:
       local: idacademico
@@ -949,6 +823,20 @@ DATO_ACTIVIDAD:
       primary: false
       notnull: true
       autoincrement: false
+    esrequerido:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipodatoact:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     OPCION_DATO_ACT:
       local: iddatoactividad
@@ -966,12 +854,6 @@ DIRECCION:
   connection: doctrine
   tableName: DIRECCION
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     iddireccion:
       type: integer(4)
       fixed: false
@@ -985,20 +867,6 @@ DIRECCION:
       primary: false
       notnull: true
       autoincrement: false
-    idpaisdir:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
-    idestadodir:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
     idciudaddir:
       type: integer(4)
       fixed: false
@@ -1006,35 +874,26 @@ DIRECCION:
       primary: false
       notnull: true
       autoincrement: false
+    idacademico:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
-    CIUDAD:
-      local: idciudaddir
-      foreign: idciudad
-      type: one
-    CIUDAD_2:
-      class: CIUDAD
-      local: idestadodir
-      foreign: idestado
-      type: one
-    CIUDAD_3:
-      class: CIUDAD
-      local: idpaisdir
-      foreign: idpais
-      type: one
     ACADEMICO:
       local: idacademico
       foreign: idacademico
+      type: one
+    CIUDAD:
+      local: idciudaddir
+      foreign: idciudad
       type: one
 DOC_IDENTIFICACION:
   connection: doctrine
   tableName: DOC_IDENTIFICACION
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     iddocident:
       type: integer(4)
       fixed: false
@@ -1069,25 +928,26 @@ DOC_IDENTIFICACION:
       primary: false
       notnull: true
       autoincrement: false
+    idacademico:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
-    TIPO_DOC_IDENT:
-      local: idtipodocident
-      foreign: idtipodocident
-      type: one
     ACADEMICO:
       local: idacademico
       foreign: idacademico
+      type: one
+    TIPO_DOC_IDENT:
+      local: idtipodocident
+      foreign: idtipodocident
       type: one
 ESTADO:
   connection: doctrine
   tableName: ESTADO
   columns:
-    idpais:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idestado:
       type: integer(4)
       fixed: false
@@ -1101,6 +961,13 @@ ESTADO:
       primary: false
       notnull: true
       autoincrement: false
+    idpais:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     PAIS:
       local: idpais
@@ -1109,11 +976,6 @@ ESTADO:
     CIUDAD:
       local: idestado
       foreign: idestado
-      type: many
-    CIUDAD_2:
-      class: CIUDAD
-      local: idpais
-      foreign: idpais
       type: many
 ESTADO_ACTIVIDAD:
   connection: doctrine
@@ -1149,7 +1011,7 @@ ESTADO_ACTIVIDAD:
       notnull: true
       autoincrement: false
   relations:
-    ACTIVIDAD:
+    AVANCE_ACTIVIDAD:
       local: idestadoactividad
       foreign: idestadoactividad
       type: many
@@ -1206,14 +1068,7 @@ HISTORIAL_CARGO:
       primary: false
       notnull: true
       autoincrement: false
-    idcargo:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: false
-      notnull: true
-      autoincrement: false
-    idunidadorganizativa:
+    idcargoxunidadorg:
       type: integer(4)
       fixed: false
       unsigned: true
@@ -1251,13 +1106,8 @@ HISTORIAL_CARGO:
       foreign: idacademico
       type: one
     CARGOXUNIDAD_ORG:
-      local: idcargo
-      foreign: idcargo
-      type: one
-    CARGOXUNIDAD_ORG_4:
-      class: CARGOXUNIDAD_ORG
-      local: idunidadorganizativa
-      foreign: idunidadorganizativa
+      local: idcargoxunidadorg
+      foreign: idcargoxunidadorg
       type: one
     TIPO_CONTRATACION:
       local: idtipocontratacion
@@ -1351,12 +1201,6 @@ MATERIA:
   connection: doctrine
   tableName: MATERIA
   columns:
-    idunidadorganizativa:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idmateria:
       type: integer(4)
       fixed: false
@@ -1384,6 +1228,13 @@ MATERIA:
       primary: false
       notnull: true
       autoincrement: false
+    idunidadorganizativa:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
   relations:
     UNIDAD_ORGANIZATIVA:
       local: idunidadorganizativa
@@ -1392,11 +1243,6 @@ MATERIA:
     ACADEMICOXMATERIA:
       local: idmateria
       foreign: idmateria
-      type: many
-    ACADEMICOXMATERIA_2:
-      class: ACADEMICOXMATERIA
-      local: idunidadorganizativa
-      foreign: idunidadorganizativa
       type: many
 MODULO:
   connection: doctrine
@@ -1417,6 +1263,13 @@ MODULO:
       autoincrement: false
     nombremodulo:
       type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    descripcionmodulo:
+      type: string()
       fixed: false
       unsigned: false
       primary: false
@@ -1577,12 +1430,6 @@ TEL_ACADEMICO:
   connection: doctrine
   tableName: TEL_ACADEMICO
   columns:
-    idacademico:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
     idtelacademico:
       type: integer(4)
       fixed: false
@@ -1600,6 +1447,13 @@ TEL_ACADEMICO:
       type: integer(4)
       fixed: false
       unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    idacademico:
+      type: integer(4)
+      fixed: false
+      unsigned: true
       primary: false
       notnull: true
       autoincrement: false
@@ -1897,24 +1751,12 @@ VALOR_DATO_ACT:
   connection: doctrine
   tableName: VALOR_DATO_ACT
   columns:
-    idacademico:
+    idvalordatoact:
       type: integer(4)
       fixed: false
       unsigned: true
       primary: true
-      autoincrement: false
-    idactividad:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
-    iddatoactividad:
-      type: integer(4)
-      fixed: false
-      unsigned: true
-      primary: true
-      autoincrement: false
+      autoincrement: true
     valorbooleanact:
       type: integer(1)
       fixed: false
@@ -1930,7 +1772,7 @@ VALOR_DATO_ACT:
       notnull: false
       autoincrement: false
     valorrealact:
-      type: integer(4)
+      type: float()
       fixed: false
       unsigned: false
       primary: false
@@ -1950,6 +1792,20 @@ VALOR_DATO_ACT:
       primary: false
       notnull: false
       autoincrement: false
+    idactividad:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    iddatoactividad:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
     idopciondatoact:
       type: integer(4)
       fixed: false
@@ -1965,11 +1821,6 @@ VALOR_DATO_ACT:
     ACTIVIDAD:
       local: idactividad
       foreign: idactividad
-      type: one
-    ACTIVIDAD_3:
-      class: ACTIVIDAD
-      local: idacademico
-      foreign: idacademico
       type: one
     DATO_ACTIVIDAD:
       local: iddatoactividad

@@ -9,17 +9,23 @@ Doctrine_Manager::getInstance()->bindComponent('DATO_ACTIVIDAD', 'doctrine');
  * 
  * @property integer $iddatoactividad
  * @property string $nombredatoactividad
+ * @property integer $esrequerido
+ * @property integer $tipodatoact
  * @property Doctrine_Collection $OPCION_DATO_ACT
  * @property Doctrine_Collection $TIPOXDATO_ACT
  * @property Doctrine_Collection $VALOR_DATO_ACT
  * 
  * @method integer             getIddatoactividad()     Returns the current record's "iddatoactividad" value
  * @method string              getNombredatoactividad() Returns the current record's "nombredatoactividad" value
+ * @method integer             getEsrequerido()         Returns the current record's "esrequerido" value
+ * @method integer             getTipodatoact()         Returns the current record's "tipodatoact" value
  * @method Doctrine_Collection getOPCIONDATOACT()       Returns the current record's "OPCION_DATO_ACT" collection
  * @method Doctrine_Collection getTIPOXDATOACT()        Returns the current record's "TIPOXDATO_ACT" collection
  * @method Doctrine_Collection getVALORDATOACT()        Returns the current record's "VALOR_DATO_ACT" collection
  * @method DATO_ACTIVIDAD      setIddatoactividad()     Sets the current record's "iddatoactividad" value
  * @method DATO_ACTIVIDAD      setNombredatoactividad() Sets the current record's "nombredatoactividad" value
+ * @method DATO_ACTIVIDAD      setEsrequerido()         Sets the current record's "esrequerido" value
+ * @method DATO_ACTIVIDAD      setTipodatoact()         Sets the current record's "tipodatoact" value
  * @method DATO_ACTIVIDAD      setOPCIONDATOACT()       Sets the current record's "OPCION_DATO_ACT" collection
  * @method DATO_ACTIVIDAD      setTIPOXDATOACT()        Sets the current record's "TIPOXDATO_ACT" collection
  * @method DATO_ACTIVIDAD      setVALORDATOACT()        Sets the current record's "VALOR_DATO_ACT" collection
@@ -50,6 +56,24 @@ abstract class BaseDATO_ACTIVIDAD extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 150,
+             ));
+        $this->hasColumn('esrequerido', 'integer', 1, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 1,
+             ));
+        $this->hasColumn('tipodatoact', 'integer', 2, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 2,
              ));
     }
 

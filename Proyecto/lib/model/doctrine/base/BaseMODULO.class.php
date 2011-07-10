@@ -10,28 +10,31 @@ Doctrine_Manager::getInstance()->bindComponent('MODULO', 'doctrine');
  * @property integer $idmodulo
  * @property string $codmodulo
  * @property string $nombremodulo
+ * @property string $descripcionmodulo
  * @property string $urlmodulo
  * @property string $imgmodulo
  * @property string $imgsobremodulo
  * @property string $imgactivomodulo
  * @property Doctrine_Collection $ACCION
  * 
- * @method integer             getIdmodulo()        Returns the current record's "idmodulo" value
- * @method string              getCodmodulo()       Returns the current record's "codmodulo" value
- * @method string              getNombremodulo()    Returns the current record's "nombremodulo" value
- * @method string              getUrlmodulo()       Returns the current record's "urlmodulo" value
- * @method string              getImgmodulo()       Returns the current record's "imgmodulo" value
- * @method string              getImgsobremodulo()  Returns the current record's "imgsobremodulo" value
- * @method string              getImgactivomodulo() Returns the current record's "imgactivomodulo" value
- * @method Doctrine_Collection getACCION()          Returns the current record's "ACCION" collection
- * @method MODULO              setIdmodulo()        Sets the current record's "idmodulo" value
- * @method MODULO              setCodmodulo()       Sets the current record's "codmodulo" value
- * @method MODULO              setNombremodulo()    Sets the current record's "nombremodulo" value
- * @method MODULO              setUrlmodulo()       Sets the current record's "urlmodulo" value
- * @method MODULO              setImgmodulo()       Sets the current record's "imgmodulo" value
- * @method MODULO              setImgsobremodulo()  Sets the current record's "imgsobremodulo" value
- * @method MODULO              setImgactivomodulo() Sets the current record's "imgactivomodulo" value
- * @method MODULO              setACCION()          Sets the current record's "ACCION" collection
+ * @method integer             getIdmodulo()          Returns the current record's "idmodulo" value
+ * @method string              getCodmodulo()         Returns the current record's "codmodulo" value
+ * @method string              getNombremodulo()      Returns the current record's "nombremodulo" value
+ * @method string              getDescripcionmodulo() Returns the current record's "descripcionmodulo" value
+ * @method string              getUrlmodulo()         Returns the current record's "urlmodulo" value
+ * @method string              getImgmodulo()         Returns the current record's "imgmodulo" value
+ * @method string              getImgsobremodulo()    Returns the current record's "imgsobremodulo" value
+ * @method string              getImgactivomodulo()   Returns the current record's "imgactivomodulo" value
+ * @method Doctrine_Collection getACCION()            Returns the current record's "ACCION" collection
+ * @method MODULO              setIdmodulo()          Sets the current record's "idmodulo" value
+ * @method MODULO              setCodmodulo()         Sets the current record's "codmodulo" value
+ * @method MODULO              setNombremodulo()      Sets the current record's "nombremodulo" value
+ * @method MODULO              setDescripcionmodulo() Sets the current record's "descripcionmodulo" value
+ * @method MODULO              setUrlmodulo()         Sets the current record's "urlmodulo" value
+ * @method MODULO              setImgmodulo()         Sets the current record's "imgmodulo" value
+ * @method MODULO              setImgsobremodulo()    Sets the current record's "imgsobremodulo" value
+ * @method MODULO              setImgactivomodulo()   Sets the current record's "imgactivomodulo" value
+ * @method MODULO              setACCION()            Sets the current record's "ACCION" collection
  * 
  * @package    SEA-UCA_v1.0
  * @subpackage model
@@ -68,6 +71,15 @@ abstract class BaseMODULO extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 100,
+             ));
+        $this->hasColumn('descripcionmodulo', 'string', null, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => '',
              ));
         $this->hasColumn('urlmodulo', 'string', 300, array(
              'type' => 'string',

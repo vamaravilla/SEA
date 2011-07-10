@@ -16,4 +16,12 @@ class ACTIVIDADTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ACTIVIDAD');
     }
+    
+    public function ObtenerConsultaActividades(array $arrParamFiltro)
+    {
+        $query = Doctrine_Query::create()
+                    ->select('a.idActividad, a.nombreActividad')
+                    ->from('ACTIVIDAD a');
+        return $query;
+    }
 }

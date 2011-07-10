@@ -11,18 +11,18 @@ Doctrine_Manager::getInstance()->bindComponent('ESTADO_ACTIVIDAD', 'doctrine');
  * @property string $nombreestadoactividad
  * @property integer $permiteedicion
  * @property integer $esestadoinicial
- * @property Doctrine_Collection $ACTIVIDAD
+ * @property Doctrine_Collection $AVANCE_ACTIVIDAD
  * 
  * @method integer             getIdestadoactividad()     Returns the current record's "idestadoactividad" value
  * @method string              getNombreestadoactividad() Returns the current record's "nombreestadoactividad" value
  * @method integer             getPermiteedicion()        Returns the current record's "permiteedicion" value
  * @method integer             getEsestadoinicial()       Returns the current record's "esestadoinicial" value
- * @method Doctrine_Collection getACTIVIDAD()             Returns the current record's "ACTIVIDAD" collection
+ * @method Doctrine_Collection getAVANCEACTIVIDAD()       Returns the current record's "AVANCE_ACTIVIDAD" collection
  * @method ESTADO_ACTIVIDAD    setIdestadoactividad()     Sets the current record's "idestadoactividad" value
  * @method ESTADO_ACTIVIDAD    setNombreestadoactividad() Sets the current record's "nombreestadoactividad" value
  * @method ESTADO_ACTIVIDAD    setPermiteedicion()        Sets the current record's "permiteedicion" value
  * @method ESTADO_ACTIVIDAD    setEsestadoinicial()       Sets the current record's "esestadoinicial" value
- * @method ESTADO_ACTIVIDAD    setACTIVIDAD()             Sets the current record's "ACTIVIDAD" collection
+ * @method ESTADO_ACTIVIDAD    setAVANCEACTIVIDAD()       Sets the current record's "AVANCE_ACTIVIDAD" collection
  * 
  * @package    SEA-UCA_v1.0
  * @subpackage model
@@ -76,7 +76,7 @@ abstract class BaseESTADO_ACTIVIDAD extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('ACTIVIDAD', array(
+        $this->hasMany('AVANCE_ACTIVIDAD', array(
              'local' => 'idestadoactividad',
              'foreign' => 'idestadoactividad'));
     }

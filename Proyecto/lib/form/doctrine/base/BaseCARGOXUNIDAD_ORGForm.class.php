@@ -15,13 +15,15 @@ abstract class BaseCARGOXUNIDAD_ORGForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idcargo'              => new sfWidgetFormInputHidden(),
-      'idunidadorganizativa' => new sfWidgetFormInputHidden(),
+      'idcargoxunidadorg'    => new sfWidgetFormInputHidden(),
+      'idcargo'              => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('CARGO'), 'add_empty' => false)),
+      'idunidadorganizativa' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UNIDAD_ORGANIZATIVA'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'idcargo'              => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcargo')), 'empty_value' => $this->getObject()->get('idcargo'), 'required' => false)),
-      'idunidadorganizativa' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idunidadorganizativa')), 'empty_value' => $this->getObject()->get('idunidadorganizativa'), 'required' => false)),
+      'idcargoxunidadorg'    => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idcargoxunidadorg')), 'empty_value' => $this->getObject()->get('idcargoxunidadorg'), 'required' => false)),
+      'idcargo'              => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('CARGO'))),
+      'idunidadorganizativa' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('UNIDAD_ORGANIZATIVA'))),
     ));
 
     $this->widgetSchema->setNameFormat('cargoxunidad_org[%s]');

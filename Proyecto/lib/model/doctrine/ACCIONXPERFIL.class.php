@@ -12,4 +12,21 @@
  */
 class ACCIONXPERFIL extends BaseACCIONXPERFIL
 {
+    
+    public function getMODULO() {
+        $query = Doctrine_Query::create()->from('MODULO mod')
+                    ->where('mod.idModulo = ?', $this->idmodulo);
+        return $query->fetchOne();
+    }
+    
+    
+//    public static function obtenerACCIONXPERFIL(PERFIL $perfil){
+//        
+//        $query = Doctrine_Query::create()->from('ACCIONXPERFIL pxa')
+//                    ->where('pxa.idPerfil = ?', $perfil->idperfil)->distinct();
+//        
+//        return $query->fetchArray();
+//        
+//    }
+    
 }

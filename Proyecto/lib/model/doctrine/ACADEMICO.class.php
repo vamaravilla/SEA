@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * ACADEMICO
@@ -49,10 +49,13 @@ class ACADEMICO extends BaseACADEMICO
         return $strValor;
     }
     
+    /*
     public static function obtenerAcademicoPorIdUsuario($idUsuario)
     {
         $query = Doctrine_Query::create()->from('ACADEMICO acd')
                     ->where('acd.idUsuario = ?', $idUsuario);
         return $query->fetchOne();
     }
+     * 
+     */
 }

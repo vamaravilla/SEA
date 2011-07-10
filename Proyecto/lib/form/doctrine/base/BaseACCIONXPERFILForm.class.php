@@ -15,13 +15,11 @@ abstract class BaseACCIONXPERFILForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'idmodulo' => new sfWidgetFormInputHidden(),
       'idaccion' => new sfWidgetFormInputHidden(),
       'idperfil' => new sfWidgetFormInputHidden(),
     ));
 
     $this->setValidators(array(
-      'idmodulo' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idmodulo')), 'empty_value' => $this->getObject()->get('idmodulo'), 'required' => false)),
       'idaccion' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idaccion')), 'empty_value' => $this->getObject()->get('idaccion'), 'required' => false)),
       'idperfil' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('idperfil')), 'empty_value' => $this->getObject()->get('idperfil'), 'required' => false)),
     ));

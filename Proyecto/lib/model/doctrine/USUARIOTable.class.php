@@ -16,4 +16,13 @@ class USUARIOTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('USUARIO');
     }
+    
+    public static function login($user,$password){
+      return Doctrine_Query::create()
+        ->from('USUARIO u')
+	->where('u.nombreusuario = ?', array($user))
+        ->andWhere('u.contraseniausuario = ?', $password) // Podrimos usar otro algoritmo, en este caso utilizamos md5
+	->fetchOne();
+    }
+    
 }
