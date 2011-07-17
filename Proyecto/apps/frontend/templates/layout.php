@@ -5,11 +5,11 @@
         <?php include_http_metas() ?>
         <?php include_metas() ?>
         <?php include_title() ?>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <?php use_helper('JavascriptBase') ?>
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
-        <?php use_helper('JavascriptBase') ?>
-        <?php echo javascript_tag('window.onload = function(){'); ?>
+        <?php //echo javascript_tag('window.onload = function(){'); ?>
     </head>
 
     <body>
@@ -51,6 +51,8 @@
                         <div id="contenedor_cuerpo" class="contenido_centrado">
 
                             <!-- Área de trabajo - Inicio -->
+                            <div id="indicador" style="display:none"><?php echo image_tag('cargando.gif')?></div>
+                            
                             <div id="area_trabajo">
                                 <?php echo $sf_content; ?>
                             </div>
@@ -70,5 +72,5 @@
             </div>
         </div>
     </body>
-    <?php echo javascript_tag('}'); ?>
+    <?php //echo javascript_tag('}'); ?>
 </html>

@@ -110,7 +110,8 @@ abstract class sfDoctrineRecord extends Doctrine_Record
    */
   public function __toString()
   {
-    $guesses = array('name',
+    $guesses = array('nombre'.strtolower($this->getTable()->getComponentName()),
+                     'name',
                      'title',
                      'description',
                      'subject',

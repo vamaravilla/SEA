@@ -13,10 +13,10 @@
 
 .flash
 {
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #f4d848;
-    background-color: #f8f49a;
+    border-color: #f8f49a;
+    background-color: #f5f8b0;
     height: 50px;
     background-repeat: no-repeat;
     background-position: 9px 9px;
@@ -24,11 +24,87 @@
 
 .flash_exito
 {
-    background-image: url('../images/iconos/exito.png');
+    
 }
 
 .flash_error
 {
+    
+}
+
+.flash div
+{
+    padding-left:50px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 9px 9px;
+    vertical-align: middle;
+}
+
+.flash div.exito
+{
+    background-image: url('../images/iconos/exito.png');
+}
+
+.flash div.error
+{
     background-image: url('../images/iconos/error.png');
 }
 
+
+/* AGREGADOS POR VICTOR 20110715 */
+.error_flash{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f8f49a;
+    background-color: #f5f8b0;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    background-image: url('../images/iconos/error.png');
+    
+    padding-left:50px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    vertical-align: middle;
+}
+
+.error_flash{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f8f49a;
+    background-color: #f5f8b0;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    background-image: url('../images/iconos/error.png');
+    
+    padding-left:50px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    vertical-align: middle;
+    color: red;
+}
+
+.aviso_flash{
+/*    border-width: 1px;
+    border-style: solid;
+    border-color: #f8f49a;*/
+    background-color: #f5f8b0;
+    height: 25px;
+/*    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    background-image: url('../images/iconos/error.png');
+    */
+    padding-left:5px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    vertical-align: middle;
+    color: #503512;
+}
+
+.error_list
+{
+  color: red;
+  list-style: none;
+  display: inline;
+}

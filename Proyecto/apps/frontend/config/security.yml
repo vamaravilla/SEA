@@ -7,6 +7,9 @@ all:
 default:
   is_secure: false
 
+indexError404:
+  is_secure: false
+
 indexLogin:
   is_secure: false
   

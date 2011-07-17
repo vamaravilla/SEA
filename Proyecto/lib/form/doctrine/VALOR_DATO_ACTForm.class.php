@@ -25,33 +25,33 @@ class VALOR_DATO_ACTForm extends BaseVALOR_DATO_ACTForm
                 
         switch($daDatoAct)
         {
-            case 0: //Booleano
+            case 1: //Booleano
                 $this->widgetSchema['valorbooleanact']
                     = new sfWidgetFormTrilean(array('permite_nulo' => $boolEsRequerido));
                 $this->validatorSchema['valorbooleanact']
                         = new sfValidatorTrilean(array('permite_nulo' => $boolEsRequerido));
                 break;
-            case 1: //Entero
+            case 2: //Entero
                 $this->validatorSchema['valorenteroact']
                     = new sfValidatorInteger(array('required' => $boolEsRequerido));
                 $this->useFields(array('valorenteroact'));
                 break;
-            case 2: //Real
+            case 3: //Real
                 $this->useFields(array('valorrealact'));
                 $this->validatorSchema['valorrealact']
                     = new sfValidatorNumber(array('required' => $boolEsRequerido));
                 break;
-            case 3: //Cadena
+            case 4: //Cadena
                 $this->useFields(array('valorcadenaact'));
                 break;
-            case 4: //Fecha
+            case 5: //Fecha
                 $this->widgetSchema['valorfechaact']
                     = new seaWidgetFormInputTextDate();
                 $this->validatorSchema['valorfechaact']
                     = new seaValidatorDate(array(), array('id' => 'valorfechaact',));
                 $this->useFields(array('valorfechaact'));
                 break;
-            case 5: //Lista de opciones
+            case 6: //Lista de opciones
                 $this->useFields(array('idopciondatoact'));
                 break;
         }

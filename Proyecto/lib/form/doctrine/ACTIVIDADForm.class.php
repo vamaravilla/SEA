@@ -17,10 +17,5 @@ class ACTIVIDADForm extends BaseACTIVIDADForm
       {
           unset($this['observacionactividad']);
       }
-      $actActividad = $this->getObject();
-      if ($this->getObject()->isNew() && ($eacEstadoinicial = ESTADO_ACTIVIDADTable::getInstance()->findOneByEsestadoinicial(true)))
-      {
-          $this->widgetSchema['idestadoactividad']->addOption('default', $eacEstadoinicial);
-      }
   }
 }

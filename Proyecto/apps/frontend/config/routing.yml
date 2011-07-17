@@ -3,9 +3,10 @@
 
 #Reglas personalizadas
 
+
 default:
   url:   /
-  param: { module: login, action: indexLogin }
+  param: { module: login , action: indexLogin }
   
 user_login:
   url:   /login
@@ -29,14 +30,14 @@ ficha_editar_privado:
   url:     /ficha/editar.:sf_format
   class:   sfDoctrineRoute
   options: { model: ACADEMICO, type: object, propio: 1 }
-  param:   { module: ficha, action: editar, sf_format: html }
+  param:   { module: ficha, action: editarFicha, sf_format: html }
   requirements: { sf_method: get }
 
 ficha_actualizar_privado:
   url:     /ficha/actualizar.:sf_format
   class:   sfDoctrineRoute
   options: { model: ACADEMICO, type: object }
-  param:   { module: ficha, action: actualizar, sf_format: html, propio: 1 }
+  param:   { module: ficha, action: actualizarFicha, sf_format: html, propio: 1 }
   requirements: { sf_method: put }
 
 ficha_listar_academicos:
@@ -61,11 +62,18 @@ ficha_editar_publico:
     distintivo: \d+
     sf_method: [get]
 
-ficha_crear:
-  url:      /ficha/academico/nuevo.:sf_format
+actividad_nueva:
+  url:      /actividad/nueva.:sf_format
   class:    sfDoctrineRoute
-  options:  { model: ACADEMICO, type: object }
-  param:    { module: ficha, action: crear, sf_format: html }
+  options:  { model: ACTIVIDAD, type: object }
+  param:    { module: actividad, action: nuevaActividad, sf_format: html }
+  requirements: { sf_method: get }
+  
+actividad_crear:
+  url:      /actividad/crear.:sf_format
+  class:    sfDoctrineRoute
+  options:  { model: ACTIVIDAD, type: object }
+  param:    { module: actividad, action: crearActividad, sf_format: html }
   requirements: { sf_method: post }
   
 
@@ -76,8 +84,8 @@ homepage:
 
 # generic rules
 # please, remove them by adding more specific rules
-#default_index:
-#  url:   /:login
-#  param: { action: indexLogin }
+default_index:
+  url:   /:login
+  param: { action: indexLogin }
 
 

@@ -13,27 +13,27 @@ MODULO:
   MODULO_1:
     codmodulo: fi
     nombremodulo: 'Datos pesonales'
+    descripcionmodulo: 'Información relacionada con los datos básicos del catedrático.'
     urlmodulo: ficha
     imgmodulo: ''
     imgsobremodulo: ''
     imgactivomodulo: ''
-    descripcionmodulo: 'Información relacionada con los datos básicos del catedrático.'
   MODULO_2:
     codmodulo: lo
     nombremodulo: 'Logros académicos'
+    descripcionmodulo: 'Registro de las actividades realizadas por los catedráticos.'
     urlmodulo: logros
     imgmodulo: ''
     imgsobremodulo: ''
     imgactivomodulo: ''
-    descripcionmodulo: 'Registro de las actividades realizadas por los catedráticos.'
   MODULO_3:
     codmodulo: as
     nombremodulo: 'Asignación de UMA'
+    descripcionmodulo: 'Asignación de unidades de mérito académico.'
     urlmodulo: umas
     imgmodulo: ''
     imgsobremodulo: ''
     imgactivomodulo: ''
-    descripcionmodulo: 'Asignación de unidades de mérito académico.'
 TIPO_DOC_IDENT:
   TIPO_DOC_IDENT_1:
     nombretipodocident: 'DUI (Documento Único de Identidad)'
@@ -77,137 +77,6 @@ NIVEL_ESTUDIO:
     nombrenivelestudio: Maestría
   NIVEL_ESTUDIO_7:
     nombrenivelestudio: Doctorado
-ACCION:
-  ACCION_1:
-    MODULO: MODULO_1
-    codaccion: '10'
-    nombreaccion: 'Buscar Académico'
-    urlaccion: buscarFicha
-  ACCION_2:
-    MODULO: MODULO_1
-    codaccion: '20'
-    nombreaccion: 'Modificar datos de Académico'
-    urlaccion: modificarFicha
-  ACCION_3:
-    MODULO: MODULO_1
-    codaccion: '20'
-    nombreaccion: 'Eliminar Académico'
-    urlaccion: eliminarFicha
-  ACCION_4:
-    MODULO: MODULO_1
-    codaccion: '12'
-    nombreaccion: 'Mostrar datos de Académico'
-    urlaccion: mostrarFicha
-  ACCION_5:
-    MODULO: MODULO_1
-    codaccion: '12'
-    nombreaccion: 'Asignar UMA'
-    urlaccion: asignarUma
-  ACCION_6:
-    MODULO: MODULO_1
-    codaccion: '12'
-    nombreaccion: 'Mostrar logros'
-    urlaccion: mostrarLogros
-  ACCION_7:
-    MODULO: MODULO_1
-    codaccion: '10'
-    nombreaccion: 'Agregar Académico'
-    urlaccion: agregarFicha
-  ACCION_8:
-    MODULO: MODULO_2
-    codaccion: '10'
-    nombreaccion: 'Agregar Logro'
-    urlaccion: agregarLogro
-  ACCION_9:
-    MODULO: MODULO_2
-    codaccion: '10'
-    nombreaccion: 'Buscar Logro'
-    urlaccion: buscarLogro
-  ACCION_10:
-    MODULO: MODULO_2
-    codaccion: '20'
-    nombreaccion: 'Modificar Logro'
-    urlaccion: modificarLogro
-  ACCION_11:
-    MODULO: MODULO_2
-    codaccion: '20'
-    nombreaccion: 'Aprobar Logro'
-    urlaccion: aprobarLogro
-  ACCION_12:
-    MODULO: MODULO_3
-    codaccion: '10'
-    nombreaccion: 'Modificar clasificaciones'
-    urlaccion: modificarClasificacion
-  ACCION_13:
-    MODULO: MODULO_1
-    codaccion: '30'
-    nombreaccion: 'Datos personales y curriculares de académicos'
-    urlaccion: reporteDatosFicha
-  ACCION_14:
-    MODULO: MODULO_1
-    codaccion: '30'
-    nombreaccion: 'Academicos por departamento y escalafón'
-    urlaccion: reporteListadoFicha
-  ACCION_15:
-    MODULO: MODULO_1
-    codaccion: '30'
-    nombreaccion: 'Academicos por tipo y tiempo de contratación'
-    urlaccion: reporteContratacion
-  ACCION_16:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'MINED, MINEC y CONACYT'
-    urlaccion: reporteMined
-  ACCION_17:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Titulos obtenidos por académico'
-    urlaccion: reporteTitulos
-  ACCION_18:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Investigaciones y publicaciones'
-    urlaccion: reporteInvestigaciones
-  ACCION_19:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Temas de investigación'
-    urlaccion: reporteTemasInv
-  ACCION_20:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Diplomados, cursos y talleres'
-    urlaccion: reporteDiplomados
-  ACCION_21:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Seminarios, foros y conferencias'
-    urlaccion: reporteSeminarios
-  ACCION_22:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Activiades académicas por periodo'
-    urlaccion: reporteActividades
-  ACCION_23:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Historial de actividades académicas'
-    urlaccion: reporteHistorialAct
-  ACCION_24:
-    MODULO: MODULO_2
-    codaccion: '30'
-    nombreaccion: 'Académicos y materias impartidas'
-    urlaccion: reporteMaterias
-  ACCION_25:
-    MODULO: MODULO_3
-    codaccion: '30'
-    nombreaccion: 'UMA asignadas por periodo'
-    urlaccion: reporteUma
-  ACCION_26:
-    MODULO: MODULO_3
-    codaccion: '30'
-    nombreaccion: 'UMA académicos por departamento'
-    urlaccion: reporteUmaDepto
 ACCIONXPERFIL:
   ACCIONXPERFIL_1_1:
     ACCION: ACCION_1
@@ -885,13 +754,5006 @@ IDIOMA:
     nombreisoidioma: Zulú
 USUARIO:
   USUARIO_1:
-    nombreusuario: guillermogutierrez
-    contraseniausuario: '12345'
+    nombreusuario: juanperez1
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
     PERFIL: PERFIL_1
   USUARIO_2:
-    nombreusuario: victormaravilla
-    contraseniausuario: s
+    nombreusuario: juanperez2
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_3:
+    nombreusuario: juanperez3
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_4:
+    nombreusuario: juanperez4
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_5:
+    nombreusuario: juanperez5
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_6:
+    nombreusuario: juanperez6
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_7:
+    nombreusuario: juanperez7
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_8:
+    nombreusuario: juanperez8
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_9:
+    nombreusuario: juanperez9
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_10:
+    nombreusuario: juanperez10
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_11:
+    nombreusuario: juanperez11
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_12:
+    nombreusuario: juanperez12
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_13:
+    nombreusuario: juanperez13
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_14:
+    nombreusuario: juanperez14
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_15:
+    nombreusuario: juanperez15
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_16:
+    nombreusuario: juanperez16
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_17:
+    nombreusuario: juanperez17
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_18:
+    nombreusuario: juanperez18
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_19:
+    nombreusuario: juanperez19
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_20:
+    nombreusuario: juanperez20
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_21:
+    nombreusuario: juanperez21
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_22:
+    nombreusuario: juanperez22
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_23:
+    nombreusuario: juanperez23
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_24:
+    nombreusuario: juanperez24
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_25:
+    nombreusuario: juanperez25
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_26:
+    nombreusuario: juanperez26
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_27:
+    nombreusuario: juanperez27
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_28:
+    nombreusuario: juanperez28
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_29:
+    nombreusuario: juanperez29
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_30:
+    nombreusuario: juanperez30
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_31:
+    nombreusuario: juanperez31
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_32:
+    nombreusuario: juanperez32
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_33:
+    nombreusuario: juanperez33
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_34:
+    nombreusuario: juanperez34
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_35:
+    nombreusuario: juanperez35
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_36:
+    nombreusuario: juanperez36
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_37:
+    nombreusuario: juanperez37
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_38:
+    nombreusuario: juanperez38
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_39:
+    nombreusuario: juanperez39
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_40:
+    nombreusuario: juanperez40
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_41:
+    nombreusuario: juanperez41
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_42:
+    nombreusuario: juanperez42
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_43:
+    nombreusuario: juanperez43
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_44:
+    nombreusuario: juanperez44
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_45:
+    nombreusuario: juanperez45
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_46:
+    nombreusuario: juanperez46
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_47:
+    nombreusuario: juanperez47
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_48:
+    nombreusuario: juanperez48
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_49:
+    nombreusuario: juanperez49
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_50:
+    nombreusuario: juanperez50
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_51:
+    nombreusuario: juanperez51
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_52:
+    nombreusuario: juanperez52
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_53:
+    nombreusuario: juanperez53
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_54:
+    nombreusuario: juanperez54
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_55:
+    nombreusuario: juanperez55
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_56:
+    nombreusuario: juanperez56
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_57:
+    nombreusuario: juanperez57
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_58:
+    nombreusuario: juanperez58
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_59:
+    nombreusuario: juanperez59
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_60:
+    nombreusuario: juanperez60
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_61:
+    nombreusuario: juanperez61
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_62:
+    nombreusuario: juanperez62
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_63:
+    nombreusuario: juanperez63
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_64:
+    nombreusuario: juanperez64
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_65:
+    nombreusuario: juanperez65
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_66:
+    nombreusuario: juanperez66
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_67:
+    nombreusuario: juanperez67
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_68:
+    nombreusuario: juanperez68
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_69:
+    nombreusuario: juanperez69
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_70:
+    nombreusuario: juanperez70
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_71:
+    nombreusuario: juanperez71
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_72:
+    nombreusuario: juanperez72
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_73:
+    nombreusuario: juanperez73
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_74:
+    nombreusuario: juanperez74
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_75:
+    nombreusuario: juanperez75
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_76:
+    nombreusuario: juanperez76
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_77:
+    nombreusuario: juanperez77
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_78:
+    nombreusuario: juanperez78
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_79:
+    nombreusuario: juanperez79
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_80:
+    nombreusuario: juanperez80
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_81:
+    nombreusuario: juanperez81
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_82:
+    nombreusuario: juanperez82
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_83:
+    nombreusuario: juanperez83
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_84:
+    nombreusuario: juanperez84
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_85:
+    nombreusuario: juanperez85
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_86:
+    nombreusuario: juanperez86
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_87:
+    nombreusuario: juanperez87
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_88:
+    nombreusuario: juanperez88
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_89:
+    nombreusuario: juanperez89
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_90:
+    nombreusuario: juanperez90
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_91:
+    nombreusuario: juanperez91
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_92:
+    nombreusuario: juanperez92
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_93:
+    nombreusuario: juanperez93
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_94:
+    nombreusuario: juanperez94
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_95:
+    nombreusuario: juanperez95
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_96:
+    nombreusuario: juanperez96
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_97:
+    nombreusuario: juanperez97
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_98:
+    nombreusuario: juanperez98
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_99:
+    nombreusuario: juanperez99
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_100:
+    nombreusuario: juanperez100
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_1
+  USUARIO_101:
+    nombreusuario: mariamenjivar101
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
     PERFIL: PERFIL_5
+  USUARIO_102:
+    nombreusuario: mariamenjivar102
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_103:
+    nombreusuario: mariamenjivar103
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_104:
+    nombreusuario: mariamenjivar104
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_105:
+    nombreusuario: mariamenjivar105
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_106:
+    nombreusuario: mariamenjivar106
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_107:
+    nombreusuario: mariamenjivar107
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_108:
+    nombreusuario: mariamenjivar108
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_109:
+    nombreusuario: mariamenjivar109
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_110:
+    nombreusuario: mariamenjivar110
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_111:
+    nombreusuario: mariamenjivar111
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_112:
+    nombreusuario: mariamenjivar112
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_113:
+    nombreusuario: mariamenjivar113
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_114:
+    nombreusuario: mariamenjivar114
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_115:
+    nombreusuario: mariamenjivar115
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_116:
+    nombreusuario: mariamenjivar116
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_117:
+    nombreusuario: mariamenjivar117
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_118:
+    nombreusuario: mariamenjivar118
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_119:
+    nombreusuario: mariamenjivar119
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_120:
+    nombreusuario: mariamenjivar120
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_121:
+    nombreusuario: mariamenjivar121
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_122:
+    nombreusuario: mariamenjivar122
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_123:
+    nombreusuario: mariamenjivar123
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_124:
+    nombreusuario: mariamenjivar124
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_125:
+    nombreusuario: mariamenjivar125
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_126:
+    nombreusuario: mariamenjivar126
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_127:
+    nombreusuario: mariamenjivar127
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_128:
+    nombreusuario: mariamenjivar128
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_129:
+    nombreusuario: mariamenjivar129
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_130:
+    nombreusuario: mariamenjivar130
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_131:
+    nombreusuario: mariamenjivar131
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_132:
+    nombreusuario: mariamenjivar132
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_133:
+    nombreusuario: mariamenjivar133
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_134:
+    nombreusuario: mariamenjivar134
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_135:
+    nombreusuario: mariamenjivar135
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_136:
+    nombreusuario: mariamenjivar136
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_137:
+    nombreusuario: mariamenjivar137
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_138:
+    nombreusuario: mariamenjivar138
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_139:
+    nombreusuario: mariamenjivar139
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_140:
+    nombreusuario: mariamenjivar140
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_141:
+    nombreusuario: mariamenjivar141
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_142:
+    nombreusuario: mariamenjivar142
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_143:
+    nombreusuario: mariamenjivar143
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_144:
+    nombreusuario: mariamenjivar144
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_145:
+    nombreusuario: mariamenjivar145
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_146:
+    nombreusuario: mariamenjivar146
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_147:
+    nombreusuario: mariamenjivar147
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_148:
+    nombreusuario: mariamenjivar148
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_149:
+    nombreusuario: mariamenjivar149
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_150:
+    nombreusuario: mariamenjivar150
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_151:
+    nombreusuario: mariamenjivar151
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_152:
+    nombreusuario: mariamenjivar152
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_153:
+    nombreusuario: mariamenjivar153
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_154:
+    nombreusuario: mariamenjivar154
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_155:
+    nombreusuario: mariamenjivar155
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_156:
+    nombreusuario: mariamenjivar156
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_157:
+    nombreusuario: mariamenjivar157
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_158:
+    nombreusuario: mariamenjivar158
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_159:
+    nombreusuario: mariamenjivar159
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_160:
+    nombreusuario: mariamenjivar160
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_161:
+    nombreusuario: mariamenjivar161
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_162:
+    nombreusuario: mariamenjivar162
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_163:
+    nombreusuario: mariamenjivar163
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_164:
+    nombreusuario: mariamenjivar164
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_165:
+    nombreusuario: mariamenjivar165
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_166:
+    nombreusuario: mariamenjivar166
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_167:
+    nombreusuario: mariamenjivar167
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_168:
+    nombreusuario: mariamenjivar168
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_169:
+    nombreusuario: mariamenjivar169
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_170:
+    nombreusuario: mariamenjivar170
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_171:
+    nombreusuario: mariamenjivar171
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_172:
+    nombreusuario: mariamenjivar172
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_173:
+    nombreusuario: mariamenjivar173
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_174:
+    nombreusuario: mariamenjivar174
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_175:
+    nombreusuario: mariamenjivar175
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_176:
+    nombreusuario: mariamenjivar176
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_177:
+    nombreusuario: mariamenjivar177
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_178:
+    nombreusuario: mariamenjivar178
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_179:
+    nombreusuario: mariamenjivar179
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_180:
+    nombreusuario: mariamenjivar180
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_181:
+    nombreusuario: mariamenjivar181
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_182:
+    nombreusuario: mariamenjivar182
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_183:
+    nombreusuario: mariamenjivar183
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_184:
+    nombreusuario: mariamenjivar184
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_185:
+    nombreusuario: mariamenjivar185
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_186:
+    nombreusuario: mariamenjivar186
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_187:
+    nombreusuario: mariamenjivar187
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_188:
+    nombreusuario: mariamenjivar188
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_189:
+    nombreusuario: mariamenjivar189
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_190:
+    nombreusuario: mariamenjivar190
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_191:
+    nombreusuario: mariamenjivar191
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_192:
+    nombreusuario: mariamenjivar192
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_193:
+    nombreusuario: mariamenjivar193
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_194:
+    nombreusuario: mariamenjivar194
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_195:
+    nombreusuario: mariamenjivar195
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_196:
+    nombreusuario: mariamenjivar196
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_197:
+    nombreusuario: mariamenjivar197
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_198:
+    nombreusuario: mariamenjivar198
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_199:
+    nombreusuario: mariamenjivar199
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+  USUARIO_200:
+    nombreusuario: mariamenjivar200
+    contraseniausuario: 827ccb0eea8a706c4c34a16891f84e7b
+    PERFIL: PERFIL_5
+ACADEMICO:
+  ACADEMICO_1:
+    codigoacademico: '0001'
+    primernombreacad: Juan_1
+    segundonombreacad: Alberto_1
+    primerapellidoacad: Pérez_1
+    segundoapellidoacad: Sosa_1
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_1
+  ACADEMICO_2:
+    codigoacademico: '0002'
+    primernombreacad: Juan_2
+    segundonombreacad: Alberto_2
+    primerapellidoacad: Pérez_2
+    segundoapellidoacad: Sosa_2
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_2
+  ACADEMICO_3:
+    codigoacademico: '0003'
+    primernombreacad: Juan_3
+    segundonombreacad: Alberto_3
+    primerapellidoacad: Pérez_3
+    segundoapellidoacad: Sosa_3
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_3
+  ACADEMICO_4:
+    codigoacademico: '0004'
+    primernombreacad: Juan_4
+    segundonombreacad: Alberto_4
+    primerapellidoacad: Pérez_4
+    segundoapellidoacad: Sosa_4
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_4
+  ACADEMICO_5:
+    codigoacademico: '0005'
+    primernombreacad: Juan_5
+    segundonombreacad: Alberto_5
+    primerapellidoacad: Pérez_5
+    segundoapellidoacad: Sosa_5
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_5
+  ACADEMICO_6:
+    codigoacademico: '0006'
+    primernombreacad: Juan_6
+    segundonombreacad: Alberto_6
+    primerapellidoacad: Pérez_6
+    segundoapellidoacad: Sosa_6
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_6
+  ACADEMICO_7:
+    codigoacademico: '0007'
+    primernombreacad: Juan_7
+    segundonombreacad: Alberto_7
+    primerapellidoacad: Pérez_7
+    segundoapellidoacad: Sosa_7
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_7
+  ACADEMICO_8:
+    codigoacademico: '0008'
+    primernombreacad: Juan_8
+    segundonombreacad: Alberto_8
+    primerapellidoacad: Pérez_8
+    segundoapellidoacad: Sosa_8
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_8
+  ACADEMICO_9:
+    codigoacademico: '0009'
+    primernombreacad: Juan_9
+    segundonombreacad: Alberto_9
+    primerapellidoacad: Pérez_9
+    segundoapellidoacad: Sosa_9
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_9
+  ACADEMICO_10:
+    codigoacademico: '00010'
+    primernombreacad: Juan_10
+    segundonombreacad: Alberto_10
+    primerapellidoacad: Pérez_10
+    segundoapellidoacad: Sosa_10
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_10
+  ACADEMICO_11:
+    codigoacademico: '00011'
+    primernombreacad: Juan_11
+    segundonombreacad: Alberto_11
+    primerapellidoacad: Pérez_11
+    segundoapellidoacad: Sosa_11
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_11
+  ACADEMICO_12:
+    codigoacademico: '00012'
+    primernombreacad: Juan_12
+    segundonombreacad: Alberto_12
+    primerapellidoacad: Pérez_12
+    segundoapellidoacad: Sosa_12
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_12
+  ACADEMICO_13:
+    codigoacademico: '00013'
+    primernombreacad: Juan_13
+    segundonombreacad: Alberto_13
+    primerapellidoacad: Pérez_13
+    segundoapellidoacad: Sosa_13
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_13
+  ACADEMICO_14:
+    codigoacademico: '00014'
+    primernombreacad: Juan_14
+    segundonombreacad: Alberto_14
+    primerapellidoacad: Pérez_14
+    segundoapellidoacad: Sosa_14
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_14
+  ACADEMICO_15:
+    codigoacademico: '00015'
+    primernombreacad: Juan_15
+    segundonombreacad: Alberto_15
+    primerapellidoacad: Pérez_15
+    segundoapellidoacad: Sosa_15
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_15
+  ACADEMICO_16:
+    codigoacademico: '00016'
+    primernombreacad: Juan_16
+    segundonombreacad: Alberto_16
+    primerapellidoacad: Pérez_16
+    segundoapellidoacad: Sosa_16
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_16
+  ACADEMICO_17:
+    codigoacademico: '00017'
+    primernombreacad: Juan_17
+    segundonombreacad: Alberto_17
+    primerapellidoacad: Pérez_17
+    segundoapellidoacad: Sosa_17
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_17
+  ACADEMICO_18:
+    codigoacademico: '00018'
+    primernombreacad: Juan_18
+    segundonombreacad: Alberto_18
+    primerapellidoacad: Pérez_18
+    segundoapellidoacad: Sosa_18
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_18
+  ACADEMICO_19:
+    codigoacademico: '00019'
+    primernombreacad: Juan_19
+    segundonombreacad: Alberto_19
+    primerapellidoacad: Pérez_19
+    segundoapellidoacad: Sosa_19
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_19
+  ACADEMICO_20:
+    codigoacademico: '00020'
+    primernombreacad: Juan_20
+    segundonombreacad: Alberto_20
+    primerapellidoacad: Pérez_20
+    segundoapellidoacad: Sosa_20
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_20
+  ACADEMICO_21:
+    codigoacademico: '00021'
+    primernombreacad: Juan_21
+    segundonombreacad: Alberto_21
+    primerapellidoacad: Pérez_21
+    segundoapellidoacad: Sosa_21
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_21
+  ACADEMICO_22:
+    codigoacademico: '00022'
+    primernombreacad: Juan_22
+    segundonombreacad: Alberto_22
+    primerapellidoacad: Pérez_22
+    segundoapellidoacad: Sosa_22
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_22
+  ACADEMICO_23:
+    codigoacademico: '00023'
+    primernombreacad: Juan_23
+    segundonombreacad: Alberto_23
+    primerapellidoacad: Pérez_23
+    segundoapellidoacad: Sosa_23
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_23
+  ACADEMICO_24:
+    codigoacademico: '00024'
+    primernombreacad: Juan_24
+    segundonombreacad: Alberto_24
+    primerapellidoacad: Pérez_24
+    segundoapellidoacad: Sosa_24
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_24
+  ACADEMICO_25:
+    codigoacademico: '00025'
+    primernombreacad: Juan_25
+    segundonombreacad: Alberto_25
+    primerapellidoacad: Pérez_25
+    segundoapellidoacad: Sosa_25
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_25
+  ACADEMICO_26:
+    codigoacademico: '00026'
+    primernombreacad: Juan_26
+    segundonombreacad: Alberto_26
+    primerapellidoacad: Pérez_26
+    segundoapellidoacad: Sosa_26
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_26
+  ACADEMICO_27:
+    codigoacademico: '00027'
+    primernombreacad: Juan_27
+    segundonombreacad: Alberto_27
+    primerapellidoacad: Pérez_27
+    segundoapellidoacad: Sosa_27
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_27
+  ACADEMICO_28:
+    codigoacademico: '00028'
+    primernombreacad: Juan_28
+    segundonombreacad: Alberto_28
+    primerapellidoacad: Pérez_28
+    segundoapellidoacad: Sosa_28
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_28
+  ACADEMICO_29:
+    codigoacademico: '00029'
+    primernombreacad: Juan_29
+    segundonombreacad: Alberto_29
+    primerapellidoacad: Pérez_29
+    segundoapellidoacad: Sosa_29
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_29
+  ACADEMICO_30:
+    codigoacademico: '00030'
+    primernombreacad: Juan_30
+    segundonombreacad: Alberto_30
+    primerapellidoacad: Pérez_30
+    segundoapellidoacad: Sosa_30
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_30
+  ACADEMICO_31:
+    codigoacademico: '00031'
+    primernombreacad: Juan_31
+    segundonombreacad: Alberto_31
+    primerapellidoacad: Pérez_31
+    segundoapellidoacad: Sosa_31
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_31
+  ACADEMICO_32:
+    codigoacademico: '00032'
+    primernombreacad: Juan_32
+    segundonombreacad: Alberto_32
+    primerapellidoacad: Pérez_32
+    segundoapellidoacad: Sosa_32
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_32
+  ACADEMICO_33:
+    codigoacademico: '00033'
+    primernombreacad: Juan_33
+    segundonombreacad: Alberto_33
+    primerapellidoacad: Pérez_33
+    segundoapellidoacad: Sosa_33
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_33
+  ACADEMICO_34:
+    codigoacademico: '00034'
+    primernombreacad: Juan_34
+    segundonombreacad: Alberto_34
+    primerapellidoacad: Pérez_34
+    segundoapellidoacad: Sosa_34
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_34
+  ACADEMICO_35:
+    codigoacademico: '00035'
+    primernombreacad: Juan_35
+    segundonombreacad: Alberto_35
+    primerapellidoacad: Pérez_35
+    segundoapellidoacad: Sosa_35
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_35
+  ACADEMICO_36:
+    codigoacademico: '00036'
+    primernombreacad: Juan_36
+    segundonombreacad: Alberto_36
+    primerapellidoacad: Pérez_36
+    segundoapellidoacad: Sosa_36
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_36
+  ACADEMICO_37:
+    codigoacademico: '00037'
+    primernombreacad: Juan_37
+    segundonombreacad: Alberto_37
+    primerapellidoacad: Pérez_37
+    segundoapellidoacad: Sosa_37
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_37
+  ACADEMICO_38:
+    codigoacademico: '00038'
+    primernombreacad: Juan_38
+    segundonombreacad: Alberto_38
+    primerapellidoacad: Pérez_38
+    segundoapellidoacad: Sosa_38
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_38
+  ACADEMICO_39:
+    codigoacademico: '00039'
+    primernombreacad: Juan_39
+    segundonombreacad: Alberto_39
+    primerapellidoacad: Pérez_39
+    segundoapellidoacad: Sosa_39
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_39
+  ACADEMICO_40:
+    codigoacademico: '00040'
+    primernombreacad: Juan_40
+    segundonombreacad: Alberto_40
+    primerapellidoacad: Pérez_40
+    segundoapellidoacad: Sosa_40
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_40
+  ACADEMICO_41:
+    codigoacademico: '00041'
+    primernombreacad: Juan_41
+    segundonombreacad: Alberto_41
+    primerapellidoacad: Pérez_41
+    segundoapellidoacad: Sosa_41
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_41
+  ACADEMICO_42:
+    codigoacademico: '00042'
+    primernombreacad: Juan_42
+    segundonombreacad: Alberto_42
+    primerapellidoacad: Pérez_42
+    segundoapellidoacad: Sosa_42
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_42
+  ACADEMICO_43:
+    codigoacademico: '00043'
+    primernombreacad: Juan_43
+    segundonombreacad: Alberto_43
+    primerapellidoacad: Pérez_43
+    segundoapellidoacad: Sosa_43
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_43
+  ACADEMICO_44:
+    codigoacademico: '00044'
+    primernombreacad: Juan_44
+    segundonombreacad: Alberto_44
+    primerapellidoacad: Pérez_44
+    segundoapellidoacad: Sosa_44
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_44
+  ACADEMICO_45:
+    codigoacademico: '00045'
+    primernombreacad: Juan_45
+    segundonombreacad: Alberto_45
+    primerapellidoacad: Pérez_45
+    segundoapellidoacad: Sosa_45
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_45
+  ACADEMICO_46:
+    codigoacademico: '00046'
+    primernombreacad: Juan_46
+    segundonombreacad: Alberto_46
+    primerapellidoacad: Pérez_46
+    segundoapellidoacad: Sosa_46
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_46
+  ACADEMICO_47:
+    codigoacademico: '00047'
+    primernombreacad: Juan_47
+    segundonombreacad: Alberto_47
+    primerapellidoacad: Pérez_47
+    segundoapellidoacad: Sosa_47
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_47
+  ACADEMICO_48:
+    codigoacademico: '00048'
+    primernombreacad: Juan_48
+    segundonombreacad: Alberto_48
+    primerapellidoacad: Pérez_48
+    segundoapellidoacad: Sosa_48
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_48
+  ACADEMICO_49:
+    codigoacademico: '00049'
+    primernombreacad: Juan_49
+    segundonombreacad: Alberto_49
+    primerapellidoacad: Pérez_49
+    segundoapellidoacad: Sosa_49
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_49
+  ACADEMICO_50:
+    codigoacademico: '00050'
+    primernombreacad: Juan_50
+    segundonombreacad: Alberto_50
+    primerapellidoacad: Pérez_50
+    segundoapellidoacad: Sosa_50
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_50
+  ACADEMICO_51:
+    codigoacademico: '00051'
+    primernombreacad: Juan_51
+    segundonombreacad: Alberto_51
+    primerapellidoacad: Pérez_51
+    segundoapellidoacad: Sosa_51
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_51
+  ACADEMICO_52:
+    codigoacademico: '00052'
+    primernombreacad: Juan_52
+    segundonombreacad: Alberto_52
+    primerapellidoacad: Pérez_52
+    segundoapellidoacad: Sosa_52
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_52
+  ACADEMICO_53:
+    codigoacademico: '00053'
+    primernombreacad: Juan_53
+    segundonombreacad: Alberto_53
+    primerapellidoacad: Pérez_53
+    segundoapellidoacad: Sosa_53
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_53
+  ACADEMICO_54:
+    codigoacademico: '00054'
+    primernombreacad: Juan_54
+    segundonombreacad: Alberto_54
+    primerapellidoacad: Pérez_54
+    segundoapellidoacad: Sosa_54
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_54
+  ACADEMICO_55:
+    codigoacademico: '00055'
+    primernombreacad: Juan_55
+    segundonombreacad: Alberto_55
+    primerapellidoacad: Pérez_55
+    segundoapellidoacad: Sosa_55
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_55
+  ACADEMICO_56:
+    codigoacademico: '00056'
+    primernombreacad: Juan_56
+    segundonombreacad: Alberto_56
+    primerapellidoacad: Pérez_56
+    segundoapellidoacad: Sosa_56
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_56
+  ACADEMICO_57:
+    codigoacademico: '00057'
+    primernombreacad: Juan_57
+    segundonombreacad: Alberto_57
+    primerapellidoacad: Pérez_57
+    segundoapellidoacad: Sosa_57
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_57
+  ACADEMICO_58:
+    codigoacademico: '00058'
+    primernombreacad: Juan_58
+    segundonombreacad: Alberto_58
+    primerapellidoacad: Pérez_58
+    segundoapellidoacad: Sosa_58
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_58
+  ACADEMICO_59:
+    codigoacademico: '00059'
+    primernombreacad: Juan_59
+    segundonombreacad: Alberto_59
+    primerapellidoacad: Pérez_59
+    segundoapellidoacad: Sosa_59
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_59
+  ACADEMICO_60:
+    codigoacademico: '00060'
+    primernombreacad: Juan_60
+    segundonombreacad: Alberto_60
+    primerapellidoacad: Pérez_60
+    segundoapellidoacad: Sosa_60
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_60
+  ACADEMICO_61:
+    codigoacademico: '00061'
+    primernombreacad: Juan_61
+    segundonombreacad: Alberto_61
+    primerapellidoacad: Pérez_61
+    segundoapellidoacad: Sosa_61
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_61
+  ACADEMICO_62:
+    codigoacademico: '00062'
+    primernombreacad: Juan_62
+    segundonombreacad: Alberto_62
+    primerapellidoacad: Pérez_62
+    segundoapellidoacad: Sosa_62
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_62
+  ACADEMICO_63:
+    codigoacademico: '00063'
+    primernombreacad: Juan_63
+    segundonombreacad: Alberto_63
+    primerapellidoacad: Pérez_63
+    segundoapellidoacad: Sosa_63
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_63
+  ACADEMICO_64:
+    codigoacademico: '00064'
+    primernombreacad: Juan_64
+    segundonombreacad: Alberto_64
+    primerapellidoacad: Pérez_64
+    segundoapellidoacad: Sosa_64
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_64
+  ACADEMICO_65:
+    codigoacademico: '00065'
+    primernombreacad: Juan_65
+    segundonombreacad: Alberto_65
+    primerapellidoacad: Pérez_65
+    segundoapellidoacad: Sosa_65
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_65
+  ACADEMICO_66:
+    codigoacademico: '00066'
+    primernombreacad: Juan_66
+    segundonombreacad: Alberto_66
+    primerapellidoacad: Pérez_66
+    segundoapellidoacad: Sosa_66
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_66
+  ACADEMICO_67:
+    codigoacademico: '00067'
+    primernombreacad: Juan_67
+    segundonombreacad: Alberto_67
+    primerapellidoacad: Pérez_67
+    segundoapellidoacad: Sosa_67
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_67
+  ACADEMICO_68:
+    codigoacademico: '00068'
+    primernombreacad: Juan_68
+    segundonombreacad: Alberto_68
+    primerapellidoacad: Pérez_68
+    segundoapellidoacad: Sosa_68
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_68
+  ACADEMICO_69:
+    codigoacademico: '00069'
+    primernombreacad: Juan_69
+    segundonombreacad: Alberto_69
+    primerapellidoacad: Pérez_69
+    segundoapellidoacad: Sosa_69
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_69
+  ACADEMICO_70:
+    codigoacademico: '00070'
+    primernombreacad: Juan_70
+    segundonombreacad: Alberto_70
+    primerapellidoacad: Pérez_70
+    segundoapellidoacad: Sosa_70
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_70
+  ACADEMICO_71:
+    codigoacademico: '00071'
+    primernombreacad: Juan_71
+    segundonombreacad: Alberto_71
+    primerapellidoacad: Pérez_71
+    segundoapellidoacad: Sosa_71
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_71
+  ACADEMICO_72:
+    codigoacademico: '00072'
+    primernombreacad: Juan_72
+    segundonombreacad: Alberto_72
+    primerapellidoacad: Pérez_72
+    segundoapellidoacad: Sosa_72
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_72
+  ACADEMICO_73:
+    codigoacademico: '00073'
+    primernombreacad: Juan_73
+    segundonombreacad: Alberto_73
+    primerapellidoacad: Pérez_73
+    segundoapellidoacad: Sosa_73
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_73
+  ACADEMICO_74:
+    codigoacademico: '00074'
+    primernombreacad: Juan_74
+    segundonombreacad: Alberto_74
+    primerapellidoacad: Pérez_74
+    segundoapellidoacad: Sosa_74
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_74
+  ACADEMICO_75:
+    codigoacademico: '00075'
+    primernombreacad: Juan_75
+    segundonombreacad: Alberto_75
+    primerapellidoacad: Pérez_75
+    segundoapellidoacad: Sosa_75
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_75
+  ACADEMICO_76:
+    codigoacademico: '00076'
+    primernombreacad: Juan_76
+    segundonombreacad: Alberto_76
+    primerapellidoacad: Pérez_76
+    segundoapellidoacad: Sosa_76
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_76
+  ACADEMICO_77:
+    codigoacademico: '00077'
+    primernombreacad: Juan_77
+    segundonombreacad: Alberto_77
+    primerapellidoacad: Pérez_77
+    segundoapellidoacad: Sosa_77
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_77
+  ACADEMICO_78:
+    codigoacademico: '00078'
+    primernombreacad: Juan_78
+    segundonombreacad: Alberto_78
+    primerapellidoacad: Pérez_78
+    segundoapellidoacad: Sosa_78
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_78
+  ACADEMICO_79:
+    codigoacademico: '00079'
+    primernombreacad: Juan_79
+    segundonombreacad: Alberto_79
+    primerapellidoacad: Pérez_79
+    segundoapellidoacad: Sosa_79
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_79
+  ACADEMICO_80:
+    codigoacademico: '00080'
+    primernombreacad: Juan_80
+    segundonombreacad: Alberto_80
+    primerapellidoacad: Pérez_80
+    segundoapellidoacad: Sosa_80
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_80
+  ACADEMICO_81:
+    codigoacademico: '00081'
+    primernombreacad: Juan_81
+    segundonombreacad: Alberto_81
+    primerapellidoacad: Pérez_81
+    segundoapellidoacad: Sosa_81
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_81
+  ACADEMICO_82:
+    codigoacademico: '00082'
+    primernombreacad: Juan_82
+    segundonombreacad: Alberto_82
+    primerapellidoacad: Pérez_82
+    segundoapellidoacad: Sosa_82
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_82
+  ACADEMICO_83:
+    codigoacademico: '00083'
+    primernombreacad: Juan_83
+    segundonombreacad: Alberto_83
+    primerapellidoacad: Pérez_83
+    segundoapellidoacad: Sosa_83
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_83
+  ACADEMICO_84:
+    codigoacademico: '00084'
+    primernombreacad: Juan_84
+    segundonombreacad: Alberto_84
+    primerapellidoacad: Pérez_84
+    segundoapellidoacad: Sosa_84
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_84
+  ACADEMICO_85:
+    codigoacademico: '00085'
+    primernombreacad: Juan_85
+    segundonombreacad: Alberto_85
+    primerapellidoacad: Pérez_85
+    segundoapellidoacad: Sosa_85
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_85
+  ACADEMICO_86:
+    codigoacademico: '00086'
+    primernombreacad: Juan_86
+    segundonombreacad: Alberto_86
+    primerapellidoacad: Pérez_86
+    segundoapellidoacad: Sosa_86
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_86
+  ACADEMICO_87:
+    codigoacademico: '00087'
+    primernombreacad: Juan_87
+    segundonombreacad: Alberto_87
+    primerapellidoacad: Pérez_87
+    segundoapellidoacad: Sosa_87
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_87
+  ACADEMICO_88:
+    codigoacademico: '00088'
+    primernombreacad: Juan_88
+    segundonombreacad: Alberto_88
+    primerapellidoacad: Pérez_88
+    segundoapellidoacad: Sosa_88
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_88
+  ACADEMICO_89:
+    codigoacademico: '00089'
+    primernombreacad: Juan_89
+    segundonombreacad: Alberto_89
+    primerapellidoacad: Pérez_89
+    segundoapellidoacad: Sosa_89
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_89
+  ACADEMICO_90:
+    codigoacademico: '00090'
+    primernombreacad: Juan_90
+    segundonombreacad: Alberto_90
+    primerapellidoacad: Pérez_90
+    segundoapellidoacad: Sosa_90
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_90
+  ACADEMICO_91:
+    codigoacademico: '00091'
+    primernombreacad: Juan_91
+    segundonombreacad: Alberto_91
+    primerapellidoacad: Pérez_91
+    segundoapellidoacad: Sosa_91
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_91
+  ACADEMICO_92:
+    codigoacademico: '00092'
+    primernombreacad: Juan_92
+    segundonombreacad: Alberto_92
+    primerapellidoacad: Pérez_92
+    segundoapellidoacad: Sosa_92
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_92
+  ACADEMICO_93:
+    codigoacademico: '00093'
+    primernombreacad: Juan_93
+    segundonombreacad: Alberto_93
+    primerapellidoacad: Pérez_93
+    segundoapellidoacad: Sosa_93
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_93
+  ACADEMICO_94:
+    codigoacademico: '00094'
+    primernombreacad: Juan_94
+    segundonombreacad: Alberto_94
+    primerapellidoacad: Pérez_94
+    segundoapellidoacad: Sosa_94
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_94
+  ACADEMICO_95:
+    codigoacademico: '00095'
+    primernombreacad: Juan_95
+    segundonombreacad: Alberto_95
+    primerapellidoacad: Pérez_95
+    segundoapellidoacad: Sosa_95
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_95
+  ACADEMICO_96:
+    codigoacademico: '00096'
+    primernombreacad: Juan_96
+    segundonombreacad: Alberto_96
+    primerapellidoacad: Pérez_96
+    segundoapellidoacad: Sosa_96
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_96
+  ACADEMICO_97:
+    codigoacademico: '00097'
+    primernombreacad: Juan_97
+    segundonombreacad: Alberto_97
+    primerapellidoacad: Pérez_97
+    segundoapellidoacad: Sosa_97
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_97
+  ACADEMICO_98:
+    codigoacademico: '00098'
+    primernombreacad: Juan_98
+    segundonombreacad: Alberto_98
+    primerapellidoacad: Pérez_98
+    segundoapellidoacad: Sosa_98
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_98
+  ACADEMICO_99:
+    codigoacademico: '00099'
+    primernombreacad: Juan_99
+    segundonombreacad: Alberto_99
+    primerapellidoacad: Pérez_99
+    segundoapellidoacad: Sosa_99
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_99
+  ACADEMICO_100:
+    codigoacademico: '000100'
+    primernombreacad: Juan_100
+    segundonombreacad: Alberto_100
+    primerapellidoacad: Pérez_100
+    segundoapellidoacad: Sosa_100
+    apellidocasadaacad: ''
+    sexoacad: '0'
+    fechanacimientoacad: '1988-11-26'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_100
+  ACADEMICO_101:
+    codigoacademico: '000101'
+    primernombreacad: María_101
+    segundonombreacad: Rosa_101
+    primerapellidoacad: Menjívar_101
+    segundoapellidoacad: Mejía_101
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_101
+  ACADEMICO_102:
+    codigoacademico: '000102'
+    primernombreacad: María_102
+    segundonombreacad: Rosa_102
+    primerapellidoacad: Menjívar_102
+    segundoapellidoacad: Mejía_102
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_102
+  ACADEMICO_103:
+    codigoacademico: '000103'
+    primernombreacad: María_103
+    segundonombreacad: Rosa_103
+    primerapellidoacad: Menjívar_103
+    segundoapellidoacad: Mejía_103
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_103
+  ACADEMICO_104:
+    codigoacademico: '000104'
+    primernombreacad: María_104
+    segundonombreacad: Rosa_104
+    primerapellidoacad: Menjívar_104
+    segundoapellidoacad: Mejía_104
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_104
+  ACADEMICO_105:
+    codigoacademico: '000105'
+    primernombreacad: María_105
+    segundonombreacad: Rosa_105
+    primerapellidoacad: Menjívar_105
+    segundoapellidoacad: Mejía_105
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_105
+  ACADEMICO_106:
+    codigoacademico: '000106'
+    primernombreacad: María_106
+    segundonombreacad: Rosa_106
+    primerapellidoacad: Menjívar_106
+    segundoapellidoacad: Mejía_106
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_106
+  ACADEMICO_107:
+    codigoacademico: '000107'
+    primernombreacad: María_107
+    segundonombreacad: Rosa_107
+    primerapellidoacad: Menjívar_107
+    segundoapellidoacad: Mejía_107
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_107
+  ACADEMICO_108:
+    codigoacademico: '000108'
+    primernombreacad: María_108
+    segundonombreacad: Rosa_108
+    primerapellidoacad: Menjívar_108
+    segundoapellidoacad: Mejía_108
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_108
+  ACADEMICO_109:
+    codigoacademico: '000109'
+    primernombreacad: María_109
+    segundonombreacad: Rosa_109
+    primerapellidoacad: Menjívar_109
+    segundoapellidoacad: Mejía_109
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_109
+  ACADEMICO_110:
+    codigoacademico: '000110'
+    primernombreacad: María_110
+    segundonombreacad: Rosa_110
+    primerapellidoacad: Menjívar_110
+    segundoapellidoacad: Mejía_110
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_110
+  ACADEMICO_111:
+    codigoacademico: '000111'
+    primernombreacad: María_111
+    segundonombreacad: Rosa_111
+    primerapellidoacad: Menjívar_111
+    segundoapellidoacad: Mejía_111
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_111
+  ACADEMICO_112:
+    codigoacademico: '000112'
+    primernombreacad: María_112
+    segundonombreacad: Rosa_112
+    primerapellidoacad: Menjívar_112
+    segundoapellidoacad: Mejía_112
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_112
+  ACADEMICO_113:
+    codigoacademico: '000113'
+    primernombreacad: María_113
+    segundonombreacad: Rosa_113
+    primerapellidoacad: Menjívar_113
+    segundoapellidoacad: Mejía_113
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_113
+  ACADEMICO_114:
+    codigoacademico: '000114'
+    primernombreacad: María_114
+    segundonombreacad: Rosa_114
+    primerapellidoacad: Menjívar_114
+    segundoapellidoacad: Mejía_114
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_114
+  ACADEMICO_115:
+    codigoacademico: '000115'
+    primernombreacad: María_115
+    segundonombreacad: Rosa_115
+    primerapellidoacad: Menjívar_115
+    segundoapellidoacad: Mejía_115
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_115
+  ACADEMICO_116:
+    codigoacademico: '000116'
+    primernombreacad: María_116
+    segundonombreacad: Rosa_116
+    primerapellidoacad: Menjívar_116
+    segundoapellidoacad: Mejía_116
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_116
+  ACADEMICO_117:
+    codigoacademico: '000117'
+    primernombreacad: María_117
+    segundonombreacad: Rosa_117
+    primerapellidoacad: Menjívar_117
+    segundoapellidoacad: Mejía_117
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_117
+  ACADEMICO_118:
+    codigoacademico: '000118'
+    primernombreacad: María_118
+    segundonombreacad: Rosa_118
+    primerapellidoacad: Menjívar_118
+    segundoapellidoacad: Mejía_118
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_118
+  ACADEMICO_119:
+    codigoacademico: '000119'
+    primernombreacad: María_119
+    segundonombreacad: Rosa_119
+    primerapellidoacad: Menjívar_119
+    segundoapellidoacad: Mejía_119
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_119
+  ACADEMICO_120:
+    codigoacademico: '000120'
+    primernombreacad: María_120
+    segundonombreacad: Rosa_120
+    primerapellidoacad: Menjívar_120
+    segundoapellidoacad: Mejía_120
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_120
+  ACADEMICO_121:
+    codigoacademico: '000121'
+    primernombreacad: María_121
+    segundonombreacad: Rosa_121
+    primerapellidoacad: Menjívar_121
+    segundoapellidoacad: Mejía_121
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_121
+  ACADEMICO_122:
+    codigoacademico: '000122'
+    primernombreacad: María_122
+    segundonombreacad: Rosa_122
+    primerapellidoacad: Menjívar_122
+    segundoapellidoacad: Mejía_122
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_122
+  ACADEMICO_123:
+    codigoacademico: '000123'
+    primernombreacad: María_123
+    segundonombreacad: Rosa_123
+    primerapellidoacad: Menjívar_123
+    segundoapellidoacad: Mejía_123
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_123
+  ACADEMICO_124:
+    codigoacademico: '000124'
+    primernombreacad: María_124
+    segundonombreacad: Rosa_124
+    primerapellidoacad: Menjívar_124
+    segundoapellidoacad: Mejía_124
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_124
+  ACADEMICO_125:
+    codigoacademico: '000125'
+    primernombreacad: María_125
+    segundonombreacad: Rosa_125
+    primerapellidoacad: Menjívar_125
+    segundoapellidoacad: Mejía_125
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_125
+  ACADEMICO_126:
+    codigoacademico: '000126'
+    primernombreacad: María_126
+    segundonombreacad: Rosa_126
+    primerapellidoacad: Menjívar_126
+    segundoapellidoacad: Mejía_126
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_126
+  ACADEMICO_127:
+    codigoacademico: '000127'
+    primernombreacad: María_127
+    segundonombreacad: Rosa_127
+    primerapellidoacad: Menjívar_127
+    segundoapellidoacad: Mejía_127
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_127
+  ACADEMICO_128:
+    codigoacademico: '000128'
+    primernombreacad: María_128
+    segundonombreacad: Rosa_128
+    primerapellidoacad: Menjívar_128
+    segundoapellidoacad: Mejía_128
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_128
+  ACADEMICO_129:
+    codigoacademico: '000129'
+    primernombreacad: María_129
+    segundonombreacad: Rosa_129
+    primerapellidoacad: Menjívar_129
+    segundoapellidoacad: Mejía_129
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_129
+  ACADEMICO_130:
+    codigoacademico: '000130'
+    primernombreacad: María_130
+    segundonombreacad: Rosa_130
+    primerapellidoacad: Menjívar_130
+    segundoapellidoacad: Mejía_130
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_130
+  ACADEMICO_131:
+    codigoacademico: '000131'
+    primernombreacad: María_131
+    segundonombreacad: Rosa_131
+    primerapellidoacad: Menjívar_131
+    segundoapellidoacad: Mejía_131
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_131
+  ACADEMICO_132:
+    codigoacademico: '000132'
+    primernombreacad: María_132
+    segundonombreacad: Rosa_132
+    primerapellidoacad: Menjívar_132
+    segundoapellidoacad: Mejía_132
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_132
+  ACADEMICO_133:
+    codigoacademico: '000133'
+    primernombreacad: María_133
+    segundonombreacad: Rosa_133
+    primerapellidoacad: Menjívar_133
+    segundoapellidoacad: Mejía_133
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_133
+  ACADEMICO_134:
+    codigoacademico: '000134'
+    primernombreacad: María_134
+    segundonombreacad: Rosa_134
+    primerapellidoacad: Menjívar_134
+    segundoapellidoacad: Mejía_134
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_134
+  ACADEMICO_135:
+    codigoacademico: '000135'
+    primernombreacad: María_135
+    segundonombreacad: Rosa_135
+    primerapellidoacad: Menjívar_135
+    segundoapellidoacad: Mejía_135
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_135
+  ACADEMICO_136:
+    codigoacademico: '000136'
+    primernombreacad: María_136
+    segundonombreacad: Rosa_136
+    primerapellidoacad: Menjívar_136
+    segundoapellidoacad: Mejía_136
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_136
+  ACADEMICO_137:
+    codigoacademico: '000137'
+    primernombreacad: María_137
+    segundonombreacad: Rosa_137
+    primerapellidoacad: Menjívar_137
+    segundoapellidoacad: Mejía_137
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_137
+  ACADEMICO_138:
+    codigoacademico: '000138'
+    primernombreacad: María_138
+    segundonombreacad: Rosa_138
+    primerapellidoacad: Menjívar_138
+    segundoapellidoacad: Mejía_138
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_138
+  ACADEMICO_139:
+    codigoacademico: '000139'
+    primernombreacad: María_139
+    segundonombreacad: Rosa_139
+    primerapellidoacad: Menjívar_139
+    segundoapellidoacad: Mejía_139
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_139
+  ACADEMICO_140:
+    codigoacademico: '000140'
+    primernombreacad: María_140
+    segundonombreacad: Rosa_140
+    primerapellidoacad: Menjívar_140
+    segundoapellidoacad: Mejía_140
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_140
+  ACADEMICO_141:
+    codigoacademico: '000141'
+    primernombreacad: María_141
+    segundonombreacad: Rosa_141
+    primerapellidoacad: Menjívar_141
+    segundoapellidoacad: Mejía_141
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_141
+  ACADEMICO_142:
+    codigoacademico: '000142'
+    primernombreacad: María_142
+    segundonombreacad: Rosa_142
+    primerapellidoacad: Menjívar_142
+    segundoapellidoacad: Mejía_142
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_142
+  ACADEMICO_143:
+    codigoacademico: '000143'
+    primernombreacad: María_143
+    segundonombreacad: Rosa_143
+    primerapellidoacad: Menjívar_143
+    segundoapellidoacad: Mejía_143
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_143
+  ACADEMICO_144:
+    codigoacademico: '000144'
+    primernombreacad: María_144
+    segundonombreacad: Rosa_144
+    primerapellidoacad: Menjívar_144
+    segundoapellidoacad: Mejía_144
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_144
+  ACADEMICO_145:
+    codigoacademico: '000145'
+    primernombreacad: María_145
+    segundonombreacad: Rosa_145
+    primerapellidoacad: Menjívar_145
+    segundoapellidoacad: Mejía_145
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_145
+  ACADEMICO_146:
+    codigoacademico: '000146'
+    primernombreacad: María_146
+    segundonombreacad: Rosa_146
+    primerapellidoacad: Menjívar_146
+    segundoapellidoacad: Mejía_146
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_146
+  ACADEMICO_147:
+    codigoacademico: '000147'
+    primernombreacad: María_147
+    segundonombreacad: Rosa_147
+    primerapellidoacad: Menjívar_147
+    segundoapellidoacad: Mejía_147
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_147
+  ACADEMICO_148:
+    codigoacademico: '000148'
+    primernombreacad: María_148
+    segundonombreacad: Rosa_148
+    primerapellidoacad: Menjívar_148
+    segundoapellidoacad: Mejía_148
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_148
+  ACADEMICO_149:
+    codigoacademico: '000149'
+    primernombreacad: María_149
+    segundonombreacad: Rosa_149
+    primerapellidoacad: Menjívar_149
+    segundoapellidoacad: Mejía_149
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_149
+  ACADEMICO_150:
+    codigoacademico: '000150'
+    primernombreacad: María_150
+    segundonombreacad: Rosa_150
+    primerapellidoacad: Menjívar_150
+    segundoapellidoacad: Mejía_150
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_150
+  ACADEMICO_151:
+    codigoacademico: '000151'
+    primernombreacad: María_151
+    segundonombreacad: Rosa_151
+    primerapellidoacad: Menjívar_151
+    segundoapellidoacad: Mejía_151
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_151
+  ACADEMICO_152:
+    codigoacademico: '000152'
+    primernombreacad: María_152
+    segundonombreacad: Rosa_152
+    primerapellidoacad: Menjívar_152
+    segundoapellidoacad: Mejía_152
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_152
+  ACADEMICO_153:
+    codigoacademico: '000153'
+    primernombreacad: María_153
+    segundonombreacad: Rosa_153
+    primerapellidoacad: Menjívar_153
+    segundoapellidoacad: Mejía_153
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_153
+  ACADEMICO_154:
+    codigoacademico: '000154'
+    primernombreacad: María_154
+    segundonombreacad: Rosa_154
+    primerapellidoacad: Menjívar_154
+    segundoapellidoacad: Mejía_154
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_154
+  ACADEMICO_155:
+    codigoacademico: '000155'
+    primernombreacad: María_155
+    segundonombreacad: Rosa_155
+    primerapellidoacad: Menjívar_155
+    segundoapellidoacad: Mejía_155
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_155
+  ACADEMICO_156:
+    codigoacademico: '000156'
+    primernombreacad: María_156
+    segundonombreacad: Rosa_156
+    primerapellidoacad: Menjívar_156
+    segundoapellidoacad: Mejía_156
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_156
+  ACADEMICO_157:
+    codigoacademico: '000157'
+    primernombreacad: María_157
+    segundonombreacad: Rosa_157
+    primerapellidoacad: Menjívar_157
+    segundoapellidoacad: Mejía_157
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_157
+  ACADEMICO_158:
+    codigoacademico: '000158'
+    primernombreacad: María_158
+    segundonombreacad: Rosa_158
+    primerapellidoacad: Menjívar_158
+    segundoapellidoacad: Mejía_158
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_158
+  ACADEMICO_159:
+    codigoacademico: '000159'
+    primernombreacad: María_159
+    segundonombreacad: Rosa_159
+    primerapellidoacad: Menjívar_159
+    segundoapellidoacad: Mejía_159
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_159
+  ACADEMICO_160:
+    codigoacademico: '000160'
+    primernombreacad: María_160
+    segundonombreacad: Rosa_160
+    primerapellidoacad: Menjívar_160
+    segundoapellidoacad: Mejía_160
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_160
+  ACADEMICO_161:
+    codigoacademico: '000161'
+    primernombreacad: María_161
+    segundonombreacad: Rosa_161
+    primerapellidoacad: Menjívar_161
+    segundoapellidoacad: Mejía_161
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_161
+  ACADEMICO_162:
+    codigoacademico: '000162'
+    primernombreacad: María_162
+    segundonombreacad: Rosa_162
+    primerapellidoacad: Menjívar_162
+    segundoapellidoacad: Mejía_162
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_162
+  ACADEMICO_163:
+    codigoacademico: '000163'
+    primernombreacad: María_163
+    segundonombreacad: Rosa_163
+    primerapellidoacad: Menjívar_163
+    segundoapellidoacad: Mejía_163
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_163
+  ACADEMICO_164:
+    codigoacademico: '000164'
+    primernombreacad: María_164
+    segundonombreacad: Rosa_164
+    primerapellidoacad: Menjívar_164
+    segundoapellidoacad: Mejía_164
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_164
+  ACADEMICO_165:
+    codigoacademico: '000165'
+    primernombreacad: María_165
+    segundonombreacad: Rosa_165
+    primerapellidoacad: Menjívar_165
+    segundoapellidoacad: Mejía_165
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_165
+  ACADEMICO_166:
+    codigoacademico: '000166'
+    primernombreacad: María_166
+    segundonombreacad: Rosa_166
+    primerapellidoacad: Menjívar_166
+    segundoapellidoacad: Mejía_166
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_166
+  ACADEMICO_167:
+    codigoacademico: '000167'
+    primernombreacad: María_167
+    segundonombreacad: Rosa_167
+    primerapellidoacad: Menjívar_167
+    segundoapellidoacad: Mejía_167
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_167
+  ACADEMICO_168:
+    codigoacademico: '000168'
+    primernombreacad: María_168
+    segundonombreacad: Rosa_168
+    primerapellidoacad: Menjívar_168
+    segundoapellidoacad: Mejía_168
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_168
+  ACADEMICO_169:
+    codigoacademico: '000169'
+    primernombreacad: María_169
+    segundonombreacad: Rosa_169
+    primerapellidoacad: Menjívar_169
+    segundoapellidoacad: Mejía_169
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_169
+  ACADEMICO_170:
+    codigoacademico: '000170'
+    primernombreacad: María_170
+    segundonombreacad: Rosa_170
+    primerapellidoacad: Menjívar_170
+    segundoapellidoacad: Mejía_170
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_170
+  ACADEMICO_171:
+    codigoacademico: '000171'
+    primernombreacad: María_171
+    segundonombreacad: Rosa_171
+    primerapellidoacad: Menjívar_171
+    segundoapellidoacad: Mejía_171
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_171
+  ACADEMICO_172:
+    codigoacademico: '000172'
+    primernombreacad: María_172
+    segundonombreacad: Rosa_172
+    primerapellidoacad: Menjívar_172
+    segundoapellidoacad: Mejía_172
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_172
+  ACADEMICO_173:
+    codigoacademico: '000173'
+    primernombreacad: María_173
+    segundonombreacad: Rosa_173
+    primerapellidoacad: Menjívar_173
+    segundoapellidoacad: Mejía_173
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_173
+  ACADEMICO_174:
+    codigoacademico: '000174'
+    primernombreacad: María_174
+    segundonombreacad: Rosa_174
+    primerapellidoacad: Menjívar_174
+    segundoapellidoacad: Mejía_174
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_174
+  ACADEMICO_175:
+    codigoacademico: '000175'
+    primernombreacad: María_175
+    segundonombreacad: Rosa_175
+    primerapellidoacad: Menjívar_175
+    segundoapellidoacad: Mejía_175
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_175
+  ACADEMICO_176:
+    codigoacademico: '000176'
+    primernombreacad: María_176
+    segundonombreacad: Rosa_176
+    primerapellidoacad: Menjívar_176
+    segundoapellidoacad: Mejía_176
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_176
+  ACADEMICO_177:
+    codigoacademico: '000177'
+    primernombreacad: María_177
+    segundonombreacad: Rosa_177
+    primerapellidoacad: Menjívar_177
+    segundoapellidoacad: Mejía_177
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_177
+  ACADEMICO_178:
+    codigoacademico: '000178'
+    primernombreacad: María_178
+    segundonombreacad: Rosa_178
+    primerapellidoacad: Menjívar_178
+    segundoapellidoacad: Mejía_178
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_178
+  ACADEMICO_179:
+    codigoacademico: '000179'
+    primernombreacad: María_179
+    segundonombreacad: Rosa_179
+    primerapellidoacad: Menjívar_179
+    segundoapellidoacad: Mejía_179
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_179
+  ACADEMICO_180:
+    codigoacademico: '000180'
+    primernombreacad: María_180
+    segundonombreacad: Rosa_180
+    primerapellidoacad: Menjívar_180
+    segundoapellidoacad: Mejía_180
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_180
+  ACADEMICO_181:
+    codigoacademico: '000181'
+    primernombreacad: María_181
+    segundonombreacad: Rosa_181
+    primerapellidoacad: Menjívar_181
+    segundoapellidoacad: Mejía_181
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_181
+  ACADEMICO_182:
+    codigoacademico: '000182'
+    primernombreacad: María_182
+    segundonombreacad: Rosa_182
+    primerapellidoacad: Menjívar_182
+    segundoapellidoacad: Mejía_182
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_182
+  ACADEMICO_183:
+    codigoacademico: '000183'
+    primernombreacad: María_183
+    segundonombreacad: Rosa_183
+    primerapellidoacad: Menjívar_183
+    segundoapellidoacad: Mejía_183
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_183
+  ACADEMICO_184:
+    codigoacademico: '000184'
+    primernombreacad: María_184
+    segundonombreacad: Rosa_184
+    primerapellidoacad: Menjívar_184
+    segundoapellidoacad: Mejía_184
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_184
+  ACADEMICO_185:
+    codigoacademico: '000185'
+    primernombreacad: María_185
+    segundonombreacad: Rosa_185
+    primerapellidoacad: Menjívar_185
+    segundoapellidoacad: Mejía_185
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_185
+  ACADEMICO_186:
+    codigoacademico: '000186'
+    primernombreacad: María_186
+    segundonombreacad: Rosa_186
+    primerapellidoacad: Menjívar_186
+    segundoapellidoacad: Mejía_186
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_186
+  ACADEMICO_187:
+    codigoacademico: '000187'
+    primernombreacad: María_187
+    segundonombreacad: Rosa_187
+    primerapellidoacad: Menjívar_187
+    segundoapellidoacad: Mejía_187
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_187
+  ACADEMICO_188:
+    codigoacademico: '000188'
+    primernombreacad: María_188
+    segundonombreacad: Rosa_188
+    primerapellidoacad: Menjívar_188
+    segundoapellidoacad: Mejía_188
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_188
+  ACADEMICO_189:
+    codigoacademico: '000189'
+    primernombreacad: María_189
+    segundonombreacad: Rosa_189
+    primerapellidoacad: Menjívar_189
+    segundoapellidoacad: Mejía_189
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_189
+  ACADEMICO_190:
+    codigoacademico: '000190'
+    primernombreacad: María_190
+    segundonombreacad: Rosa_190
+    primerapellidoacad: Menjívar_190
+    segundoapellidoacad: Mejía_190
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_190
+  ACADEMICO_191:
+    codigoacademico: '000191'
+    primernombreacad: María_191
+    segundonombreacad: Rosa_191
+    primerapellidoacad: Menjívar_191
+    segundoapellidoacad: Mejía_191
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_191
+  ACADEMICO_192:
+    codigoacademico: '000192'
+    primernombreacad: María_192
+    segundonombreacad: Rosa_192
+    primerapellidoacad: Menjívar_192
+    segundoapellidoacad: Mejía_192
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_192
+  ACADEMICO_193:
+    codigoacademico: '000193'
+    primernombreacad: María_193
+    segundonombreacad: Rosa_193
+    primerapellidoacad: Menjívar_193
+    segundoapellidoacad: Mejía_193
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_193
+  ACADEMICO_194:
+    codigoacademico: '000194'
+    primernombreacad: María_194
+    segundonombreacad: Rosa_194
+    primerapellidoacad: Menjívar_194
+    segundoapellidoacad: Mejía_194
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_194
+  ACADEMICO_195:
+    codigoacademico: '000195'
+    primernombreacad: María_195
+    segundonombreacad: Rosa_195
+    primerapellidoacad: Menjívar_195
+    segundoapellidoacad: Mejía_195
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_195
+  ACADEMICO_196:
+    codigoacademico: '000196'
+    primernombreacad: María_196
+    segundonombreacad: Rosa_196
+    primerapellidoacad: Menjívar_196
+    segundoapellidoacad: Mejía_196
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_196
+  ACADEMICO_197:
+    codigoacademico: '000197'
+    primernombreacad: María_197
+    segundonombreacad: Rosa_197
+    primerapellidoacad: Menjívar_197
+    segundoapellidoacad: Mejía_197
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_197
+  ACADEMICO_198:
+    codigoacademico: '000198'
+    primernombreacad: María_198
+    segundonombreacad: Rosa_198
+    primerapellidoacad: Menjívar_198
+    segundoapellidoacad: Mejía_198
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_198
+  ACADEMICO_199:
+    codigoacademico: '000199'
+    primernombreacad: María_199
+    segundonombreacad: Rosa_199
+    primerapellidoacad: Menjívar_199
+    segundoapellidoacad: Mejía_199
+    apellidocasadaacad: Ruiz
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_199
+  ACADEMICO_200:
+    codigoacademico: '000200'
+    primernombreacad: María_200
+    segundonombreacad: Rosa_200
+    primerapellidoacad: Menjívar_200
+    segundoapellidoacad: Mejía_200
+    apellidocasadaacad: ''
+    sexoacad: '1'
+    fechanacimientoacad: '1970-11-20'
+    esnacional: '1'
+    esescalafonado: null
+    espensionado: '0'
+    esjubilado: '0'
+    usalentes: '0'
+    poseetransporte: '0'
+    CIUDAD: CIUDAD_1
+    PAIS: PAIS_66
+    TIPO_SANGRE: TIPO_SANGRE_1
+    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
+    ESTADO_CIVIL: ESTADO_CIVIL_1
+    USUARIO: USUARIO_200
 PAIS:
   PAIS_1:
     codigoisopais: AF
@@ -1625,6 +6487,137 @@ PAIS:
   PAIS_244:
     codigoisopais: ZW
     nombreisopais: Zimbabue
+ACCION:
+  ACCION_1:
+    codaccion: '10'
+    nombreaccion: 'Buscar Académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_2:
+    codaccion: '20'
+    nombreaccion: 'Modificar datos de Académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_3:
+    codaccion: '20'
+    nombreaccion: 'Eliminar Académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_4:
+    codaccion: '12'
+    nombreaccion: 'Mostrar datos de Académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_5:
+    codaccion: '12'
+    nombreaccion: 'Asignar UMA'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_6:
+    codaccion: '12'
+    nombreaccion: 'Mostrar logros'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_7:
+    codaccion: '10'
+    nombreaccion: 'Agregar Académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_8:
+    codaccion: '10'
+    nombreaccion: 'Agregar Logro'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_9:
+    codaccion: '10'
+    nombreaccion: 'Buscar Logro'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_10:
+    codaccion: '20'
+    nombreaccion: 'Modificar Logro'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_11:
+    codaccion: '20'
+    nombreaccion: 'Aprobar Logro'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_12:
+    codaccion: '10'
+    nombreaccion: 'Modificar clasificaciones'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_3
+  ACCION_13:
+    codaccion: '30'
+    nombreaccion: 'Datos personales y curriculares de académicos'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_14:
+    codaccion: '30'
+    nombreaccion: 'Academicos por departamento y escalafón'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_15:
+    codaccion: '30'
+    nombreaccion: 'Academicos por tipo y tiempo de contratación'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_1
+  ACCION_16:
+    codaccion: '30'
+    nombreaccion: 'MINED, MINEC y CONACYT'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_17:
+    codaccion: '30'
+    nombreaccion: 'Titulos obtenidos por académico'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_18:
+    codaccion: '30'
+    nombreaccion: 'Investigaciones y publicaciones'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_19:
+    codaccion: '30'
+    nombreaccion: 'Temas de investigación'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_20:
+    codaccion: '30'
+    nombreaccion: 'Diplomados, cursos y talleres'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_21:
+    codaccion: '30'
+    nombreaccion: 'Seminarios, foros y conferencias'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_22:
+    codaccion: '30'
+    nombreaccion: 'Activiades académicas por periodo'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_23:
+    codaccion: '30'
+    nombreaccion: 'Historial de actividades académicas'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_24:
+    codaccion: '30'
+    nombreaccion: 'Académicos y materias impartidas'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_2
+  ACCION_25:
+    codaccion: '30'
+    nombreaccion: 'UMA asignadas por periodo'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_3
+  ACCION_26:
+    codaccion: '30'
+    nombreaccion: 'UMA académicos por departamento'
+    urlaccion: ficha_mostrar_privado
+    MODULO: MODULO_3
 ESTADO:
   ESTADO_1:
     nombreestado: Ahuachapán
@@ -1696,65 +6689,3 @@ ESTADO_ACTIVIDAD:
     nombreestadoactividad: 'Devuelta para revisión'
     permiteedicion: '1'
     esestadoinicial: '0'
-ACADEMICO:
-<?php $i = 1; ?>
-<?php for (; $i <= 100; $i++){ ?>
-  ACADEMICO_<?php echo $i ?>:
-    codigoacademico: '000<?php echo $i ?>'
-    primernombreacad: Juan_<?php echo $i."\n" ?>
-    segundonombreacad: Alberto_<?php echo $i."\n" ?>
-    primerapellidoacad: Pérez_<?php echo $i."\n" ?>
-    segundoapellidoacad: Sosa_<?php echo $i."\n" ?>
-    apellidocasadaacad: ''
-    sexoacad: '0'
-    fechanacimientoacad: '1988-11-26'
-    usalentes: '0'
-    espensionado: '0'
-    esjubilado: '0'
-    usalentes: '0'
-    poseetransporte: '0'
-    esnacional: '1'
-    CIUDAD: CIUDAD_1
-    TIPO_SANGRE: TIPO_SANGRE_1
-    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
-    PAIS: PAIS_66
-    ESTADO_CIVIL: ESTADO_CIVIL_1
-    USUARIO: USUARIO_<?php echo $i."\n" ?>
-<?php } ?>
-<?php for(; $i <= 200; $i++){ ?>
-  ACADEMICO_<?php echo $i ?>:
-    codigoacademico: '000<?php echo $i ?>'
-    primernombreacad: María_<?php echo $i."\n" ?>
-    segundonombreacad: Rosa_<?php echo $i."\n" ?>
-    primerapellidoacad: Menjívar_<?php echo $i."\n" ?>
-    segundoapellidoacad: Mejía_<?php echo $i."\n" ?>
-    apellidocasadaacad: '<?php echo fmod($i,2) ? 'Ruiz' : '' ?>'
-    sexoacad: '1'
-    fechanacimientoacad: '1970-11-20'
-    usalentes: '0'
-    espensionado: '0'
-    esjubilado: '0'
-    usalentes: '0'
-    poseetransporte: '0'
-    esnacional: '1'
-    CIUDAD: CIUDAD_1
-    TIPO_SANGRE: TIPO_SANGRE_1
-    NIVEL_ESTUDIO: NIVEL_ESTUDIO_3
-    PAIS: PAIS_66
-    ESTADO_CIVIL: ESTADO_CIVIL_1
-    USUARIO: USUARIO_<?php echo $i."\n" ?>
-<?php } ?>
-USUARIO:
-<?php $i = 1; ?>
-<?php for(; $i <= 100; $i++){ ?>
-  USUARIO_<?php echo $i ?>:
-    nombreusuario: juanperez<?php echo $i."\n" ?>
-    contraseniausuario: '12345'
-    PERFIL: PERFIL_1
-<?php } ?>
-<?php for(; $i <= 200; $i++){ ?>
-  USUARIO_<?php echo $i ?>:
-    nombreusuario: mariamenjivar<?php echo $i."\n" ?>
-    contraseniausuario: '12345'
-    PERFIL: PERFIL_5
-<?php } ?>

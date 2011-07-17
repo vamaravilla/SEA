@@ -5,8 +5,11 @@
   
   #javascripts:    [jsDatePick.min.1.3.js]
 
+mostrarFichaSuccess:
+  stylesheets:    [flash.css,formulario.css]
+
 listarAcademicosSuccess:
-  stylesheets:    [tabla.css]
+  stylesheets:    [tabla.css, formulario.css]
 
 all:
   http_metas:
@@ -19,7 +22,7 @@ all:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css,menu_principal.css,menu_secundario.css]
+  stylesheets:    [main.css,menu_principal.css,menu_secundario.css,formulario.css]
 
   #javascripts:    [jsDatePick.min.1.3.js]
 

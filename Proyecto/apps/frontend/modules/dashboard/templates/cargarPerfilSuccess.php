@@ -43,6 +43,9 @@
 <!--Slot para cargar las acciones-->
 <?php slot('submenu') ?>
 
+<?php
+use_helper('jQuery');
+?>
 
                         <div id="submenu" class="fondo_azul2">
                         <div id="cabeza_submenu"></div>
@@ -65,7 +68,16 @@
                                     <ul>
                                         <?php foreach($accAcciones as $accion){ ?>
                                         <?php if($accion->codaccion < 20){ ?>
-                                        <li><?php echo link_to($accion->getNombreaccion(), $accion->getUrlaccion()); ?></li>
+                                        <li><?php 
+                                                echo jq_link_to_remote($accion->getNombreaccion(), 
+                                                      array('update' => 'area_trabajo',
+                                                            'url' => $accion->getUrlaccion(),
+                                                            'type' => 'synchronous',
+                                                            'method'=> 'get',
+                                                            'loading' => jq_visual_effect('fadeIn',  '#indicador'),
+                                                            'complete'=> jq_visual_effect('fadeOut', '#indicador')
+                                             )); ?>
+                                        </li>
                                         <?php } ?>
                                         <?php } ?>
                                     </ul>
@@ -85,7 +97,16 @@
                                     <ul>
                                         <?php foreach($accAcciones as $accion){ ?>
                                         <?php if($accion->codaccion == 30){ ?>
-                                        <li><?php echo link_to($accion->getNombreaccion(), "ficha_mostrar"); ?></li>
+                                        <li><?php 
+                                                echo jq_link_to_remote($accion->getNombreaccion(), 
+                                                      array('update' => 'area_trabajo',
+                                                            'url' => $accion->getUrlaccion(),
+                                                            'type' => 'synchronous',
+                                                            'method'=> 'get',
+                                                            'loading' => jq_visual_effect('fadeIn',  '#indicador'),
+                                                            'complete'=> jq_visual_effect('fadeOut', '#indicador')
+                                             )); ?>
+                                        </li>
                                         <?php } ?>
                                         <?php } ?>
                                     </ul>
@@ -95,8 +116,6 @@
                         </div>
                         <div id="pie_submenu"></div>
                     </div>
-
-
     
 <?php end_slot(); ?>
 

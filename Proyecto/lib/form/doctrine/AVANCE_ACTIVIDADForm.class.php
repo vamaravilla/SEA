@@ -62,10 +62,19 @@ class AVANCE_ACTIVIDADForm extends BaseAVANCE_ACTIVIDADForm
             )
         );
         
+        //Colocando textos de ayuda
         $this->widgetSchema->setHelps(
                 array(
                     'porcentajeavance'     => 'Porcentaje de avance de la actividad hasta el momento',
                 )
             );
+        
+        //Inicializando campos
+        
+        $avnAvance = $this->getObject();
+        if ($avnAvan->isNew() && ($eacEstadoinicial = ESTADO_ACTIVIDADTable::getInstance()->findOneByEsestadoinicial(true)))
+        {
+            $this->widgetSchema['idestadoactividad']->addOption('default', $eacEstadoinicial);
+        }
     }
 }

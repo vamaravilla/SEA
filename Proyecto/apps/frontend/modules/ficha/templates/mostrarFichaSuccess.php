@@ -1,12 +1,11 @@
 <?php if ($sf_user->hasFlash('aviso')): ?>
-<div class="flash flash_aviso"><?php echo $sf_user->getFlash('aviso')
-?></div>
+<div class="flash flash_exito"><div class="exito"><?php echo $sf_user->getFlash('aviso') ?></div></div>
 <?php endif ?>
 <?php if ($sf_user->hasFlash('error')): ?>
-<div class="flash flash_error"><?php echo $sf_user->getFlash('error') ?></div>
+<div class="flash flash_error"><div class="exito"><?php echo $sf_user->getFlash('error') ?></div></div>
 <?php endif ?>
 <center>
-    <table id="mostrar_registro" width="100%">
+    <table id="gen_form" width="100%">
         <thead>
             <tr>
                 <td colspan="2"><center><h1>Ficha de acad&eacute;mico <?php echo $idUsuario ?></h1></center></td>
@@ -58,7 +57,7 @@
         <tfoot>
             <tr>
                 <td colspan="2">
-                    <?php echo link_to('Editar datos personales', 'ficha_editar_privado', array('sf_subject' => $acdAcademico, 'propio' => $intPropio,)); ?>
+                    <?php echo link_to('Editar datos personales', 'ficha_editar_privado', array('sf_subject' => $acdAcademico)); ?>
                 </td>
             </tr>
         </tfoot>

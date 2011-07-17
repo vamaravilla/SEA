@@ -19,8 +19,7 @@ class loginActions extends sfActions
   {
      $this->form = new LoginForm();
      //$this->getUser()->setAuthenticated(false);
-     
-               
+    
      if($request->isMethod("post")){
         $this->form->bind($request->getParameter("login"));
  
@@ -28,8 +27,9 @@ class loginActions extends sfActions
            if(!$user = USUARIOTable::login($this->form->getValue("usuario"), $this->form->getValue("contraseña"))){
                // No hemos conseguido loguear al usuario
                // Redirigimos de nuevo al login con un mensaje de error
-               $this->getUser()->setFlash("error", "Datos incorrectos");
+               $this->getUser()->setFlash("error", "La información de nombre de usuario o contraseña introducido no es correcta.");
                $this->redirect("@user_login");
+               
            }else{
                // Logueamos
                $this->getUser()->setAuthenticated(true);

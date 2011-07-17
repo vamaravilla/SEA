@@ -23,7 +23,7 @@ class fichaActions extends sfActions
 
     public function executeMostrarFicha(sfWebRequest $swrRequest)
     {
-        
+        //return $this->renderText('Hola mundo');
         $objPk = $swrRequest->getParameter('pk');
         $this->intPropio = $swrRequest->getParameter('propio', 0);
         $this->acdAcademico = $this->obtenerAcademico($objPk, $this->intPropio);
@@ -56,7 +56,6 @@ class fichaActions extends sfActions
         $acdAcademico = null;
         if (is_null($objPk))
         {
-            in_array(null, null);
             if ($intPropio != 0)
             {
                 $usrUsuario = $this->getUser()->getAttribute('usuario');
@@ -65,7 +64,6 @@ class fichaActions extends sfActions
             }
             else
             {
-                in_array($cosa3, $cosa4);
                 $acdAcademico = $this->getRoute()->getObject();
             }
         }

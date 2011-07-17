@@ -5,7 +5,7 @@
         <?php include_http_metas() ?>
         <?php include_metas() ?>
         <?php include_title() ?>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
     </head>
@@ -19,7 +19,7 @@
 			<div id="contenedor_resto">
 				<div id="contenedor_medio">
 					<div id="bloque_cabeza">
-						<div id="cabeza" class=></div>
+						<div id="cabeza"></div>
 					</div>
 				</div>
                                 <div >

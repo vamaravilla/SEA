@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css,menu_principal.css,menu_secundario.css]
+  stylesheets:    [main.css,menu_principal.css,menu_secundario.css,formulario.css]
 
   javascripts:    [utiles.js]
 
@@ -32,9 +32,23 @@ indexLoginSuccess:
     language:     es
     #robots:       index, follow
 
-  stylesheets:    [main.css,menu_principal.css,menu_secundario.css]
-  javascripts:    [utiles.js]
+  stylesheets:    [main.css,login.css,flash.css]
+  #javascripts:    [utiles.js]
   has_layout:     true
   layout:         loginLayout
   
-  
+indexError404Success:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Sistema de Expediente académico
+    #description:  symfony project
+    #keywords:     symfony, project
+    language:     es
+    #robots:       index, follow
+
+  stylesheets:    [main.css]
+  #javascripts:    [utiles.js]
+  has_layout:     true
+  layout:         loginLayout  

@@ -22,7 +22,7 @@ class LoginForm extends BaseForm
     ));
  
     $this->widgetSchema->setNameFormat('login[%s]');
-    //$this->widgetSchema->setFormFormatterName('list');
+    $this->widgetSchema->setFormFormatterName('table');
  
   }
  
